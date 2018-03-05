@@ -5,9 +5,9 @@
     <div ng-switch="$ctrl.accident" class="accidentForm">
 
       <div class="tab carAccident1" ng-switch-when="1">
-        <button ng-click="$ctrl.getForm(2)" type="button">Hit and Run</button>
-        <button ng-click="$ctrl.getForm(2)" type="button">Moving</button>
-        <button ng-click="$ctrl.getForm(2)" type="button">Parked</button>
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('hit and run')" type="button">Hit and Run</button>
+        <button ng-click="$ctrl.getForm(2)" $ctrl.getType('moving')" type="button">Moving</button>
+        <button ng-click="$ctrl.getForm(2)" $ctrl.getType('parked')" type="button">Parked</button>
       </div>
 
       <div class="tab car2" ng-switch-when="2">
@@ -56,15 +56,22 @@
         <p>Take photos</p>
         <button ng-click="$ctrl.getForm(6)" >NEXT</button>
       </div>
+
+      <div class="tab" ng-switch-when="6">
+        <p>Timeline of Events</p>
+
+      </div>
     </div>
     `,
     controller: function() {
       var $ctrl = this;
       var accidentDb = {};
+      var type;
 
       $ctrl.accident = 1;
       $ctrl.setPerpCar = function(car) {
         accidentDb = car;
+        console.log(accidentDb.type)
         $ctrl.getForm(3);
       }
       $ctrl.getForm = function(item) {
@@ -80,10 +87,15 @@
 
       $ctrl.setEvent = function (car){
         accidentDb.event = car.event;
-        accidentDb.type = "accident";
+        accidentDb.type = type;
         console.log(accidentDb);
         $ctrl.getForm(5);
       }
+
+      $ctrl.getType = function(typeOf){
+        type = typeOf;
+      }
+
 
     }
 
