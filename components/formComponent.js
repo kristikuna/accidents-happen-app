@@ -2,10 +2,10 @@
   var formComponent = {
     template:`    <div class="mainForm">
           <h1>Title</h1>
-          <button type="button">Accident</button>
-          <button type="button">Theft</button>
-          <button type="button">Assault</button>
-          <button type="button">Witness</button>
+          <button type="button"><a href="#!/accident">Accident</a></button>
+          <button type="button"><a href="#!/theft">Theft</a></button>
+          <button type="button"><a href="#!/assault">Assault</a></button>
+          <button type="button"><a href="#!/witness">Witness</a></button>
         </div>
 
     `,
