@@ -18,6 +18,7 @@
           <label>Color<input type="text" ng-model="$ctrl.car.color"></label>
           <label>License Plate #<input type="text" ng-model="$ctrl.car.plate"></label>
           <label>Driver Description<input type="text" ng-model="$ctrl.car.driver"></label>
+          <button ng-click="$ctrl.goBack()" type="button">BACK</button>
           <button type="submit">NEXT</button>
         </form>
       </div>
@@ -31,6 +32,7 @@
 
           <p>What direction was the car headed?</p>
           <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
+          <button ng-click="$ctrl.goBack()" type="button">BACK</button>
           <button type="submit">NEXT</button>
         </form>
       </div>
@@ -47,6 +49,7 @@
           <li>Where</li>
         </ul>
         <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
+        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
         <button type="submit">NEXT</button>
         </form>
       </div>
@@ -54,41 +57,55 @@
       <div class="tab car5" ng-switch-when="5">
         <p>Remember to check the area for witnesses</p>
         <p>Take photos</p>
+        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
         <button ng-click="$ctrl.getForm(6)" >NEXT</button>
       </div>
 
       <div class="tab" ng-switch-when="6">
         <p>Timeline of Events</p>
+        <div>
+        <p>Perps description</p>
+        <p>Make: {{$ctrl.accidentDb.make}}</p>
+        <p>Model: {{$ctrl.accidentDb.model}}</p>
+        <p>Color: {{$ctrl.accidentDb.color}}</p>
+        <p>Plate: {{$ctrl.accidentDb.plate}}</p>
+        <p>Driver Description: {{$ctrl.accidentDb.driver}}</p>
+        <p>Event Description: {{$ctrl.accidentDb.event}}</p>
+        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+        </div>
 
       </div>
     </div>
     `,
     controller: function() {
       var $ctrl = this;
-      var accidentDb = {};
+      $ctrl.accidentDb = {};
       var type;
 
       $ctrl.accident = 1;
       $ctrl.setPerpCar = function(car) {
-        accidentDb = car;
-        console.log(accidentDb.type)
+        $ctrl.accidentDb = car;
+        console.log($ctrl.accidentDb.type)
         $ctrl.getForm(3);
       }
       $ctrl.getForm = function(item) {
         $ctrl.accident = item;
 
       }
+      $ctrl.goBack = function(){
+        $ctrl.accident = $ctrl.accident - 1;
+      }
 
       $ctrl.setDescription = function(car){
-        accidentDb.description = car.description;
-        accidentDb.direction = car.direction;
+        $ctrl.accidentDb.description = car.description;
+        $ctrl.accidentDb.direction = car.direction;
         $ctrl.getForm(4);
       }
 
       $ctrl.setEvent = function (car){
-        accidentDb.event = car.event;
-        accidentDb.type = type;
-        console.log(accidentDb);
+        $ctrl.accidentDb.event = car.event;
+        $ctrl.accidentDb.type = type;
+        console.log($ctrl.accidentDb);
         $ctrl.getForm(5);
       }
 
