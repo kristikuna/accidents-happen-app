@@ -7,10 +7,11 @@
     };
 
     function setList(sentObj){
-      console.log(sentObj);
+      // console.log(sentObj);
       savedList.push(sentObj);
       console.log(savedList);
     }
+
 
   };
   angular.module("app")

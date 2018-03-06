@@ -78,7 +78,7 @@
       </div>
     </div>
     `,
-    controller: function(WizardService) {
+    controller: function(WizardService,$location) {
       var $ctrl = this;
       $ctrl.accidentDb = {};
       var type;
@@ -116,6 +116,7 @@
 
       $ctrl.sendToService = function(){
         WizardService.setList($ctrl.accidentDb);
+        $location.path('/form')
       }
 
     }
