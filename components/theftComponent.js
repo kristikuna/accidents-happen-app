@@ -52,12 +52,12 @@
           <p>Stolen Items: {{$ctrl.theftDb.stolenStuff}}</p>
           <p>Event Description: {{$ctrl.theftDb.eventOfTheft}}</p>
           <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-          <button type="button"><a href="#!/form">Home</a></button>
+          <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
         </div>
       </div>
     </div>
     `,
-    controller: function() {
+    controller: function(WizardService,$location) {
       var $ctrl = this;
       $ctrl.theftDb = {};
       var type = "";
@@ -74,6 +74,7 @@
 
       $ctrl.setDescription = function(items){
         $ctrl.theftDb = items;
+
         $ctrl.getForm(3);
 
       }
@@ -85,13 +86,14 @@
 
       $ctrl.setEvents = function(items) {
         $ctrl.theftDb = items;
+        $ctrl.theftDb.type = "theft";
         $ctrl.getForm(5);
       }
-      //
-      // $ctrl.getType = function(typeOf) {
-      //   type = typeOf;
-      //   $ctrl.theftDb.type = type;
-      // }
+
+      $ctrl.sendToService = function(){
+        WizardService.setList($ctrl.theftDb);
+        $location.path('/form')
+      }
     }
   };
 

@@ -1,12 +1,12 @@
 (function() {
     var witnessComponent = {
       templateUrl: "partials/witness-partial.html",
-      controller: function() {
+      controller: function(WizardService,$location) {
         var $ctrl = this;
         $ctrl.accidentDb = {};
         var type;
         $ctrl.accident = 1;
-        
+
         $ctrl.getType = function(typeOf){
           type = typeOf;
         }
@@ -18,7 +18,7 @@
         }
         $ctrl.getForm = function(item) {
           $ctrl.accident = item;
-  
+
         }
         $ctrl.goBack = function(){
           $ctrl.accident = $ctrl.accident - 1;
@@ -29,11 +29,16 @@
           console.log($ctrl.accidentDb);
           $ctrl.getForm(7);
         }
+
+        $ctrl.sendToService = function(){
+          WizardService.setList($ctrl.accidentDb);
+          $location.path('/form')
+        }
       }
-  
+
     };
-  
-  
+
+
     angular.module("app")
       .component("witnessComponent", witnessComponent)
   }());

@@ -43,7 +43,7 @@
             <label>Description of stolen/damaged property if any:
                 <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.carDescription"></textarea>
             </label>
-            <label>What direction was the car headed if fleeing?: 
+            <label>What direction was the car headed if fleeing?:
                 <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
             </label>
             <button ng-click="$ctrl.goBack()" type="button">BACK</button>
@@ -87,7 +87,7 @@
                 <p>Direction the person was headed if fleeing: {{$ctrl.accidentDb.direction}}</p>
                 <p>Description of events: {{$ctrl.accidentDb.event}}</p>
                 <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-                <button><a href="#!/form"></a>HOME</button>
+                <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
         </div>
 
     </div>

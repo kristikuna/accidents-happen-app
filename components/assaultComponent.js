@@ -73,13 +73,13 @@
         <p>Driver Description: {{$ctrl.accidentDb.driver}}</p>
         <p>Event Description: {{$ctrl.accidentDb.event}}</p>
         <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-        <button type="button">SUBMIT</button>
+        <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
         </div>
 
       </div>
     </div>
     `,
-    controller: function(WizardService) {
+    controller: function(WizardService,$location) {
       var $ctrl = this;
       $ctrl.accidentDb = {};
       var type;
@@ -114,6 +114,12 @@
       $ctrl.getType = function(typeOf){
         type = typeOf;
       }
+
+      $ctrl.sendToService = function(){
+        WizardService.setList($ctrl.accidentDb);
+        $location.path('/form')
+      }
+
     }
   };
 

@@ -3,7 +3,8 @@
     var savedList = [];
 
     return {
-      setList: setList
+      setList: setList,
+      sendList: sendList
     };
 
     function setList(sentObj){
@@ -12,7 +13,9 @@
       console.log(savedList);
     }
 
-
+    function sendList(){
+        return savedList;
+    }
   };
   angular.module("app")
     .factory("WizardService",WizardService)
