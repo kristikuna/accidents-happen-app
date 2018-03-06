@@ -21,6 +21,9 @@
         .when("/home", {
             template: "<home-component></home-component>"
         })
+        .when("/prev", {
+            template: "<previous-component></previous-component>"
+        })
         .otherwise({ redirectTo: "/home" });
     });
 })();

@@ -1,6 +1,18 @@
 (function() {
   function WizardService(){
-    var savedList = [];
+    var savedList = [
+      {
+        type: "theft",
+        event: "stole some stuff",
+        stolenStuff: "stuff",
+        description: "black hair, looked like a mugger",
+      },
+      {
+        type: "car-accident",
+        event: "stuff broke",
+        description: "shit went dowwnnnnn"
+      }
+    ];
 
     return {
       setList: setList,
