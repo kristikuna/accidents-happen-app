@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("photo/landscape.jpg");
+  height:1000px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  margin: 0 auto;
+}
