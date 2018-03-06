@@ -12,8 +12,8 @@
         .when("/theft", {
             template: "<theft-component></theft-component>"
         })
-        .when("/assault", {
-            template: "<assault-component></assault-component>"
+        .when("/hitandrun", {
+            template: "<hitandrun-component></hitandrun-component>"
         })
         .when("/witness", {
             template: "<witness-component></witness-component>"
