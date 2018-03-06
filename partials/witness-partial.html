@@ -1,0 +1,94 @@
+<div ng-switch="$ctrl.accident" class="accidentForm">
+
+    <div class="tab wit1" ng-switch-when="1">
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('robbery')" type="button">Robbery</button>
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car-theft')" type="button">Car-Theft</button>
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car-accident')" type="button">Car-Accident</button>
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('assault')" type="button">Assault</button>
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('injury')" type="button">Injury</button>
+    </div>
+
+    <div class="tab wit2" ng-switch-when="2">
+        <p>Remember: Remain calm and call authorities!</p>
+        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+        <button ng-click="$ctrl.getForm(3)">NEXT</button>
+    </div>
+
+    <div class="tab wit3" ng-switch-when="3">
+        <p>Was there another vehicle involved?</p>
+        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+        <button ng-click="$ctrl.getForm(4)">YES</button>
+        <button ng-click="$ctrl.getForm(5)">NEXT</button>
+        </form>
+    </div>
+
+    <div class="tab wit4" ng-switch-when="4">
+        <p>Was there another vehicle involved?</p>
+        <form ng-submit="$ctrl.setPerpCar($ctrl.car); $ctrl.getForm(5)">
+            <label>Make:
+                <input type="text" ng-model="$ctrl.car.make">
+            </label>
+            <label>Model:
+                <input type="text" ng-model="$ctrl.car.model">
+            </label>
+            <label>Color:
+                <input type="text" ng-model="$ctrl.car.color">
+            </label>
+            <label>License Plate #:
+                <input type="text" ng-model="$ctrl.car.plate">
+            </label>
+            <label>Driver Description:
+                <textarea name="driver" rows="8" cols="80" ng-model="$ctrl.car.driver"></textarea>
+            </label>
+            <label>Description of stolen/damaged property if any:
+                <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.carDescription"></textarea>
+            </label>
+            <label>What direction was the car headed if fleeing?: 
+                <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
+            </label>
+            <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+            <button>NEXT</button>
+        </form>
+    </div>
+
+    <div class="tab wit5" ng-switch-when="5">
+        <p>Describe what happened in as much detail as possible.</p>
+        <form ng-submit="$ctrl.setEvent($ctrl.car)">
+            <ul>Remember to include:
+                <li>Injuries to yourself or others</li>
+                <li>Damage to your property</li>
+                <li>Any who, what, where, or when</li>
+            </ul>
+            <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
+            <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+            <button type="submit">NEXT</button>
+        </form>
+    </div>
+
+    <div class="tab wit6" ng-switch-when="6">
+        <p>Remember to take pictures and check the area for any other witnesses. Ask them to provide a statement when authorities
+            arrive.
+        </p>
+        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+        <button ng-click="$ctrl.getForm(7)">NEXT</button>
+    </div>
+
+    <div class="tab wit7" ng-switch-when="7">
+        <p>Timeline of Events</p>
+        <div>
+            <p>Other person's description</p>
+            <p>Type of incident: {{ $ctrl.accidentDb.type }}
+                <p>Make: {{$ctrl.accidentDb.make}}</p>
+                <p>Model: {{$ctrl.accidentDb.model}}</p>
+                <p>Color: {{$ctrl.accidentDb.color}}</p>
+                <p>Plate: {{$ctrl.accidentDb.plate}}</p>
+                <p>Person's Description: {{$ctrl.accidentDb.driver}}</p>
+                <p>STolen/damage to property if any: {{$ctrl.accidentDb.carDescription}}</p>
+                <p>Direction the person was headed if fleeing: {{$ctrl.accidentDb.direction}}</p>
+                <p>Description of events: {{$ctrl.accidentDb.event}}</p>
+                <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+                <button><a href="#!/form"></a>HOME</button>
+        </div>
+
+    </div>
+</div>
