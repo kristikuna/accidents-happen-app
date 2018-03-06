@@ -18,6 +18,9 @@
         .when("/witness", {
             template: "<witness-component></witness-component>"
         })
-        .otherwise({ redirectTo: "/form" });
+        .when("/home", {
+            template: "<home-component></home-component>"
+        })
+        .otherwise({ redirectTo: "/home" });
     });
 })();
