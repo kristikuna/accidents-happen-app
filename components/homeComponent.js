@@ -22,7 +22,7 @@
         $ctrl.height = {
           "height": "35vh",
           "background-color": "#39414C",
-          "background-image": "none",
+          "box-shadow": "inset 0 0 0 10000px rgba(57,65,75,1)"
         }
         $ctrl.display = {
           "display": "flex"

@@ -17,9 +17,11 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: white;
+  background-color: #39414C;
+  /* background-color: white; */
+  /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,1); */
   margin: 0 auto;
-  transition: 1s;
+  transition: all 1s;
   display: flex;
 }
 
