@@ -27,6 +27,8 @@
 
       <div class="tab car3" ng-switch-when="3">
         <p>Enter other drivers insurance information</p>
+        <p>Do not admit fault:
+        Do not discuss the car accident with anyone other than the police and your insurance claims representative.</p>
         <form ng-submit="$ctrl.setInsuranceInfo($ctrl.car)">
           <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.insuranceInfo"></textarea>
 
@@ -36,7 +38,7 @@
       </div>
 
       <div class="tab car4" ng-switch-when="4">
-        <p>Write your memories</p>
+        <p>Write your account of the incident that took place</p>
         <form ng-submit="$ctrl.setEvent($ctrl.car)"
         <ul>Remember to include:
           <li>Injuries</li>
@@ -62,7 +64,7 @@
       <div class="tab" ng-switch-when="6">
         <p>Timeline of Events</p>
         <div>
-        <p>Other driver info</p>
+        <p>Other driver information</p>
         <p>Name: {{$ctrl.accidentDb.name}}</p>
         <p>Contact: {{$ctrl.accidentDb.phone}}</p>
         <p>Make: {{$ctrl.accidentDb.make}}</p>
