@@ -18,8 +18,8 @@
     <div class="tab wit3" ng-switch-when="3">
         <p>Was there another vehicle involved?</p>
         <button type="button" ng-click="showme=true">YES</button>
-        <button type="button" ng-click="showme=false">NO</button>
-        <form ng-show="showme" ng-submit="$ctrl.setPerpCar($ctrl.car); $ctrl.getForm(5)">
+        <button type="button" ng-click="showme=false; $ctrl.getForm(4)">NO</button>
+        <form ng-show="showme" ng-submit="$ctrl.setPerpCar($ctrl.car)">
             <label>Make:
                 <input type="text" ng-model="$ctrl.car.make">
             </label>
@@ -36,18 +36,19 @@
                 <textarea name="driver" rows="8" cols="80" ng-model="$ctrl.car.driver"></textarea>
             </label>
             <label>Description of stolen/damaged property if any:
-                <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.carDescription"></textarea>
+                <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.property"></textarea>
             </label>
             <label>What direction was the car headed if fleeing?:
                 <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
             </label>
+            <button type="submit">NEXT</button>
         </form>
         <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-        <button>NEXT</button>
+
         </form>
     </div>
 
-    <div class="tab wit5" ng-switch-when="5">
+    <div class="tab wit4" ng-switch-when="4">
         <p>Describe what happened in as much detail as possible.</p>
         <form ng-submit="$ctrl.setEvent($ctrl.car)">
             <ul>Remember to include:
@@ -61,15 +62,15 @@
         </form>
     </div>
 
-    <div class="tab wit6" ng-switch-when="6">
+    <div class="tab wit5" ng-switch-when="5">
         <p>Remember to take pictures and check the area for any other witnesses. Ask them to provide a statement when authorities
             arrive.
         </p>
         <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-        <button ng-click="$ctrl.getForm(7)">NEXT</button>
+        <button ng-click="$ctrl.getForm(6)">NEXT</button>
     </div>
 
-    <div class="tab wit7" ng-switch-when="7">
+    <div class="tab wit6" ng-switch-when="6">
         <p>Timeline of Events</p>
         <div>
             <p>Other person's description</p>
@@ -79,7 +80,7 @@
                 <p>Color: {{$ctrl.accidentDb.color}}</p>
                 <p>Plate: {{$ctrl.accidentDb.plate}}</p>
                 <p>Person's Description: {{$ctrl.accidentDb.driver}}</p>
-                <p>STolen/damage to property if any: {{$ctrl.accidentDb.carDescription}}</p>
+                <p>Stolen/damage to property if any: {{$ctrl.accidentDb.property}}</p>
                 <p>Direction the person was headed if fleeing: {{$ctrl.accidentDb.direction}}</p>
                 <p>Description of events: {{$ctrl.accidentDb.event}}</p>
                 <button ng-click="$ctrl.goBack()" type="button">BACK</button>

@@ -13,7 +13,7 @@
         $ctrl.setPerpCar = function(car) {
           $ctrl.accidentDb = car;
           console.log($ctrl.accidentDb.type)
-          console.log(car.carDescription);
+          console.log(car.property);
           $ctrl.getForm(4);
         }
         $ctrl.getForm = function(item) {
@@ -27,7 +27,7 @@
           $ctrl.accidentDb.event = car.event;
           $ctrl.accidentDb.type = type;
           console.log($ctrl.accidentDb);
-          $ctrl.getForm(7);
+          $ctrl.getForm(5);
         }
 
         $ctrl.sendToService = function(){
