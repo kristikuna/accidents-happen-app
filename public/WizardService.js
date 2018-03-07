@@ -1,33 +1,65 @@
 (function() {
-  function WizardService(){
-    var savedList = [
-      {
-        type: "theft",
-        event: "stole some stuff",
-        stolenStuff: "stuff",
-        description: "black hair, looked like a mugger",
-      },
-      {
-        type: "car-accident",
-        event: "stuff broke",
-        description: "shit went dowwnnnnn"
-      }
-    ];
+  function WizardService($http){
 
     return {
-      setList: setList,
-      sendList: sendList
+      getList: getList,
+      setList: setList
+      // deleteItem: deleteItem,
+      // updateItem: updateItem
     };
 
-    function setList(sentObj){
-      // console.log(sentObj);
-      savedList.push(sentObj);
-      console.log(savedList);
+    function getList(){
+      return $http({
+        method: "GET",
+        url: "/incidents"
+        }).then(function(response) {
+        console.log(response.data);
+        return response.data;
+        });
+
+    };
+
+    function setList(incident){
+      console.log(incident);
+      return $http({
+        method: "POST",
+        url: "/incidents",
+        data: incident
+      });
+
+
     }
 
-    function sendList(){
-        return savedList;
-    }
+
+
+    // var savedList = [
+    //   {
+    //     type: "theft",
+    //     event: "stole some stuff",
+    //     stolenStuff: "stuff",
+    //     description: "black hair, looked like a mugger",
+    //   },
+    //   {
+    //     type: "car-accident",
+    //     event: "stuff broke",
+    //     description: "shit went dowwnnnnn"
+    //   }
+    // ];
+    //
+    // return {
+    //   setList: setList,
+    //   sendList: sendList
+    // };
+    //
+    // function setList(sentObj){
+    //   // console.log(sentObj);
+    //   savedList.push(sentObj);
+    //   console.log(savedList);
+    // }
+    //
+    // function sendList(){
+    //     return savedList;
+    // }
   };
   angular.module("app")
     .factory("WizardService",WizardService)

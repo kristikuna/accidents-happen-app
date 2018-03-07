@@ -31,6 +31,7 @@
         }
 
         $ctrl.sendToService = function(){
+          console.log("sent to service");
           WizardService.setList($ctrl.accidentDb);
           $location.path('/home')
         }

@@ -2,14 +2,19 @@
     var previousComponent = {
         template: `
         <div class="history" ng-repeat="incident in $ctrl.whatever">
-          <p>Type of incident: {{ incident.type }}</p>
-          <p>Events that took place: {{ incident.event }}</p>
-          <p>Description of person: {{ incident.description }}</p>
+          <p>Type of incident: {{ incident.type_of }}</p>
+          <p>Events that took place: {{ incident.events }}</p>
+          <p>Description of person: {{ incident.driver }}</p>
         </div>
         `,
         controller: function(WizardService, $location) {
             var $ctrl = this;
-            $ctrl.whatever = WizardService.sendList();
+
+            WizardService.getList().then(function (response){
+              $ctrl.whatever = response;
+              console.log(response);
+            });
+
         }
       }
       angular.module("app")
