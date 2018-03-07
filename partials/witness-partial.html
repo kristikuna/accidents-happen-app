@@ -1,6 +1,7 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
 
     <div class="tab wit1" ng-switch-when="1">
+            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
         <button ng-click="$ctrl.getForm(2); $ctrl.getType('robbery')" type="button">Robbery</button>
         <button ng-click="$ctrl.getForm(2); $ctrl.getType('car theft')" type="button">Car-Theft</button>
         <button ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" type="button">Car-Accident</button>
@@ -9,6 +10,7 @@
     </div>
 
     <div class="tab wit2" ng-switch-when="2">
+            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
         <p>Call the police</p>
         <p>Keep calm</p>
         <button ng-click="$ctrl.goBack()" type="button">BACK</button>
@@ -16,6 +18,7 @@
     </div>
 
     <div class="tab wit3" ng-switch-when="3">
+            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
         <p>Was there another vehicle involved?</p>
         <button type="button" ng-click="showme=true">YES</button>
         <button type="button" ng-click="showme=false; $ctrl.getForm(4)">NO</button>
@@ -52,6 +55,7 @@
     </div>
 
     <div class="tab wit4" ng-switch-when="4">
+            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
         <p>Describe what happened in as much detail as possible.</p>
         <form ng-submit="$ctrl.setEvent($ctrl.car)">
             <ul>Remember to include:
@@ -66,6 +70,7 @@
     </div>
 
     <div class="tab wit5" ng-switch-when="5">
+            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
         <p>Remember to take pictures and check the area for any other witnesses. Ask them to provide a statement when authorities
             arrive.
         </p>
@@ -74,6 +79,7 @@
     </div>
 
     <div class="tab wit6" ng-switch-when="6">
+            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
         <p>Timeline of Events</p>
         <div>
             <p>Other person's description</p>

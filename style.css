@@ -1,4 +1,10 @@
-
+.xbut {
+  position: absolute;
+  color: white;
+  background-color: crimson;
+  right: 3px;
+  top: 3px;
+}
 
 
 /* h1{
@@ -16,6 +22,7 @@
   font-family: "Open Sans";
   font-size: 10px;
   padding: 20px;
+  position: relative;
 }
 
 button {
