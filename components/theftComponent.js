@@ -68,9 +68,7 @@
 
       $ctrl.setDescription = function(items){
         $ctrl.theftDb = items;
-
         $ctrl.getForm(3);
-
       }
 
       $ctrl.stolenItems = function(items) {
@@ -87,6 +85,7 @@
       $ctrl.sendToService = function(){
         WizardService.setList($ctrl.theftDb);
         $location.path('/form')
+        console.log($ctrl.theftDb);
       }
     }
   };
