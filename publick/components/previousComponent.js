@@ -1,7 +1,7 @@
 (function() {
     var previousComponent = {
         template: `
-        <div ng-repeat="incident in $ctrl.whatever">
+        <div class="history" ng-repeat="incident in $ctrl.whatever">
           <p>Type of incident: {{ incident.type }}</p>
           <p>Events that took place: {{ incident.event }}</p>
           <p>Description of person: {{ incident.description }}</p>

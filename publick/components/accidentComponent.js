@@ -108,7 +108,7 @@
       $ctrl.setEvent = function (car){
         $ctrl.accidentDb.event = car.event;
         $ctrl.accidentDb.type = type;
-        // console.log($ctrl.accidentDb);
+        console.log($ctrl.accidentDb);
         $ctrl.getForm(5);
       }
 
