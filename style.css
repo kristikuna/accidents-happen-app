@@ -2,11 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Georgia;
+}
+
+body {
+  background-color: #39414C;
 }
 
 header {
   background-image: url("photo/landscape.jpg");
-  height:1000px;
+  height:100vh;
   background-repeat: no-repeat;
   background-origin: content-box;
   background-attachment: fixed;
@@ -14,4 +19,53 @@ header {
   background-size: cover;
   background-color: white;
   margin: 0 auto;
+  transition: 1s;
+  display: flex;
+}
+
+#slideButton {
+  background-color: #555142;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  transition: 1s;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+.headerTitle h1 {
+  flex: 1;
+  color: white;
+  font-size: 4rem;
+}
+
+.homePageButtons{
+  display: none;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.homePageButtons button {
+  display: block;
+  width: 30%;
+  margin: 10px;
+  min-width: 350px;
+  background-color: grey;
+  height: 50vh;
+}
+
+.homePageButtons button a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
 }
