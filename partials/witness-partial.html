@@ -2,8 +2,8 @@
 
     <div class="tab wit1" ng-switch-when="1">
         <button ng-click="$ctrl.getForm(2); $ctrl.getType('robbery')" type="button">Robbery</button>
-        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car-theft')" type="button">Car-Theft</button>
-        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car-accident')" type="button">Car-Accident</button>
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car theft')" type="button">Car-Theft</button>
+        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" type="button">Car-Accident</button>
         <button ng-click="$ctrl.getForm(2); $ctrl.getType('assault')" type="button">Assault</button>
         <button ng-click="$ctrl.getForm(2); $ctrl.getType('injury')" type="button">Injury</button>
     </div>
@@ -34,6 +34,9 @@
             </label>
             <label>Driver Description:
                 <textarea name="driver" rows="8" cols="80" ng-model="$ctrl.car.driver"></textarea>
+            </label>
+            <label>Driver Phone #:
+                <input type="tel" name="driverphone" rows="8" cols="80" ng-model="$ctrl.car.phone"/>
             </label>
             <label>Description of stolen/damaged property if any:
                 <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.property"></textarea>
