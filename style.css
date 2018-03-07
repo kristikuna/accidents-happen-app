@@ -20,6 +20,7 @@ h1{
   width: 50%;
   min-height: 200px;
   font-family: "Open Sans";
+  font-size: 10px;
   padding: 20px;
 }
 
@@ -34,8 +35,14 @@ button {
 
 input, button {
   border: none;
+  margin: 10px;
 }
 
+input {
+  background-color: #e5e5d7;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
 a {
   width: auto;
   padding: 10px;
