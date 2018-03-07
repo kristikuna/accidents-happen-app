@@ -8,7 +8,6 @@
           <button type="button"><a href="#!/theft">Theft</a></button>
           <button type="button"><a href="#!/witness">Witness</a></button>
         </div>
-
     `,
     controller: function(){
       var $ctrl = this;

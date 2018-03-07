@@ -1,6 +1,6 @@
 (function() {
-  var accidentComponent = {
-    templateUrl: "partials/accident-partial.html",
+  var hitandrunComponent = {
+    templateUrl: "partials/hit-and-run-partial.html",
     controller: function(WizardService,$location) {
       var $ctrl = this;
       $ctrl.accidentDb = {};
@@ -14,23 +14,23 @@
 
       $ctrl.getForm = function(item) {
         $ctrl.accident = item;
-
       }
 
       $ctrl.goBack = function(){
         $ctrl.accident = $ctrl.accident - 1;
       }
 
-      $ctrl.setInsuranceInfo = function(car){
-        $ctrl.accidentDb.insuranceInfo = car.insuranceInfo;
-        $ctrl.getForm(4);
+      $ctrl.setDescription = function(car){
+        $ctrl.accidentDb.description = car.description;
+        $ctrl.accidentDb.direction = car.direction;
+        $ctrl.getForm(5);
       }
 
       $ctrl.setEvent = function (car){
         $ctrl.accidentDb.event = car.event;
         $ctrl.accidentDb.type = type;
         // console.log($ctrl.accidentDb);
-        $ctrl.getForm(5);
+        $ctrl.getForm(4);
       }
 
       $ctrl.getType = function(typeOf){
@@ -47,5 +47,5 @@
 
 
   angular.module("app")
-    .component("accidentComponent", accidentComponent)
+    .component("hitandrunComponent", hitandrunComponent)
 }());
