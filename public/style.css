@@ -1,9 +1,11 @@
 .xbut {
   position: absolute;
-  color: white;
-  background-color: crimson;
   right: 3px;
   top: 3px;
+}
+.x {
+  color: white;
+  background-color: crimson;
 }
 
 
