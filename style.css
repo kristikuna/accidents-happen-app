@@ -55,6 +55,7 @@ header {
   justify-content: center;
   margin-top: 20px;
   flex-wrap: wrap;
+  height: 55vh;
 }
 
 .homePageButtons button {
@@ -63,7 +64,7 @@ header {
   margin: 10px;
   min-width: 350px;
   background-color: grey;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .homePageButtons button a {

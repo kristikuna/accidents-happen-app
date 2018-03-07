@@ -27,7 +27,6 @@
         $ctrl.display = {
           "display": "flex"
         }
-        console.log($ctrl.height)
         $ctrl.show = false;
         $ctrl.hide = true;
       }
