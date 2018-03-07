@@ -8,13 +8,6 @@
   background-color: crimson;
 }
 
-
-/* h1{
-  font-family: "Open Sans";
-  margin-top: 500px;
-  font-size: 40px;
-  color: black;
-} */
 * {
   padding: 0;
   margin: 0;
@@ -29,8 +22,9 @@ body {
 .tab {
   background-color: #e5e5d7;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   min-height: 200px;
+  height: 100vh;
   font-family: "Open Sans";
   font-size: 10px;
   padding: 20px;
@@ -44,7 +38,7 @@ body {
 
 .tab button {
   width: 30%;
-  height: 30px;
+  /* height: 30px; */
   font-size: 15px;
   color: #e5e5d7;
   background-color: #493728;
@@ -52,7 +46,7 @@ body {
   border: 2px solid black;
 }
 
-.tab input, button {
+input, button {
   border: none;
   margin: 10px;
 }
@@ -74,6 +68,30 @@ input {
 textarea{
   width: 100%;
 }
+
+/* NOTE: main form */
+.tab .mainButton {
+  width: 100%;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.mainForm h1 {
+  margin-bottom: 20px;
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainButton a {
+  color: white;
+}
+
+/* NOTE: homepage */
 
 header {
   background-image: url("photo/landscape.jpg");
@@ -146,11 +164,11 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  h1{
+  /* h1{
     margin-top: 400px;
   }
 
   button {
     width: 15%;
-  }
+  } */
 }
