@@ -2,7 +2,7 @@
     var previousComponent = {
         template: `
         <div class="profile">
-        <a class="xbut" href="#!/home"><i class="material-icons x">clear</i></a>
+        <a class="xbut" id="xbutt" href="#!/home"><i class="material-icons x">clear</i></a>
           <div class="historyHeader">
             <div class="profilePic">
 
@@ -11,7 +11,7 @@
               <h2>GRANT CHIRPUS</h2>
             </div>
           </div>
-          <h1>Incident History</h1>
+          <h1 class="incidentHistory">Incident History</h1>
           <div class="history" ng-repeat="incident in $ctrl.whatever">
           <table>
           <tr>

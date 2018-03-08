@@ -1,14 +1,16 @@
-.xbut {
+.xbut, #xbutt {
   position: absolute;
   right: 15px;
   top: 10px;
+  color: black;
 }
 .x:hover{
-  color: white;
-  background-color: rgba(255, 87, 87, 0.6);
-  cursor: pointer;
+  color: rgba(255, 87, 87, 0.6);
 }
 
+#xbutt{
+  color: #E5E5D9;
+}
 * {
   padding: 0;
   margin: 0;
@@ -34,10 +36,13 @@ body {
   position: relative;
 }
 
+form {
+  padding: 0 10px;
+}
 
 .tab, p {
   font-size: 25px;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .tab button {
@@ -252,6 +257,10 @@ label, li, .enterInsurance{
   font-size: 20px;
 }
 
+li {
+  margin-left: 20px;
+}
+
 #nextOnAccident {
   position: absolute;
   right: 40px;
@@ -331,6 +340,7 @@ label, li, .enterInsurance{
    margin: 15px auto;
    border-radius: 5px;
    padding: 5px;
+   position: relative;
 }
 
 .report button {
@@ -373,12 +383,12 @@ label, li, .enterInsurance{
 
 .historyHeader h2 {
   margin-left: 20px;
-  color: white;
+  color: #E5E5D9;
 }
 
 .profile h1 {
   margin: 20px;
-  color: white;
+  color: #E5E5D9;
 }
 
 .history {
