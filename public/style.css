@@ -25,10 +25,12 @@ body {
   width: 100%;
   min-height: 200px;
   height: 100vh;
+  overflow: scroll;
   font-family: "Open Sans";
   font-size: 10px;
   padding: 20px;
-  position: relative;
+  /* position: relative; */
+
 }
 
 .tab, p {
@@ -38,7 +40,6 @@ body {
 
 .tab button {
   width: 30%;
-  /* height: 30px; */
   font-size: 15px;
   color: #e5e5d7;
   background-color: #493728;
@@ -70,13 +71,15 @@ textarea{
 }
 
 /* NOTE: main form */
-.tab .mainButton {
+.formButtons button {
   width: 100%;
   padding: 40px;
   border-radius: 5px;
+
 }
 
 .mainForm h1 {
+  /* margin-top: 120px; */
   margin-bottom: 20px;
 }
 
@@ -85,10 +88,20 @@ textarea{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* height: 100vh; */
+  overflow: scroll;
 }
 
 .mainButton a {
   color: white;
+}
+
+.formButtons {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 /* NOTE: homepage */
@@ -171,4 +184,106 @@ header {
   button {
     width: 15%;
   } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOTE: history page */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: Georgia;
+}
+
+.historyHeader {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 95%;
+  padding-top: 10px;
+}
+
+.historyHeader .profilePic {
+  border: solid green 1px;
+  background-image: url("photo/grant-chirpus-student.jpg");
+  background-size: cover;
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 5px;
+}
+
+.historyHeader h2 {
+  margin-left: 20px;
+  color: white;
+}
+
+.profile h1 {
+  margin: 20px;
+  color: white;
+}
+
+.history {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 95%;
+}
+
+table {
+  margin-top: 10px;
+}
+
+table th,td {
+  text-align: left;
+}
+
+table th {
+  padding: 5px 20px;
+  vertical-align: top;
 }
