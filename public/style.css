@@ -161,7 +161,9 @@ header {
 
 .homePageButtons a {
   text-align: center;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30%;
   margin: 10px;
   padding-top: 30px;
