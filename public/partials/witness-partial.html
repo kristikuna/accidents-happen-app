@@ -13,8 +13,8 @@
             <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
         <p>Call the police</p>
         <p>Keep calm</p>
-        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-        <button ng-click="$ctrl.getForm(3)">NEXT</button>
+        <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
+        <button ng-click="$ctrl.getForm(3)"><i class="material-icons">arrow_forward</i></button>
     </div>
 
     <div class="tab wit3" ng-switch-when="3">
@@ -48,9 +48,8 @@
                 <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
             </label>
             <button type="submit">NEXT</button>
-        </form>
-        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-
+        <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
+        <button type="submit"><i class="material-icons">arrow_forward</i></button>
         </form>
     </div>
 
@@ -64,18 +63,17 @@
                 <li>Any who, what, where, or when</li>
             </ul>
             <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
-            <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-            <button type="submit">NEXT</button>
+            <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
+            <button type="submit"><i class="material-icons">arrow_forward</i></button>
         </form>
     </div>
 
     <div class="tab wit5" ng-switch-when="5">
             <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-        <p>Remember to take pictures and check the area for any other witnesses. Ask them to provide a statement when authorities
-            arrive.
-        </p>
-        <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-        <button ng-click="$ctrl.getForm(6)">NEXT</button>
+        <p>Remember to take pictures and check the area for any other witnesses. </p>
+        <p>Ask them to provide a statement when authorities arrive.</p>
+        <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
+        <button ng-click="$ctrl.getForm(6)"><i class="material-icons">arrow_forward</i></button>
     </div>
 
     <div class="tab wit6" ng-switch-when="6">
@@ -121,7 +119,7 @@
             </tr>
 
           </table>
-          <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+          <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
           <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
         </div>
 
