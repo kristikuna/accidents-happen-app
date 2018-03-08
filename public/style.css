@@ -335,6 +335,7 @@ li {
    margin: 15px auto;
    border-radius: 5px;
    padding: 5px;
+   position: relative;
 }
 
 .report button {
