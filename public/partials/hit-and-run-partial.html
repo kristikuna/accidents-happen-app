@@ -4,7 +4,7 @@
         <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Ensure you and your car are in a safe area away from traffic</p>
       <p>Nofity the police</p>
-      <p>While you'll likely be feeling immense stress if you're a victim of a hit and run, it will help to stay as calm as possible and we're here to help gather valuable information.</p>
+      <p>Stay Calm</p>
       <p>DON'T follow the fleeing driver. Leaving the scene of the accident could put you in a compromising position.</p>
       <button ng-click="$ctrl.getForm(2); $ctrl.getType('hit and run')" type="button"><i class="material-icons">arrow_forward</i></button>
     </div>
@@ -22,15 +22,17 @@
         <label>Color<input type="text" ng-model="$ctrl.car.color"></label>
         <label>License Plate #<input type="text" ng-model="$ctrl.car.plate"></label>
         <label>Driver Description<input type="text" ng-model="$ctrl.car.driver"></label>
+        <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
         <button type="submit"><i class="material-icons">arrow_forward</i></button>
+        </div>
       </form>
     </div>
 
     <div class="tab car3" ng-switch-when="3">
         <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Write your memories of the incident</p>
-      <form ng-submit="$ctrl.setEvent($ctrl.car)"
+      <form ng-submit="$ctrl.setEvent($ctrl.car)">
       <ul>Don't forget:
         <li>Injuries</li>
         <li>Damage to your car</li>
@@ -40,8 +42,10 @@
         <li>Where</li>
       </ul>
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
+      <div class="navButtons">
       <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
       <button type="submit"><i class="material-icons">arrow_forward</i></button>
+      </div>
       </form>
     </div>
 
@@ -53,8 +57,10 @@
 
         <p>What direction was the car headed?</p>
         <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
+        <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
         <button type="submit"><i class="material-icons">arrow_forward</i></button>
+        </div>
       </form>
     </div>
 
@@ -63,8 +69,10 @@
       <p>Remember to check the area for witnesses and ask for their names and contact information.</p>
       <p>Take pictures of the accident scene.</p>
       <p>Take pictures of your car, especially if anothers car's paint is visible on it.</p>
+      <div class="navButtons">
       <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
       <button ng-click="$ctrl.getForm(6)"><i class="material-icons">arrow_forward</i></button>
+      </div>
     </div>
 
     <div class="report" ng-switch-when="6">
@@ -72,13 +80,6 @@
       <h2>Timeline of Events</h2>
       <div>
       <h3>Other Vehicle Details</h3>
-      <!-- <p>Perps description</p>
-      <p>Make: {{$ctrl.accidentDb.make}}</p>
-      <p>Model: {{$ctrl.accidentDb.model}}</p>
-      <p>Color: {{$ctrl.accidentDb.color}}</p>
-      <p>Plate: {{$ctrl.accidentDb.plate | uppercase}}</p>
-      <p>Driver Description: {{$ctrl.accidentDb.driver}}</p>
-      <p>Event Description: {{$ctrl.accidentDb.event}}</p> -->
       <table>
       <tr>
         <th>Make:</th>
@@ -113,8 +114,10 @@
           <td>{{ $ctrl.accidentDb.direction ||"n/a" | uppercase}}</td>
         </tr>
       </table>
+      <div class="navButtons">
       <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
       <button ng-click="$ctrl.sendToService()" type="button"><i class="material-icons">arrow_forward</i></button>
+      </div>
       </div>
 
     </div>

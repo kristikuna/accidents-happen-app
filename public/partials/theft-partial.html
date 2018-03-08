@@ -1,6 +1,6 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
-  <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
     <div class="tab carAccident1" ng-switch-when="1">
+      <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Call the police</p>
       <p>Keep calm</p>
       <button ng-click="$ctrl.getForm(2)" type="button"><i class="material-icons">arrow_back</i></button>
@@ -15,8 +15,10 @@
         <button type="button" ng-click="$ctrl.getForm(3); showme=false">No</button>
         <p ng-show="showme">Please describe</p>
         <textarea ng-show="showme" name="name" rows="8" cols="80" ng-model="$ctrl.items.description"></textarea>
+        <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
         <button type="submit"><i class="material-icons">arrow_forward</i></button>
+        </div>
       </form>
     </div>
 
@@ -25,8 +27,10 @@
       <p>Your insurance claims representative and authorities may want a list of stolen items:</p>
       <form ng-submit="$ctrl.stolenItems($ctrl.items)">
         <textarea name="name" rows="8" cols="80" ng-model="$ctrl.items.property"></textarea>
+        <div class="navButtons">
       <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
       <button type="submit"><i class="material-icons">arrow_forward</i></button>
+      </div>
       </form>
     </div>
 
@@ -35,8 +39,10 @@
       <p>Write your account of the incident that took place</p>
       <form ng-submit="$ctrl.setEvents($ctrl.items)">
         <textarea name="name" rows="8" cols="80" ng-model="$ctrl.items.event"></textarea>
+        <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
         <button type="submit"><i class="material-icons">arrow_forward</i></button>
+        </div>
       </form>
     </div>
 
@@ -44,10 +50,6 @@
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <h2>Report</h2>
       <div>
-        <!-- <p>Description of person: {{$ctrl.theftDb.description || "n/a"}}</p>
-        <p>Stolen Items: {{$ctrl.theftDb.stolenStuff}}</p>
-        <p>Event Description: {{$ctrl.theftDb.eventOfTheft}}</p> -->
-
         <table>
         <tr>
           <th>Description of person:</th>
@@ -62,9 +64,10 @@
             <td>{{ $ctrl.theftDb.event ||"n/a" | uppercase}}</td>
           </tr>
         </table>
-
+        <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
-        <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
+        <button ng-click="$ctrl.sendToService()" type="button"><i class="material-icons">arrow_forward</i></button>
+        </div>
       </div>
     </div>
   </div>
