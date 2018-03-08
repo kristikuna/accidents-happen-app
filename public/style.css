@@ -329,8 +329,24 @@ li {
 
 
 
+.report {
+   background-color:#E8E9EE;
+   width: 90%;
+   margin: 15px auto;
+   border-radius: 5px;
+   padding: 5px;
+}
 
-
+.report button {
+  width: 30%;
+  font-size: 15px;
+  color: black;
+  background-color: #7D9D99;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-family: "Open Sans";
+  border-radius: 5px;
+}
 
 /* NOTE: history page */
 .profile {
@@ -395,6 +411,11 @@ table th,td {
 table th {
   vertical-align: top;
   width: 25%;
+}
+
+table tr {
+  vertical-align: top;
+  width: 75%;
 }
 
 .profileDelete {
