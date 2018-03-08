@@ -272,17 +272,18 @@ header {
 .history {
   margin-bottom: 10px;
   border-radius: 10px;
+  width: 95%;
 }
 
-.history p {
-  font-size: 1em;
-  width: 25%;
-  /* border: dotted green 1px; */
-  display: inline-block;
+table {
+  margin-top: 10px;
 }
 
-.history span {
-  /* border: dotted red 1px; */
-  display: inline-block;
-  width: 75%;
+table th,td {
+  text-align: left;
+}
+
+table th {
+  padding: 5px 20px;
+  vertical-align: top;
 }

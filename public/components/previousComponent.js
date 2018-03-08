@@ -12,9 +12,21 @@
           </div>
           <h1>Incident History</h1>
           <div class="history" ng-repeat="incident in $ctrl.whatever">
-            <p>Type of incident:</p><span>{{ incident.type_of | uppercase}}</span>
-            <p>Events that took place:</p><span> {{ incident.events | uppercase}}</span>
-            <p>Description of person:</p><span>  {{ incident.driver | uppercase}}</span>
+          <table>
+          <tr>
+            <th>Type of incident:</th>
+            <td>{{ incident.type_of | uppercase}}</td>
+          </tr>
+
+            <tr>
+              <th>Events that took place:</th>
+              <td>{{ incident.events | uppercase}}</td>
+            </tr>
+            <tr>
+              <th>Description of person:</th>
+              <td>{{ incident.driver | uppercase}}</td>
+            </tr>
+          </table>
           </div>
         </div>
         `,
