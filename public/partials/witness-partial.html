@@ -80,20 +80,49 @@
 
     <div class="tab wit6" ng-switch-when="6">
             <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-        <p>Timeline of Events</p>
+        <h2>Report</h2>
         <div>
-            <p>Other person's description</p>
-            <p>Type of incident: {{ $ctrl.accidentDb.type }}
-                <p>Make: {{$ctrl.accidentDb.make}}</p>
-                <p>Model: {{$ctrl.accidentDb.model}}</p>
-                <p>Color: {{$ctrl.accidentDb.color}}</p>
-                <p>Plate: {{$ctrl.accidentDb.plate}}</p>
-                <p>Person's Description: {{$ctrl.accidentDb.driver}}</p>
-                <p>Stolen/damage to property if any: {{$ctrl.accidentDb.property}}</p>
-                <p>Direction the person was headed if fleeing: {{$ctrl.accidentDb.direction}}</p>
-                <p>Description of events: {{$ctrl.accidentDb.event}}</p>
-                <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-                <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
+          <table>
+            <tr>
+              <th>Stolen/damage to property if any:</th>
+              <td>{{ $ctrl.accidentDb.property ||"n/a" | uppercase}}</td>
+            </tr>
+            <tr>
+              <th>Direction the person was headed if fleeing:</th>
+              <td>{{ $ctrl.accidentDb.direction ||"n/a" | uppercase}}</td>
+            </tr>
+            <tr>
+              <th>Description of events:</th>
+              <td>{{ $ctrl.accidentDb.event ||"n/a" | uppercase}}</td>
+            </tr>
+          <tr>
+            <th>Make:</th>
+            <td>{{ $ctrl.accidentDb.make ||"n/a" | uppercase}}</td>
+          </tr>
+            <tr>
+              <th>Model:</th>
+              <td>{{ $ctrl.accidentDb.model ||"n/a"  | uppercase}}</td>
+            </tr>
+            <tr>
+              <th>Color:</th>
+              <td>{{ $ctrl.accidentDb.color ||"n/a" | uppercase}}</td>
+            </tr>
+            <tr>
+              <th>License plate #:</th>
+              <td>{{ $ctrl.accidentDb.plate||"n/a" | uppercase}}</td>
+            </tr>
+            <tr>
+              <th>Person's Description:</th>
+              <td>{{ $ctrl.accidentDb.driver ||"n/a" | uppercase}}</td>
+            </tr>
+            <tr>
+              <th>License plate #:</th>
+              <td>{{ $ctrl.accidentDb.plate ||"n/a" | uppercase}}</td>
+            </tr>
+
+          </table>
+          <button ng-click="$ctrl.goBack()" type="button">BACK</button>
+          <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
         </div>
 
     </div>

@@ -69,15 +69,50 @@
 
     <div class="tab" ng-switch-when="6">
         <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-      <p>Timeline of Events</p>
+      <h2>Timeline of Events</h2>
       <div>
-      <p>Perps description</p>
+      <h3>Other Vehicle Details</h3>
+      <!-- <p>Perps description</p>
       <p>Make: {{$ctrl.accidentDb.make}}</p>
       <p>Model: {{$ctrl.accidentDb.model}}</p>
       <p>Color: {{$ctrl.accidentDb.color}}</p>
       <p>Plate: {{$ctrl.accidentDb.plate | uppercase}}</p>
       <p>Driver Description: {{$ctrl.accidentDb.driver}}</p>
-      <p>Event Description: {{$ctrl.accidentDb.event}}</p>
+      <p>Event Description: {{$ctrl.accidentDb.event}}</p> -->
+      <table>
+      <tr>
+        <th>Make:</th>
+        <td>{{ $ctrl.accidentDb.make ||"n/a" | uppercase}}</td>
+      </tr>
+        <tr>
+          <th>Model:</th>
+          <td>{{ $ctrl.accidentDb.model ||"n/a"  | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Color:</th>
+          <td>{{ $ctrl.accidentDb.color ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>License plate #:</th>
+          <td>{{ $ctrl.accidentDb.plate||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Driver description:</th>
+          <td>{{ $ctrl.accidentDb.driver ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Description of events:</th>
+          <td>{{ $ctrl.accidentDb.event ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Damage to other vehicle:</th>
+          <td>{{ $ctrl.accidentDb.description ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Direction vehicle headed:</th>
+          <td>{{ $ctrl.accidentDb.direction ||"n/a" | uppercase}}</td>
+        </tr>
+      </table>
       <button ng-click="$ctrl.goBack()" type="button">BACK</button>
       <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
       </div>

@@ -87,17 +87,44 @@
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
-    <p>Timeline of Events</p>
+    <h2>Report</h2>
     <div>
-      <p>Other driver information</p>
-      <p>Name: {{$ctrl.accidentDb.name}}</p>
-      <p>Contact: {{$ctrl.accidentDb.phone}}</p>
-      <p>Make: {{$ctrl.accidentDb.make}}</p>
-      <p>Model: {{$ctrl.accidentDb.model}}</p>
-      <p>Color: {{$ctrl.accidentDb.color}}</p>
-      <p>Plate: {{$ctrl.accidentDb.plate | uppercase}}</p>
-      <p>Insurance Info: {{$ctrl.accidentDb.insuranceInfo}}</p>
-      <p>Event Description: {{$ctrl.accidentDb.event}}</p>
+      <h4>Other Driver Details</h4>
+      <table>
+      <tr>
+        <th>Name:</th>
+        <td>{{ $ctrl.accidentDb.name ||"n/a" | uppercase}}</td>
+      </tr>
+        <tr>
+          <th>Contact:</th>
+          <td>{{ $ctrl.accidentDb.phone ||"n/a"  | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Make:</th>
+          <td>{{ $ctrl.accidentDb.make ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Model:</th>
+          <td>{{ $ctrl.accidentDb.model||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Color:</th>
+          <td>{{ $ctrl.accidentDb.color ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>License plate #:</th>
+          <td>{{ $ctrl.accidentDb.plate ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Insurance info:</th>
+          <td>{{ $ctrl.accidentDb.insuranceInfo ||"n/a" | uppercase}}</td>
+        </tr>
+        <tr>
+          <th>Description of events:</th>
+          <td>{{ $ctrl.accidentDb.event ||"n/a" | uppercase}}</td>
+        </tr>
+      </table>
+
       <button ng-click="$ctrl.goBack()" type="button">BACK</button>
       <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
     </div>
