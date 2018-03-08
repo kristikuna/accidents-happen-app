@@ -74,17 +74,26 @@ textarea{
 }
 
 /* NOTE: main form */
+
+#formTitle{
+  margin-top: 30px;
+  padding: 20px 17px 10px 17px;
+  font-size: 37px;
+  color: #68827e;
+}
 .formButtons button {
   width: 100%;
   padding: 20px;
   border-radius: 5px;
-
+  background-color: #e8e9ee;
+  margin-left: 0px;
+  font-family: "Open Sans";
 }
 
-.mainForm h1 {
-  /* margin-top: 120px; */
+/* .mainForm h1 {
+  margin-top: 120px;
   margin-bottom: 20px;
-}
+} */
 
 .mainForm {
   display: flex;
@@ -93,20 +102,23 @@ textarea{
   align-items: center;
   /* height: 100vh; */
   overflow: scroll;
+  width: 50%;
 }
 
 .mainButton a {
   color: white;
+  width: 100%;
 }
 
 .formButtons {
-  height: 70vh;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
+  align-items: stretch;
 }
 
+.homeButton{
+  text-align: right;
+}
 /* NOTE: homepage */
 
 header {
@@ -175,11 +187,13 @@ header {
   font-size: 2rem;
   border-radius: 5px;
 }
+
 /* accident form styles  */
 div.tab.carAccident1  {
   height: 300px;
 }
-#accidentMain{
+
+#accidentMain {
   background-color: #E8E9EE;
   border: 2px solid black;
   width: 85%;
@@ -194,10 +208,6 @@ p {
 label, li, .enterInsurance{
   font-size: 20px;
 }
-
-/* .enterInsurance{
-  font-size: 20px;
-} */
 
 #nextOnAccident {
   position: absolute;
