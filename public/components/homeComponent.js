@@ -6,14 +6,14 @@
     <header  ng-style="$ctrl.height">
       <div class="headerTitle">
         <h1>Accidents Happen</h1>
-        <button id="slideButton" ng-click="$ctrl.slide()" ng-show="$ctrl.show">SLIDE</button>
-        <button id="slideButton" ng-click="$ctrl.slideDown()" ng-show="$ctrl.hide">SLIDE</button>
+        <i class="material-icons" id="slideButton" ng-click="$ctrl.slide()" ng-show="$ctrl.show">arrow_upward</i>
+        <i class="material-icons" id="slideButton" ng-click="$ctrl.slideDown()" ng-show="$ctrl.hide">arrow_downward</i>
       </div>
     </header>
     <div class="homePageButtons" ng-style="$ctrl.display">
-      <button type="button"><a href="#!/prev">Show History</a></button>
-      <button type="button"><a href="#!/form">Get Help</a></button>
-      <button type="button"><a href="#!/">Articles</a></button>
+    <a href="#!/prev">Show History</a>
+    <a href="#!/form">Get Help</a>
+    <a href="#!/">Articles</a>
     </div>
     `,
     controller: function(){
