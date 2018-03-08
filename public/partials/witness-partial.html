@@ -13,8 +13,10 @@
             <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
         <p>Call the police</p>
         <p>Keep calm</p>
+        <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
         <button ng-click="$ctrl.getForm(3)"><i class="material-icons">arrow_forward</i></button>
+        </div>
     </div>
 
     <div class="tab wit3" ng-switch-when="3">
@@ -47,9 +49,10 @@
             <label>What direction was the car headed if fleeing?:
                 <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
             </label>
-            <button type="submit">NEXT</button>
-        <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
-        <button type="submit"><i class="material-icons">arrow_forward</i></button>
+            <div class="navButtons">
+            <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
+            <button type="submit"><i class="material-icons">arrow_forward</i></button>
+            </div>
         </form>
     </div>
 
@@ -63,8 +66,10 @@
                 <li>Any who, what, where, or when</li>
             </ul>
             <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
+            <div class="navButtons">
             <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
             <button type="submit"><i class="material-icons">arrow_forward</i></button>
+            </div>
         </form>
     </div>
 
@@ -72,8 +77,10 @@
             <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
         <p>Remember to take pictures and check the area for any other witnesses. </p>
         <p>Ask them to provide a statement when authorities arrive.</p>
+        <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
         <button ng-click="$ctrl.getForm(6)"><i class="material-icons">arrow_forward</i></button>
+        </div>
     </div>
 
     <div class="report wit6" ng-switch-when="6">
@@ -119,8 +126,10 @@
             </tr>
 
           </table>
+          <div class="navButtons">
           <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
-          <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
+          <button ng-click="$ctrl.sendToService()" type="button"><i class="material-icons">arrow_forward</i></button>
+          </div>
         </div>
 
     </div>

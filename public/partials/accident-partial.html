@@ -33,8 +33,10 @@
       <label>License Plate #
         <input type="text" ng-model="$ctrl.car.plate">
       </label>
+      <div class="navButtons">
       <button ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
       <button ng-click="$ctrl.setPerpCar($ctrl.car)"><i class="material-icons">arrow_forward</i></button>
+      </div>
     </form>
   </div>
 
@@ -47,8 +49,10 @@
     <p class="enterInsurance">Enter other drivers insurance information:</p>
     <form ng-submit="$ctrl.setInsuranceInfo($ctrl.car)">
       <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.insuranceInfo"></textarea>
+      <div class="navButtons">
       <button ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
       <button ng-click="$ctrl.setInsuranceInfo($ctrl.car)"><i class="material-icons">arrow_forward</i></button>
+      </div>
     </form>
   </div>
 
@@ -67,8 +71,10 @@
         <li>Where</li>
       </ul>
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
+      <div class="navButtons">
       <button ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
       <button ng-click="$ctrl.setEvent($ctrl.car)" ><i class="material-icons">arrow_forward</i></button>
+      </div>
     </form>
   </div>
 
@@ -78,8 +84,10 @@
     </a>
     <p>Remember to check the area for witnesses</p>
     <p>Take photos</p>
+    <div class="navButtons">
     <button ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
     <button ng-click="$ctrl.getForm(6)" ><i class="material-icons">arrow_forward</i></button>
+    </div>
   </div>
 
   <div id="accidentSummary" class="report" ng-switch-when="6">
@@ -123,9 +131,10 @@
           <td>{{ $ctrl.accidentDb.event ||"n/a" | uppercase}}</td>
         </tr>
       </table>
-
+      <div class="navButtons">
       <button ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
-      <button ng-click="$ctrl.sendToService()">Submit</button>
+      <button ng-click="$ctrl.sendToService()"><i class="material-icons">arrow_forward</i></button>
+      </div>
 
 
     </div>
