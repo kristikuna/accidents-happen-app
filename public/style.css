@@ -321,6 +321,14 @@ label, li, .enterInsurance{
   margin-bottom: 10px;
   border-radius: 10px;
   width: 95%;
+  max-height: 125px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.history:hover{
+  max-height: 2000px;
+  transition: 2s;
 }
 
 table {
@@ -329,9 +337,16 @@ table {
 
 table th,td {
   text-align: left;
+  padding: 5px 20px;
 }
 
 table th {
-  padding: 5px 20px;
   vertical-align: top;
+  width: 25%;
+}
+
+.profileDelete {
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 5px;
 }
