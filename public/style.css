@@ -29,6 +29,7 @@ body {
   /* position: relative; */
   background-color: #E8E9EE !important;
   border-radius: 5px;
+  position: relative;
 }
 
 
@@ -227,9 +228,7 @@ header {
 }
 
 /* accident form styles  */
-div.tab.carAccident1  {
-  height: 300px;
-}
+
 
 #accidentMain {
   background-color: #E8E9EE;
