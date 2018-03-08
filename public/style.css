@@ -5,7 +5,8 @@
 }
 .x:hover{
   color: white;
-  background-color: rgba(255, 87, 87, 0.6)
+  background-color: rgba(255, 87, 87, 0.6);
+  cursor: pointer;
 }
 
 * {
@@ -112,6 +113,7 @@ textarea{
 }
 .formButtons a:hover {
   opacity: 1.0;
+  cursor: pointer;
 }
 
 .homeButton{
@@ -144,6 +146,9 @@ header {
   border: none;
   transition: 1s;
   margin-top: 20px;
+}
+#slideButton:hover {
+  cursor: pointer;
 }
 
 .headerTitle {
