@@ -20,6 +20,7 @@
 
 body {
   background-color: #39414C;
+
 }
 
 .tab {
@@ -29,6 +30,7 @@ body {
 
 .accidentForm {
   background-color: rgba(232, 233, 238, .8);
+  max-width: 1100px;
   border-radius: 5px;
   position: relative;
   width: 90%;
@@ -332,7 +334,13 @@ li {
 
 
 
-
+.accidentForm {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  border: red 3px;
+  min-height: 600px;
+}
 
 
 .report {
@@ -341,6 +349,9 @@ li {
    margin: 15px auto;
    border-radius: 5px;
    padding: 5px;
+   position: relative;
+   max-width: 1100px;
+
 }
 
 .report button {
