@@ -28,6 +28,7 @@
               <td>{{ incident.driver | uppercase}}</td>
             </tr>
           </table>
+          <button ng-click="$ctrl.delete(incident.id)" style="margin-left: 20px;border-radius: 5px; padding: 2px">delete</button>
           </div>
         </div>
         `,
@@ -38,6 +39,18 @@
               $ctrl.whatever = response;
               console.log(response);
             });
+
+            $ctrl.delete = function(id){
+              console.log("delete from component");
+              WizardService.deleteItem(id).then(refreshList);
+            }
+
+            function refreshList(){
+              WizardService.getList().then(function (response){
+                $ctrl.whatever = response;
+                console.log(response);
+              });
+            }
 
         }
       }
