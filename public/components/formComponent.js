@@ -2,7 +2,7 @@
   var formComponent = {
     template: `
         <div id="mainForm" >
-        <a class="xbut" href="#!/home"><i class="material-icons x">clear</i></a>
+        <a class="xbut xbutt" href="#!/home"><i class="material-icons">home</i></a>
         <h1 id="formTitle">Accidents Happen</h1>
         <div class = "formButtons">
           <a class="mainButton fender-bender imgButton" href="#!/accident"><span class="imageBackgroundText">Car Accident</span></a>

@@ -1,12 +1,12 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
 
-    <div class="tab wit1" ng-switch-when="1">
+    <div id="witnessMain" class="tab wit1" ng-switch-when="1">
             <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-        <button ng-click="$ctrl.getForm(2); $ctrl.getType('robbery')" type="button">Robbery</button>
-        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car theft')" type="button">Car-Theft</button>
-        <button ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" type="button">Car-Accident</button>
-        <button ng-click="$ctrl.getForm(2); $ctrl.getType('assault')" type="button">Assault</button>
-        <button ng-click="$ctrl.getForm(2); $ctrl.getType('injury')" type="button">Injury</button>
+        <button class="witnessButton" ng-click="$ctrl.getForm(2); $ctrl.getType('robbery')" type="button">Robbery</button>
+        <button class="witnessButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car theft')" type="button">Car-Theft</button>
+        <button class="witnessButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" type="button">Car-Accident</button>
+        <button class="witnessButton" ng-click="$ctrl.getForm(2); $ctrl.getType('assault')" type="button">Assault</button>
+        <button class="witnessButton" ng-click="$ctrl.getForm(2); $ctrl.getType('injury')" type="button">Injury</button>
     </div>
 
     <div class="tab wit2" ng-switch-when="2">

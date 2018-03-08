@@ -2,7 +2,7 @@
     var previousComponent = {
         template: `
         <div class="profile">
-        <a class="xbut" id="xbutt" href="#!/home"><i class="material-icons x">clear</i></a>
+        <a class="xbut xbutt" href="#!/home"><i class="material-icons x">clear</i></a>
           <div class="historyHeader">
             <div class="profilePic">
 

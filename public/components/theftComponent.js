@@ -18,27 +18,23 @@
 
       $ctrl.setDescription = function(items){
         $ctrl.theftDb = items;
-        console.log($ctrl.theftDb)
         $ctrl.getForm(3);
       }
 
       $ctrl.stolenItems = function(items) {
         $ctrl.theftDb = items;
-        console.log($ctrl.theftDb)
         $ctrl.getForm(4);
       }
 
       $ctrl.setEvents = function(items) {
         $ctrl.theftDb = items;
         $ctrl.theftDb.type = "theft";
-        console.log($ctrl.theftDb)
         $ctrl.getForm(5);
       }
 
       $ctrl.sendToService = function(){
         WizardService.setList($ctrl.theftDb);
         $location.path('/form')
-        console.log($ctrl.theftDb);
       }
     }
   };
