@@ -3,8 +3,8 @@
 
     return {
       getList: getList,
-      setList: setList
-      // deleteItem: deleteItem,
+      setList: setList,
+      deleteItem: deleteItem
       // updateItem: updateItem
     };
 
@@ -16,7 +16,6 @@
         console.log(response.data);
         return response.data;
         });
-
     };
 
     function setList(incident){
@@ -26,9 +25,23 @@
         url: "/incidents",
         data: incident
       });
+    };
 
+    function deleteItem(id){
+      console.log(id);
+      return $http({
+        method: "DELETE",
+        url: "/incidents/"+id
+      });
+    };
 
-    }
+    // function deleteItem(itemId){
+    //   console.log("delete from service");
+    //   return $http({
+    //      method: "DELETE",
+    //      url: "/incidents/" + itemId
+    //  });
+
 
 
 

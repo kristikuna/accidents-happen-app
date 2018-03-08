@@ -25,10 +25,9 @@ router.post("/incidents", function (req, res) {
     });
 });
 
-router.delete("/rooms/:id", function(req, res) {
+router.delete("/incidents/:id", function(req, res) {
   var id = req.params.id;
-  var sql = "DELETE FROM rooms WHERE id=$1::int";
-
+  var sql = "DELETE FROM incidents WHERE id=$1::int";
   pool.query(sql, [id]).then(function(result){
     res.send("deleted");
   }).catch(function(err){
