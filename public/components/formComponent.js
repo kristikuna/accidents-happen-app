@@ -1,18 +1,16 @@
-(function() {
+(function () {
   var formComponent = {
-    template:`
+    template: `
         <div class="mainForm tab">
-          <h1>Accidents Happen</h1>
-
-            <button class="mainButton" type="button"><a href="#!/accident">Car Accident</a></button>
-            <button class="mainButton" type="button"><a href="#!/hitandrun">Hit and Run</a></button>
-            <button class="mainButton" type="button"><a href="#!/theft">Theft</a></button>
-            <button class="mainButton" type="button"><a href="#!/witness">Witness</a></button>
-        
+            <h1>Accidents Happen</h1>
+            <a href="#!/accident"><button class="mainButton" type="button">Car Accident</button></a>
+            <a href="#!/hitandrun"><button class="mainButton" type="button">Hit and Run</button></a>
+            <a href="#!/theft"><button class="mainButton" type="button">Theft</button></a>
+            <a href="#!/witness"><button class="mainButton" type="button">Witness</button></a>
         </div>
 
     `,
-    controller: function(){
+    controller: function () {
       var $ctrl = this;
     }
 
@@ -20,5 +18,5 @@
 
 
   angular.module("app")
-    .component("formComponent",formComponent)
+    .component("formComponent", formComponent)
 }());

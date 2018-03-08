@@ -2,6 +2,7 @@
     var previousComponent = {
         template: `
         <div class="history" ng-repeat="incident in $ctrl.whatever">
+          <a class="xbut" href="#!/home"><i class="material-icons x">clear</i></a>
           <p>Type of incident: {{ incident.type_of }}</p>
           <p>Events that took place: {{ incident.events }}</p>
           <p>Description of person: {{ incident.driver }}</p>

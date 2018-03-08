@@ -1,6 +1,7 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
 
     <div class="tab carAccident1" ng-switch-when="1">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Ensure you and your car are in a safe area away from traffic</p>
       <p>Nofity the police</p>
       <p>While you'll likely be feeling immense stress if you're a victim of a hit and run, it will help to stay as calm as possible and we're here to help gather valuable information.</p>
@@ -9,13 +10,12 @@
     </div>
 
     <div class="tab car2" ng-switch-when="2">
-
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Enter as much information as you can remember about the other vehicle:</p>
       <ul>
         <li>This increases the chances that police will catch the driver who hit you.</li>
         <li>Helps your car insurance company make deisions about your claim.</li>
       </ul>
-
       <form ng-submit="$ctrl.setPerpCar($ctrl.car)">
         <label>Make<input type="text" ng-model="$ctrl.car.make"></label>
         <label>Model<input type="text" ng-model="$ctrl.car.model"></label>
@@ -28,6 +28,7 @@
     </div>
 
     <div class="tab car3" ng-switch-when="3">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Write your memories of the incident</p>
       <form ng-submit="$ctrl.setEvent($ctrl.car)"
       <ul>Don't forget:
@@ -45,6 +46,7 @@
     </div>
 
     <div class="tab car4" ng-switch-when="4">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Description of damage to the other vehicle</p>
       <form ng-submit="$ctrl.setDescription($ctrl.car)">
         <textarea name="description" rows="8" cols="40" ng-model="$ctrl.car.description"></textarea>
@@ -57,6 +59,7 @@
     </div>
 
     <div class="tab car5" ng-switch-when="5">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Remember to check the area for witnesses and ask for their names and contact information.</p>
       <p>Take pictures of the accident scene.</p>
       <p>Take pictures of your car, especially if anothers car's paint is visible on it.</p>
@@ -65,6 +68,7 @@
     </div>
 
     <div class="tab" ng-switch-when="6">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Timeline of Events</p>
       <div>
       <p>Perps description</p>

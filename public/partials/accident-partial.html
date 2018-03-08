@@ -1,6 +1,7 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
 
     <div class="tab carAccident1" ng-switch-when="1">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Pull your car to a safe area and check on others involved</p>
       <p>Call the police</p>
       <p>Keep calm</p>
@@ -8,6 +9,7 @@
     </div>
 
     <div class="tab car2" ng-switch-when="2">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Enter as much information as possible about the other driver</p>
       <form ng-submit="$ctrl.setPerpCar($ctrl.car)">
         <label>Name<input type="text" ng-model="$ctrl.car.name"></label>
@@ -22,6 +24,7 @@
     </div>
 
     <div class="tab car3" ng-switch-when="3">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Enter other drivers insurance information</p>
       <p>Do not admit fault:
       Do not discuss the car accident with anyone other than the police and your insurance claims representative.</p>
@@ -34,6 +37,7 @@
     </div>
 
     <div class="tab car4" ng-switch-when="4">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Write your account of the incident that took place</p>
       <form ng-submit="$ctrl.setEvent($ctrl.car)"
       <ul>Remember to include:
@@ -51,6 +55,7 @@
     </div>
 
     <div class="tab car5" ng-switch-when="5">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Remember to check the area for witnesses</p>
       <p>Take photos</p>
       <button ng-click="$ctrl.goBack()" type="button">BACK</button>
@@ -58,6 +63,7 @@
     </div>
 
     <div class="tab" ng-switch-when="6">
+        <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Timeline of Events</p>
       <div>
       <p>Other driver information</p>

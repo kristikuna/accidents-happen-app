@@ -1,5 +1,5 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
-        <a href="#!/form"><i class="material-icons xbut">clear</i></a>
+  <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
     <div class="tab carAccident1" ng-switch-when="1">
       <p>Call the police</p>
       <p>Keep calm</p>
@@ -8,7 +8,7 @@
     </div>
 
     <div class="tab" ng-switch-when="2">
-            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
+      <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <form ng-submit="$ctrl.setDescription($ctrl.items)">
         <p>Did you see the person?</p>
         <button type="button" ng-click="showme=true">Yes</button>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="tab" ng-switch-when="3">
-            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
+      <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Your insurance claims representative and authorities may want a list of stolen items:</p>
       <form ng-submit="$ctrl.stolenItems($ctrl.items)">
         <textarea name="name" rows="8" cols="80" ng-model="$ctrl.items.stolenStuff"></textarea>
@@ -31,7 +31,7 @@
     </div>
 
     <div class="tab" ng-switch-when="4">
-            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
+      <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Write your account of the incident that took place</p>
       <form ng-submit="$ctrl.setEvents($ctrl.items)">
         <textarea name="name" rows="8" cols="80" ng-model="$ctrl.items.eventOfTheft"></textarea>
@@ -41,7 +41,7 @@
     </div>
 
     <div class="tab" ng-switch-when="5">
-            <a href="#!/form"><i class="material-icons xbut">clear</i></a>
+      <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Timeline of Events</p>
       <div>
         <p>Description of person: {{$ctrl.theftDb.description || "n/a"}}</p>
