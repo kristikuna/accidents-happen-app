@@ -11,9 +11,9 @@
       </div>
     </header>
     <div class="homePageButtons" ng-style="$ctrl.display">
-    <a href="#!/prev">Show History</a>
-    <a href="#!/form">Get Help</a>
-    <a href="#!/">Articles</a>
+    <a id="previous" href="#!/prev"><span class="imageBackgroundText" >Show History</span></a>
+    <a id="help" href="#!/form"><span class="imageBackgroundText" >Get Help</span></a>
+    <a id="article" href="#!/"><span class="imageBackgroundText" >Articles</span></a>
     </div>
     `,
     controller: function(){
