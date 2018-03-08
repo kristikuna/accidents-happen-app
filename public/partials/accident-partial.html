@@ -1,11 +1,11 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
-
+  <div id="accidentMain">
     <div class="tab carAccident1" ng-switch-when="1">
         <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Pull your car to a safe area and check on others involved</p>
       <p>Call the police</p>
       <p>Keep calm</p>
-      <button ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" type="button">NEXT</button>
+      <button id="nextOnAccident" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" type="button">NEXT</button>
     </div>
 
     <div class="tab car2" ng-switch-when="2">
@@ -25,9 +25,9 @@
 
     <div class="tab car3" ng-switch-when="3">
         <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-      <p>Enter other drivers insurance information</p>
-      <p>Do not admit fault:
-      Do not discuss the car accident with anyone other than the police and your insurance claims representative.</p>
+      <p>Do not admit fault</p>
+      <p>Do not discuss the car accident with anyone other than the police and your insurance claims representative.</p>
+      <p class="enterInsurance">Enter other drivers insurance information:</p>
       <form ng-submit="$ctrl.setInsuranceInfo($ctrl.car)">
         <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.insuranceInfo"></textarea>
 
@@ -39,7 +39,7 @@
     <div class="tab car4" ng-switch-when="4">
         <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Write your account of the incident that took place</p>
-      <form ng-submit="$ctrl.setEvent($ctrl.car)"
+      <form ng-submit="$ctrl.setEvent($ctrl.car)">
       <ul>Remember to include:
         <li>Injuries</li>
         <li>Damage to your car</li>
@@ -62,7 +62,7 @@
       <button ng-click="$ctrl.getForm(6)" >NEXT</button>
     </div>
 
-    <div class="tab" ng-switch-when="6">
+    <div id="accidentSummary" class="tab" ng-switch-when="6">
         <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Timeline of Events</p>
       <div>
@@ -78,6 +78,6 @@
       <button ng-click="$ctrl.goBack()" type="button">BACK</button>
       <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
       </div>
-
     </div>
+  </div>
   </div>
