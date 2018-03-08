@@ -67,7 +67,7 @@ input, button {
 }
 
 input {
-  background-color: #E8E9EE;
+  background-color: rgba(232, 233, 238, -0.2);
   border-bottom: 1px solid black;
   width: 95%;
   padding: 10px;
@@ -271,11 +271,15 @@ li {
   right: 40px;
   top: 275px;
 }
-.history {
-  background-color: #e5e5d7;
-  margin: 0 auto;
-  width: 80%;
+
+.accidentForm {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  border: red 3px;
+  min-height: 600px;
 }
+
 
 #witnessButton {
 
@@ -344,13 +348,7 @@ li {
 
 
 
-.accidentForm {
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  border: red 3px;
-  min-height: 600px;
-}
+
 
 
 .report {
@@ -404,15 +402,16 @@ li {
 
 .historyHeader h2 {
   margin-left: 20px;
-  color: #E5E5D9;
+  color: rgba(232, 233, 238, .8);
 }
 
 .profile h1 {
   margin: 20px;
-  color: #E5E5D9;
+  color: rgba(232, 233, 238, .8);
 }
 
 .history {
+  background-color: rgba(232, 233, 238, .8);
   margin-bottom: 10px;
   border-radius: 10px;
   width: 95%;
@@ -446,7 +445,13 @@ table tr {
 }
 
 .profileDelete {
-  margin-left: 20px;
+  color: black;
+  text-transform: uppercase;
+  border: 2px solid black;
   border-radius: 5px;
-  padding: 5px;
+  opacity: .8;
+  background-color: #7D9D99;
+  width: 10%;
+  height: 30px;
+  margin-left: 10px;
 }
