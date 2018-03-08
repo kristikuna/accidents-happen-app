@@ -1,10 +1,15 @@
 .xbut {
   position: absolute;
-  right: 20px;
-  top: 25px;
+  right: 5px;
+  top: 5px;
+}
+.x:hover{
+  color: white;
+  background-color: rgba(255, 87, 87, 0.6)
 }
 .x {
-  color: black;
+  color: white;
+  background-color: rgba(255, 87, 87, 0.3)
 }
 
 * {
@@ -22,7 +27,7 @@ body {
   margin: 0 auto;
   width: 100%;
   min-height: 100px;
-  overflow: scroll;
+  /* overflow: scroll; */
   font-family: "Open Sans";
   font-size: 10px;
   padding: 20px;
@@ -81,13 +86,32 @@ textarea{
   font-size: 37px;
   color: #68827e;
 }
-.formButtons button {
-  width: 100%;
-  padding: 20px;
+.formButtons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+.formButtons a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-width: 300px;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
   border-radius: 5px;
-  background-color: #e8e9ee;
-  margin-left: 0px;
-  font-family: "Open Sans";
+}
+.formButtons a:hover {
+  opacity: 1.0;
 }
 
 /* .mainForm h1 {
@@ -95,26 +119,12 @@ textarea{
   margin-bottom: 20px;
 } */
 
-.mainForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
-  overflow: scroll;
-  width: 50%;
-}
-
-.mainButton a {
-  color: white;
-  width: 100%;
-}
-
+/* 
 .formButtons {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-}
+} */
 
 .homeButton{
   text-align: right;
@@ -187,6 +197,47 @@ header {
   font-size: 2rem;
   border-radius: 5px;
 }
+#previous {
+  background: url(photo/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#help {
+  background: url(photo/help.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#article {
+  background: url(photo/article.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fender-bender {
+  background: url(photo/fender-bender.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.theft {
+  background: url(photo/theft.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.witness {
+  background: url(photo/witness.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.har {
+  background: url(photo/hit-and-run.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imageBackgroundText {
+  background-color: rgba(20, 20, 20, 0.5);
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+}
 
 /* accident form styles  */
 div.tab.carAccident1  {
@@ -231,6 +282,12 @@ label, li, .enterInsurance{
 
   #nextOnAccident {
     right: 180px;
+  }
+  .imgButton {
+    opacity: .90;
+  }
+  .imgButton:hover {
+    opacity: 1.0;
   }
 }
 
@@ -280,7 +337,6 @@ label, li, .enterInsurance{
 
 
 /* NOTE: history page */
-
 .profile {
   display: flex;
   flex-direction: column;
