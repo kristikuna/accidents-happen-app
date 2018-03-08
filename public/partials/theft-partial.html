@@ -42,11 +42,27 @@
 
     <div class="tab" ng-switch-when="5">
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-      <p>Timeline of Events</p>
+      <h2>Report</h2>
       <div>
-        <p>Description of person: {{$ctrl.theftDb.description || "n/a"}}</p>
+        <!-- <p>Description of person: {{$ctrl.theftDb.description || "n/a"}}</p>
         <p>Stolen Items: {{$ctrl.theftDb.stolenStuff}}</p>
-        <p>Event Description: {{$ctrl.theftDb.eventOfTheft}}</p>
+        <p>Event Description: {{$ctrl.theftDb.eventOfTheft}}</p> -->
+
+        <table>
+        <tr>
+          <th>Description of person:</th>
+          <td>{{ $ctrl.theftDb.description ||"n/a" | uppercase}}</td>
+        </tr>
+          <tr>
+            <th>Stolen property:</th>
+            <td>{{ $ctrl.theftDb.property ||"n/a"  | uppercase}}</td>
+          </tr>
+          <tr>
+            <th>Description of events:</th>
+            <td>{{ $ctrl.theftDb.event ||"n/a" | uppercase}}</td>
+          </tr>
+        </table>
+
         <button ng-click="$ctrl.goBack()" type="button">BACK</button>
         <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
       </div>
