@@ -247,8 +247,8 @@ header {
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
-  padding: 10px;
+  width: 95%;
+  padding-top: 10px;
 }
 
 .historyHeader .profilePic {
@@ -257,7 +257,7 @@ header {
   background-size: cover;
   min-width: 100px;
   min-height: 100px;
-
+  border-radius: 5px;
 }
 
 .historyHeader h2 {
