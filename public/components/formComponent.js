@@ -1,7 +1,7 @@
 (function () {
   var formComponent = {
     template: `
-        <div id="mainForm" class="tab">
+        <div id="mainForm" >
         <a class="xbut" href="#!/home"><i class="material-icons x">clear</i></a>
         <h1 id="formTitle">Accidents Happen</h1>
         <div class = "formButtons">

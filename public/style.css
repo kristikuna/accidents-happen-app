@@ -1,15 +1,11 @@
 .xbut {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 15px;
+  top: 10px;
 }
 .x:hover{
   color: white;
   background-color: rgba(255, 87, 87, 0.6)
-}
-.x {
-  color: white;
-  background-color: rgba(255, 87, 87, 0.3)
 }
 
 * {
@@ -24,16 +20,17 @@ body {
 }
 
 .tab {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 100px;
+  margin: 15px auto;
+  width: 90%;
   /* overflow: scroll; */
   font-family: "Open Sans";
   font-size: 10px;
   padding: 20px;
   /* position: relative; */
-
+  background-color: #E8E9EE !important;
+  border-radius: 5px;
 }
+
 
 .tab, p {
   font-size: 25px;
@@ -82,10 +79,11 @@ textarea{
 
 #formTitle{
   margin-top: 30px;
-  padding: 20px 17px 10px 17px;
-  font-size: 37px;
-  color: #68827e;
+  padding: 20px 17px 10px 25px;
+  font-size: 35px;
+  color: #E8E9EE;
 }
+
 .formButtons {
   display: flex;
   justify-content: space-evenly;
@@ -114,18 +112,6 @@ textarea{
 .formButtons a:hover {
   opacity: 1.0;
 }
-
-/* .mainForm h1 {
-  margin-top: 120px;
-  margin-bottom: 20px;
-} */
-
-/*
-.formButtons {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-} */
 
 .homeButton{
   text-align: right;
@@ -199,17 +185,17 @@ header {
   border-radius: 5px;
 }
 #previous {
-  background: url(photo/profile.png);
+  background: url(photo/previouspage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #help {
-  background: url(photo/help.jpg);
+  background: url(photo/gethelp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #article {
-  background: url(photo/article.png);
+  background: url(photo/articles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -6,7 +6,7 @@
     <p>Pull your car to a safe area and check on others involved</p>
     <p>Call the police</p>
     <p>Keep calm</p>
-    <button id="nextOnAccident" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" type="button">NEXT</button>
+    <i id="nextOnAccident" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')" class="material-icons">arrow_forward</i>
   </div>
 
   <div class="tab car2" ng-switch-when="2">
@@ -33,8 +33,8 @@
       <label>License Plate #
         <input type="text" ng-model="$ctrl.car.plate">
       </label>
-      <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-      <button type="submit">NEXT</button>
+      <i ng-click="$ctrl.goBack()" class="material-icons">arrow_back</i>
+      <i ng-click="$ctrl.setPerpCar($ctrl.car)" class="material-icons">arrow_forward</i>
     </form>
   </div>
 
@@ -47,9 +47,8 @@
     <p class="enterInsurance">Enter other drivers insurance information:</p>
     <form ng-submit="$ctrl.setInsuranceInfo($ctrl.car)">
       <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.insuranceInfo"></textarea>
-
-      <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-      <button type="submit">NEXT</button>
+      <i ng-click="$ctrl.goBack()" class="material-icons">arrow_back</i>
+      <i ng-click="$ctrl.setInsuranceInfo($ctrl.car)" class="material-icons">arrow_forward</i>
     </form>
   </div>
 
@@ -68,8 +67,8 @@
         <li>Where</li>
       </ul>
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
-      <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-      <button type="submit">NEXT</button>
+      <i ng-click="$ctrl.goBack()" class="material-icons">arrow_back</i>
+      <i ng-click="$ctrl.setEvent($ctrl.car)" class="material-icons">arrow_forward</i>
     </form>
   </div>
 
@@ -79,8 +78,8 @@
     </a>
     <p>Remember to check the area for witnesses</p>
     <p>Take photos</p>
-    <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-    <button ng-click="$ctrl.getForm(6)">NEXT</button>
+    <i ng-click="$ctrl.goBack()" class="material-icons">arrow_back</i>
+    <i ng-click="$ctrl.getForm(6)" class="material-icons">arrow_forward</i>
   </div>
 
   <div id="accidentSummary" class="tab" ng-switch-when="6">
@@ -98,8 +97,8 @@
       <p>Plate: {{$ctrl.accidentDb.plate | uppercase}}</p>
       <p>Insurance Info: {{$ctrl.accidentDb.insuranceInfo}}</p>
       <p>Event Description: {{$ctrl.accidentDb.event}}</p>
-      <button ng-click="$ctrl.goBack()" type="button">BACK</button>
-      <button ng-click="$ctrl.sendToService()" type="button">SUBMIT</button>
+      <i ng-click="$ctrl.goBack()" class="material-icons">arrow_back</i>
+      <i ng-click="$ctrl.sendToService()" class="material-icons">arrow_forward</i>
     </div>
   </div>
 </div>
