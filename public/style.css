@@ -284,11 +284,11 @@ li {
 #witnessButton {
 
 }
-/* .navButtons {
+.navButtons {
   display: flex;
   width: 100%;
   justify-content: space-between;
-} */
+}
 @media screen and (min-width: 768px) {
   /* h1{
     margin-top: 400px;
