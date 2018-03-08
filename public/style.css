@@ -268,6 +268,14 @@ li {
   width: 80%;
 }
 
+.accidentForm {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  border: red 3px;
+  min-height: 600px;
+}
+
 @media screen and (min-width: 768px) {
   /* h1{
     margin-top: 400px;
@@ -327,13 +335,7 @@ li {
 
 
 
-.accidentForm {
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  border: red 3px;
-  min-height: 600px;
-}
+
 
 
 .report {
