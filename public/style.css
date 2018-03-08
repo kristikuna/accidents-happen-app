@@ -1,11 +1,10 @@
 .xbut {
   position: absolute;
-  right: 3px;
-  top: 3px;
+  right: 20px;
+  top: 25px;
 }
 .x {
-  color: white;
-  background-color: crimson;
+  color: black;
 }
 
 * {
@@ -20,11 +19,9 @@ body {
 }
 
 .tab {
-  background-color: #e5e5d7;
   margin: 0 auto;
   width: 100%;
-  min-height: 200px;
-  height: 100vh;
+  min-height: 100px;
   overflow: scroll;
   font-family: "Open Sans";
   font-size: 10px;
@@ -41,21 +38,25 @@ body {
 .tab button {
   width: 30%;
   font-size: 15px;
-  color: #e5e5d7;
-  background-color: #493728;
+  color: black;
+  background-color: #7D9D99;
   text-transform: uppercase;
   border: 2px solid black;
+  font-family: "Open Sans";
+  border-radius: 5px;
 }
 
 input, button {
   border: none;
   margin: 10px;
+  font-size: 20px;
 }
 
 input {
-  background-color: #e5e5d7;
+  background-color: #E8E9EE;
   border-bottom: 1px solid black;
   width: 100%;
+  padding: 10px;
 }
 
 .tab a {
@@ -68,12 +69,14 @@ input {
 
 textarea{
   width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 /* NOTE: main form */
 .formButtons button {
   width: 100%;
-  padding: 40px;
+  padding: 20px;
   border-radius: 5px;
 
 }
@@ -170,7 +173,35 @@ header {
   font-size: 2rem;
   border-radius: 5px;
 }
+/* accident form styles  */
+div.tab.carAccident1  {
+  height: 300px;
+}
+#accidentMain{
+  background-color: #E8E9EE;
+  border: 2px solid black;
+  width: 85%;
+  margin: 30px;
+  border-radius: 5px;
+}
 
+p {
+  font-size: 25px;
+}
+
+label, li, .enterInsurance{
+  font-size: 20px;
+}
+
+/* .enterInsurance{
+  font-size: 20px;
+} */
+
+#nextOnAccident {
+  position: absolute;
+  right: 40px;
+  top: 275px;
+}
 .history {
   background-color: #e5e5d7;
   margin: 0 auto;
@@ -185,6 +216,10 @@ header {
   button {
     width: 15%;
   } */
+
+  #nextOnAccident {
+    right: 180px;
+  }
 }
 
 
