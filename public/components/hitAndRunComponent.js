@@ -21,7 +21,7 @@
       }
 
       $ctrl.setDescription = function(car){
-        $ctrl.accidentDb.description = car.description;
+        $ctrl.accidentDb.property = car.description;
         $ctrl.accidentDb.direction = car.direction;
         $ctrl.getForm(5);
       }
@@ -37,8 +37,9 @@
       }
 
       $ctrl.sendToService = function(){
+        console.log($ctrl.accidentDb);
         WizardService.setList($ctrl.accidentDb);
-        $location.path('/submit')
+        $location.path('/submit');
       }
 
     }

@@ -5,7 +5,7 @@
 
     <header ng-style="$ctrl.height">
       <div class="headerTitle">
-        <h1>Accidents Happen</h1>
+        <h1 class="formTitle">Accidents Happen</h1>
         <i class="material-icons" id="slideButton" ng-click="$ctrl.slide()" ng-show="$ctrl.show">arrow_upward</i>
         <i class="material-icons" id="slideButton" ng-click="$ctrl.slideDown()" ng-show="$ctrl.hide">arrow_downward</i>
       </div>
