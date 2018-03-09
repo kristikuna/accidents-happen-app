@@ -119,11 +119,6 @@ textarea{
   text-decoration: none;
   font-size: 2rem;
   border-radius: 5px;
-  opacity: .75;
-}
-.formButtons a:hover {
-  opacity: 1.0;
-  cursor: pointer;
 }
 
 .homeButton{
@@ -306,6 +301,13 @@ li {
   }
   .imgButton:hover {
     opacity: 1.0;
+  }
+  .formButtons a:hover {
+    opacity: 1.0;
+    cursor: pointer;
+  }
+  .formButtons {
+    opacity: .90;
   }
 }
 
