@@ -21,7 +21,6 @@
 
 body {
   background-color: #39414C;
-
 }
 
 .tab {
@@ -111,13 +110,6 @@ textarea{
 
 /* NOTE: main form */
 
-#formTitle{
-  margin-top: 30px;
-  padding: 20px 17px 10px 25px;
-  font-size: 35px;
-  color: #E8E9EE;
-}
-
 .formButtons {
   display: flex;
   justify-content: space-evenly;
@@ -167,7 +159,7 @@ header {
   /* background-color: white; */
   /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,1); */
   margin: 0 auto;
-  transition: all 1s;
+  transition: all 2s;
   display: flex;
 }
 
@@ -196,9 +188,19 @@ header {
 
 .headerTitle h1 {
   flex: 1;
-  color: white;
+  color: #eae8e5;
   font-size: 4rem;
 }
+
+.formTitle{
+  /* margin-top: 30px; */
+  padding: 20px 17px 10px 25px;
+  font-family: "Yellowtail";
+  font-weight: normal;
+  color: #eae8e5;
+
+}
+
 
 .homePageButtons{
   display: none;
@@ -388,7 +390,7 @@ li {
   margin-bottom: 10px;
   border-radius: 10px;
   width: 95%;
-  max-height: 125px;
+  max-height: 140px;
   overflow: hidden;
   transition: all 1s;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
@@ -446,5 +448,8 @@ table tr {
   }
   .imgButton:hover {
     opacity: 1.0;
+  }
+  .headerTitle h1 {
+    font-size: 6rem;
   }
 }

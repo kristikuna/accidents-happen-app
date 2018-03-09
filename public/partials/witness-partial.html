@@ -25,7 +25,7 @@
         <div id="theftYesNoBtn">
           <button type="button" ng-click="showme=true">YES</button>
           <button type="button" ng-click="showme=false; $ctrl.getForm(4)">NO</button>
-        </div>  
+        </div>
         <form ng-show="showme" ng-submit="$ctrl.setPerpCar($ctrl.car)">
             <label>Make:
                 <input type="text" ng-model="$ctrl.car.make">
@@ -62,7 +62,7 @@
             <ul>Remember to include:
                 <li>Injuries to yourself or others</li>
                 <li>Damage to your property</li>
-                <li>Any who, what, where, or when</li>
+                <li>Who, what, where, and when</li>
             </ul>
             <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
             <div class="navButtons">
