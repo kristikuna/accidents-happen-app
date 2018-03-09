@@ -10,10 +10,15 @@
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <form ng-submit="$ctrl.setDescription($ctrl.items)">
         <p>Did you see the person?</p>
+<<<<<<< HEAD
         <div id="theftYesNoBtn">
           <button type="button" ng-click="showme=true">Yes</button>
           <button type="button" ng-click="$ctrl.getForm(3); showme=false">No</button>
         </div>
+=======
+        <button class="yesButton" type="button" ng-click="showme=true">Yes</button>
+        <button class="yesButton" type="button" ng-click="$ctrl.getForm(3); showme=false">No</button>
+>>>>>>> 7ebb70c8e931b96edfdeab41f53fc739280b6dce
         <p ng-show="showme">Please describe</p>
         <textarea ng-show="showme" name="name" rows="8" cols="80" ng-model="$ctrl.items.description"></textarea>
         <div class="navButtons">
@@ -67,7 +72,7 @@
         </table>
         <div class="navButtons">
         <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
-        <button ng-click="$ctrl.sendToService()" type="button"><i class="material-icons">arrow_forward</i></button>
+        <button ng-click="$ctrl.sendToService()" type="button"><i class="material-icons">done_all</i></button>
         </div>
       </div>
     </div>
