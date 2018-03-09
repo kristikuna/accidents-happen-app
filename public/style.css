@@ -304,8 +304,16 @@ li {
   min-height: 700px;
 }
 
-.witnessButton {
+#witnessMain .witnessButton {
   align-items: center;
+  color: black;
+  background-color: #7D9D99;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-family: "Open Sans";
+  border-radius: 5px;
+  width: 50%;
+  margin: 20px;
 }
 
 #witnessMain {
@@ -314,9 +322,6 @@ li {
   align-items: center;
 }
 
-#witnessMain button {
-  width: 50%;
-}
 .navButtons {
   display: flex;
   width: 100%;
@@ -335,6 +340,7 @@ li {
     opacity: 1.0;
   }
 }
+
 
 
 
