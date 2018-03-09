@@ -23,6 +23,8 @@
         })
         .when("/prev", {
             template: "<previous-component></previous-component>"
+        }).when("/submit", {
+            template: "<submit-component></submit-component>"
         })
         .otherwise({ redirectTo: "/home" });
     });

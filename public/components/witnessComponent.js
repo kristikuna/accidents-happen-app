@@ -29,7 +29,7 @@
 
         $ctrl.sendToService = function(){
           WizardService.setList($ctrl.accidentDb);
-          $location.path('/home')
+          $location.path('/submit')
         }
       }
 

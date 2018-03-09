@@ -34,7 +34,7 @@
 
       $ctrl.sendToService = function(){
         WizardService.setList($ctrl.theftDb);
-        $location.path('/form')
+        $location.path('/submit')
       }
     }
   };
