@@ -31,12 +31,13 @@ body {
 
 .tab {
   background-color: rgba(232, 233, 238, .8);
-  max-width: 1100px;
+  max-width: 700px;
   border-radius: 5px;
   position: relative;
   width: 90%;
   font-family: "Open Sans";
   margin: 15px auto;
+  text-align: center;
 }
 
 form {
@@ -60,10 +61,18 @@ form {
   opacity: .8;
 }
 
+.tab ul {
+list-style-type: none;
+}
+
+.tab ul li {
+  padding-top: 5px;
+}
+
 #theftYesNoBtn {
   /* border: red 4px solid; */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 #theftYesNoBtn button {
@@ -374,7 +383,7 @@ li {
    padding: 5px;
    position: relative;
    max-width: 1100px;
-
+   text-align: center;
 }
 
 .report button {
