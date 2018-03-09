@@ -3,7 +3,7 @@
     template: `
         <div id="mainForm" >
         <a class="xbut xbutt" href="#!/home"><i class="material-icons">home</i></a>
-        <h1 id="formTitle">Accidents Happen</h1>
+        <h1 class="formTitle">Accidents Happen</h1>
         <div class = "formButtons">
           <a class="mainButton fender-bender imgButton" href="#!/accident"><span class="imageBackgroundText">Car Accident</span></a>
           <a class="mainButton har imgButton" href="#!/hitandrun"><span class="imageBackgroundText">Hit and Run</span></a>
