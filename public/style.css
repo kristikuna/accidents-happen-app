@@ -38,6 +38,7 @@ body {
   font-family: "Open Sans";
   margin: 15px auto;
   text-align: center;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
 
 form {
@@ -141,6 +142,8 @@ textarea{
   font-size: 2rem;
   border-radius: 5px;
   opacity: .75;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+
 }
 .formButtons a:hover {
   opacity: 1.0;
@@ -220,6 +223,8 @@ header {
   text-decoration: none;
   font-size: 2rem;
   border-radius: 5px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+
 }
 #previous {
   background: url(photo/previouspage.jpg);
@@ -382,6 +387,8 @@ li {
    position: relative;
    max-width: 1100px;
    text-align: center;
+   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+
 }
 
 .report button {
@@ -440,6 +447,8 @@ li {
   max-height: 125px;
   overflow: hidden;
   transition: all 1s;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+
 }
 
 .history:hover{
