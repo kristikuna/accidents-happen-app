@@ -77,7 +77,7 @@ list-style-type: none;
 }
 
 #theftYesNoBtn button {
-  background-color: gold;
+  background-color: rgba(179, 74, 0, 1);
   width: 60px;
   opacity: .8;
 }
@@ -323,61 +323,6 @@ li {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-
-  #nextOnAccident {
-    right: 180px;
-  }
-  .imgButton {
-    opacity: .90;
-  }
-  .imgButton:hover {
-    opacity: 1.0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .report {
    background-color:#E8E9EE;
    width: 90%;
@@ -388,7 +333,6 @@ li {
    max-width: 1100px;
    text-align: center;
    box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
-
 }
 
 .report button {
@@ -490,4 +434,17 @@ table tr {
 .submit {
   font-size: 30px;
   margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+  #nextOnAccident {
+    right: 180px;
+  }
+  .imgButton {
+    opacity: .90;
+  }
+  .imgButton:hover {
+    opacity: 1.0;
+  }
 }
