@@ -3,7 +3,7 @@
     template: `
 
 
-    <header  ng-style="$ctrl.height">
+    <header ng-style="$ctrl.height">
       <div class="headerTitle">
         <h1>Accidents Happen</h1>
         <i class="material-icons" id="slideButton" ng-click="$ctrl.slide()" ng-show="$ctrl.show">arrow_upward</i>
