@@ -60,17 +60,6 @@ form {
   opacity: .8;
 }
 
-#theftYesNoBtn {
-  /* border: red 4px solid; */
-  display: flex;
-  justify-content: flex-start;
-}
-
-#theftYesNoBtn button {
-  background-color: gold;
-  width: 60px;
-  opacity: .8;
-}
 
 input, button {
   border: none;
@@ -131,6 +120,11 @@ textarea{
   text-decoration: none;
   font-size: 2rem;
   border-radius: 5px;
+  opacity: .75;
+}
+.formButtons a:hover {
+  opacity: 1.0;
+  cursor: pointer;
 }
 
 .homeButton{
@@ -315,13 +309,6 @@ li {
   .imgButton:hover {
     opacity: 1.0;
   }
-  .formButtons a:hover {
-    opacity: 1.0;
-    cursor: pointer;
-  }
-  .formButtons {
-    opacity: .90;
-  }
 }
 
 
@@ -465,8 +452,13 @@ table tr {
   border: 2px solid black;
   border-radius: 5px;
   opacity: .8;
-  background-color: #7D9D99;
-  width: 10%;
+  width: 5%;
   height: 30px;
-  margin-left: 10px;
+  margin: 20px;
+  float: right;
+}
+
+.submit {
+  font-size: 30px;
+  margin: 20px;
 }

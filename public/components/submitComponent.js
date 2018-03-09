@@ -3,10 +3,10 @@
     template: `
     <div class="accidentForm">
     <div class="tab">
-      <h2>Your incident has been recorded</h2>
-      <div class="navButtons">
-        <a href="#!/prev">Incident History</a>
-        <a href="#!/home">Home</a>
+      <h2 class="submit">Your incident has been recorded</h2>
+      <div id="icons" class="navButtons">
+        <a class="icons" href="#!/prev"><i class="material-icons md-36">history</i></a>
+        <a class="icons" href="#!/home"><i class="material-icons md-36">home</i></a>
       </div>
     <div>
     </div>

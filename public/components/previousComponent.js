@@ -2,7 +2,7 @@
     var previousComponent = {
         template: `
         <div class="profile">
-        <a class="xbut xbutt" href="#!/home"><i class="material-icons x">clear</i></a>
+        <a class="xbut xbutt" href="#!/home"><i class="material-icons">home</i></a>
           <div class="historyHeader">
             <div class="profilePic">
 
@@ -59,7 +59,7 @@
               <td>{{ incident.direction ||"n/a" | uppercase}}</td>
             </tr>
           </table>
-          <button class="profileDelete" ng-click="$ctrl.delete(incident.id)">delete</button>
+          <button class="profileDelete" ng-click="$ctrl.delete(incident.id)"><i class="material-icons">delete_forever</i></button>
           </div>
         </div>
         `,
