@@ -60,15 +60,12 @@
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
-    <p>Write your account of the incident that took place</p>
+    <p>Describe what happened in as much detail as possible.</p>
     <form ng-submit="$ctrl.setEvent($ctrl.car)">
       <ul>Remember to include:
-        <li>Injuries</li>
-        <li>Damage to your car</li>
-        <li>Who</li>
-        <li>What</li>
-        <li>When</li>
-        <li>Where</li>
+          <li>Injuries to yourself or others</li>
+          <li>Damage to your property</li>
+          <li>Any who, what, where, or when</li>
       </ul>
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
       <div class="navButtons">
