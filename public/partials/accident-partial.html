@@ -3,17 +3,16 @@
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
-    <p>Pull your car to a safe area and check on others involved</p>
-    <p>Call the police</p>
-    <p>Keep calm</p>
-    <button ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')"><i class="material-icons">arrow_forward</i></button>
+    <p>Are you safe?</p>
+    <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')">Yes I'm Safe</button>
+    <button id="notSafeButton" ng-click="$ctrl.showAlert();">No I need help</button>
   </div>
 
   <div class="tab car2" ng-switch-when="2">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
-    <p>Enter as much information as possible about the other driver</p>
+    <h3>Vechicle Information</h3>
     <form ng-submit="$ctrl.setPerpCar($ctrl.car)">
       <label>Name
         <input type="text" ng-model="$ctrl.car.name">
@@ -44,9 +43,7 @@
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
-    <p>Do not admit fault</p>
-    <p>Do not discuss the car accident with anyone other than the police and your insurance claims representative.</p>
-    <p class="enterInsurance">Enter other drivers insurance information:</p>
+    <h3>Enter other drivers insurance information:</h3>
     <form ng-submit="$ctrl.setInsuranceInfo($ctrl.car)">
       <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.insuranceInfo"></textarea>
       <div class="navButtons">
