@@ -49,8 +49,8 @@ form {
 }
 
 .tab button {
-  width: 30%;
-  height: 30px;
+  width: 40%;
+  height: 55px;
   color: black;
   background-color: #7D9D99;
   text-transform: uppercase;
@@ -58,6 +58,15 @@ form {
   font-family: "Open Sans";
   border-radius: 5px;
   opacity: .8;
+}
+
+#yesNoButtons{
+  width: 47%;
+}
+
+#yesNoButtons > .yesButton {
+  background-color: pink;
+  height: 20px;
 }
 
 input, button {
@@ -243,8 +252,6 @@ header {
 }
 
 /* accident form styles  */
-
-
 #accidentMain {
   background-color: #E8E9EE;
   border: 2px solid black;
@@ -280,23 +287,26 @@ li {
   min-height: 700px;
 }
 
+.witnessButton {
+  align-items: center;
+}
 
-#witnessButton {
+#witnessMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#witnessMain button {
+  width: 50%;
 }
 .navButtons {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
-  /* h1{
-    margin-top: 400px;
-  }
 
-  button {
-    width: 15%;
-  } */
+@media screen and (min-width: 768px) {
 
   #nextOnAccident {
     right: 180px;
