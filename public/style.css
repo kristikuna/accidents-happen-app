@@ -302,13 +302,6 @@ li {
   .imgButton:hover {
     opacity: 1.0;
   }
-  .formButtons a:hover {
-    opacity: 1.0;
-    cursor: pointer;
-  }
-  .formButtons {
-    opacity: .90;
-  }
 }
 
 
