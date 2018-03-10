@@ -1,28 +1,34 @@
 .xbut, #xbutt {
   position: absolute;
-  right: 15px;
-  top: 10px;
+  right: 0px;
+  top: 0px;
   color: black;
 }
+
 .x:hover{
   color: rgba(255, 87, 87, 0.6);
 }
 
 .xbutt{
-  color: #E5E5D9;
+  color: #294168;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Georgia;
+  font-family: Raleway, sans-serif;
 }
 
 body {
   background-image: url("photo/fabric.png");
 }
 
+h3{
+  color: #294168;
+  font-size: 25px;
+  margin: 10px 0px;
+}
 .tab {
   font-size: 10px;
   padding: 20px;
@@ -44,21 +50,16 @@ form {
   padding: 0 10px;
 }
 
-.tab, p {
-  font-size: 25px;
-  padding: 20px 10px;
-}
-
 .tab button {
-  width: 6%;
+  width: 14%;
   height: 40px;
   color: white;
   background-color: rgb(56, 57, 58);
   text-transform: uppercase;
-  font-family: "Open Sans";
+  font-family: Raleway;
   border-radius: 100px;
   opacity: .8;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .tab button:hover {
@@ -70,11 +71,16 @@ list-style-type: none;
 }
 
 .tab ul li {
-  padding-top: 5px;
+  font-size: 15px;
+  /* padding-top: 5px; */
+}
+
+.tab, p {
+  font-size: 20px;
+  padding: 20px 10px;
 }
 
 #theftYesNoBtn {
-  /* border: red 4px solid; */
   display: flex;
   justify-content: center;
 }
@@ -85,16 +91,27 @@ list-style-type: none;
   opacity: .8;
 }
 
-input, button {
-  border: none;
-  margin: 10px;
-  font-size: 20px;
+input {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
 }
 
-input {
-  background-color: rgba(232, 233, 238, -0.2);
-  border-bottom: 1px solid black;
-  width: 95%;
+.accidentInputs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+label {
+  font-size: 15px;
+  display: block;
+}
+
+.formRow{
+  width: 50%;
   padding: 10px;
 }
 
@@ -139,8 +156,8 @@ textarea{
   border-radius: 5px;
   opacity: .75;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
-
 }
+
 .formButtons a:hover {
   opacity: 1.0;
   cursor: pointer;
@@ -173,7 +190,6 @@ textarea{
   flex-wrap: wrap;
   padding: 20px;
   width: 100%;
-  /* background: url(photo/fabric.png); */
 }
 
 header {
@@ -199,14 +215,12 @@ header {
 }
 
 .formTitle{
-  /* margin-top: 30px; */
   padding: 20px 17px 10px 25px;
   font-family: "Pacifico";
   font-weight: normal;
   color: #294168;
   font-size: 40px;
 }
-
 
 .homePageButtons{
   display: none;
@@ -289,7 +303,7 @@ p {
   font-size: 25px;
 }
 
-label, li, .enterInsurance{
+li, .enterInsurance{
   font-size: 20px;
 }
 
@@ -307,7 +321,7 @@ li {
 .accidentForm {
   display: flex;
   align-items: center;
-  min-height: 700px;
+  min-height: 500px;
 }
 
 #witnessMain .witnessButton {
@@ -346,15 +360,17 @@ li {
    box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
 
+
 .report button {
-  width: 30%;
-  font-size: 15px;
-  color: black;
-  background-color: #7D9D99;
+  width: 13%;
+  height: 40px;
+  color: white;
+  background-color: rgb(56, 57, 58);
   text-transform: uppercase;
-  border: 2px solid black;
-  font-family: "Open Sans";
-  border-radius: 5px;
+  font-family: Raleway;
+  border-radius: 100px;
+  opacity: .8;
+  padding-top: 4px;
 }
 
 /* NOTE: history page */
@@ -363,7 +379,7 @@ li {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  font-family: Georgia;
+  font-family: Raleway, sans-serif;
 }
 
 .historyHeader {
@@ -448,20 +464,27 @@ table tr {
 }
 
 #safeButton {
-  width: 40%;
+  width: 65%;
+  height: 45px;
   background-color: green;
   display: flex;
   justify-content: center;
-  margin-left: 30%;
+  margin-top: 5%;
+  margin-left: 18%;
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
 }
 
 #notSafeButton {
   background-color: crimson;
-  width: 40%;
+  width: 65%;
+  height: 45px;
   border-radius: 100px;
   font-family: "Open Sans";
   margin: 10px;
   opacity: 1;
+  font-family: Raleway;
+  font-size: 15px;
 }
 
 carAccident1{
@@ -485,4 +508,9 @@ carAccident1{
   .headerTitle h1 {
     font-size: 5rem;
   }
+
+  /* .hide {
+    display: none;
+  } */
+
 }
