@@ -41,6 +41,9 @@
         WizardService.setList($ctrl.accidentDb);
         $location.path('/submit');
       }
+      $ctrl.showAlert = function(){
+        alert("Authorities have be notified, keep calm.");
+      }
 
     }
   };
