@@ -14,47 +14,51 @@
           <h1 class="incidentHistory">Incident History</h1>
           <div class="history" ng-repeat="incident in $ctrl.whatever">
           <table>
-          <tr>
+          <tr ng-if="incident.type_of">
             <th>Type of incident:</th>
             <td>{{ incident.type_of | uppercase}}</td>
           </tr>
-            <tr>
+            <tr ng-if="incident.events">
               <th>Events that took place:</th>
               <td>{{ incident.events | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.property">
               <th>Stolen or damaged property:</th>
               <td>{{ incident.property ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
-              <th>Description or name:</th>
-              <td>{{ incident.driver || incident.name_of ||"n/a" | uppercase}}</td>
+            <tr ng-if="incident.driver">
+              <th>Description of driver:</th>
+              <td>{{ incident.driver ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.name_of">
+              <th>Name:</th>
+              <td> {{incident.name_of ||"n/a" | uppercase}}</td>
+            </tr>
+            <tr ng-if="incident.phone">
               <th>Contact info:</th>
               <td>{{ incident.phone ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.make">
               <th>Make:</th>
               <td>{{ incident.make ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.model">
               <th>Model:</th>
               <td>{{ incident.model ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.color" >
               <th>Color:</th>
               <td>{{ incident.color ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.insurance_info">
               <th>Insurance info:</th>
               <td>{{ incident.insurance_info ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.plate">
               <th>License Plate:</th>
               <td>{{ incident.plate ||"n/a" | uppercase}}</td>
             </tr>
-            <tr>
+            <tr ng-if="incident.direction">
               <th>Direction:</th>
               <td>{{ incident.direction ||"n/a" | uppercase}}</td>
             </tr>
