@@ -22,7 +22,7 @@
       $ctrl.slide = function(){
         $ctrl.height = {
           "height": "35vh",
-          "background": "url('photo/fabric.png')"
+          "background": "url('photo/fabric.png') no-repeat"
           // "background-color": "#39414C",
           // "box-shadow": "inset 0 0 0 10000px rgba(57,65,75,1)"
         }
