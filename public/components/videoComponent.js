@@ -1,7 +1,12 @@
 (function() {
     var videoComponent = {
       template: `
-      test
+      <div>
+        <h1>Video title</h1>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/GKnEMwAqjcY">
+        </iframe>
+      </div>
       `,
       controller: function(WizardService,$location) {
         var $ctrl = this;
