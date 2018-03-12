@@ -12,7 +12,7 @@
             </div>
           </div>
           <h1 class="incidentHistory">Incident History</h1>
-          <div class="history" ng-repeat="incident in $ctrl.whatever" ng-style="$ctrl.height" ng-click="$ctrl.slide()" ng-dblclick="$ctrl.slideUp()">
+          <div class="history" ng-repeat="incident in $ctrl.whatever"  ng-class="{'grow':incident.id == $ctrl.selectedRow}" ng-click="$ctrl.setClickedRow(incident.id)" ng-dblclick="$ctrl.slideUp()">
           <table>
           <tr ng-if="incident.type_of">
             <th>Type of incident:</th>
@@ -69,22 +69,20 @@
         `,
         controller: function(WizardService, $location) {
             var $ctrl = this;
+            $ctrl.selectedRow= null;
 
             WizardService.getList().then(function (response){
               $ctrl.whatever = response;
               console.log(response);
             });
 
-            $ctrl.slide = function(){
-              $ctrl.height = {
-                "max-height": "2000px",
-              }
-              console.log("click");
+            $ctrl.setClickedRow = function(id){
+              $ctrl.selectedRow = id;
+              console.log("click" + id);
             }
+
             $ctrl.slideUp = function(){
-              $ctrl.height = {
-                "max-height": "100px",
-              }
+              $ctrl.selectedRow = null;
               console.log("doubleclick");
             }
             $ctrl.delete = function(id){
