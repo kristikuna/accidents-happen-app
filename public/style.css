@@ -203,7 +203,7 @@ header {
   /* background-color: #39414C; */
   /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,1); */
   margin: 0 auto;
-  transition: all 2s;
+  transition: all 2s ease-in-out;
   display: flex;
 }
 
@@ -388,7 +388,6 @@ li {
 }
 
 .historyHeader .profilePic {
-  border: solid green 1px;
   background-image: url("photo/grant-chirpus-student.jpg");
   background-size: cover;
   min-width: 100px;
@@ -399,11 +398,14 @@ li {
 .historyHeader h2 {
   margin-left: 20px;
   color: rgba(232, 233, 238, .8);
+  color: #39414B;
+
 }
 
 .profile h1 {
   margin: 20px;
   color: rgba(232, 233, 238, .8);
+  color: #39414B;
 }
 
 .history {
@@ -415,7 +417,6 @@ li {
   overflow: hidden;
   transition: all 1s;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
-
 }
 
 .history:hover{
