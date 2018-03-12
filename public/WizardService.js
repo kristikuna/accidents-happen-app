@@ -4,7 +4,8 @@
     return {
       getList: getList,
       setList: setList,
-      deleteItem: deleteItem
+      deleteItem: deleteItem,
+      getVideo: getVideo
       // updateItem: updateItem
     };
 
@@ -35,44 +36,16 @@
       });
     };
 
-    // function deleteItem(itemId){
-    //   console.log("delete from service");
-    //   return $http({
-    //      method: "DELETE",
-    //      url: "/incidents/" + itemId
-    //  });
-
-
-
-
-    // var savedList = [
-    //   {
-    //     type: "theft",
-    //     event: "stole some stuff",
-    //     stolenStuff: "stuff",
-    //     description: "black hair, looked like a mugger",
-    //   },
-    //   {
-    //     type: "car-accident",
-    //     event: "stuff broke",
-    //     description: "shit went dowwnnnnn"
-    //   }
-    // ];
-    //
-    // return {
-    //   setList: setList,
-    //   sendList: sendList
-    // };
-    //
-    // function setList(sentObj){
-    //   // console.log(sentObj);
-    //   savedList.push(sentObj);
-    //   console.log(savedList);
-    // }
-    //
-    // function sendList(){
-    //     return savedList;
-    // }
+    function getVideo(){
+      return $http({
+        method: "GET",
+        url: "/videos"
+        }).then(function(response) {
+        console.log(response.data);
+        return response.data;
+        });
+    };
+    
   };
   angular.module("app")
     .factory("WizardService",WizardService)

@@ -491,6 +491,15 @@ carAccident1{
   justify-content: center;
 }
 
+.videoForm {
+  text-align: center;
+}
+
+iFrame{
+  min-width: 95%;
+  min-height: 200px;
+
+}
 @media screen and (min-width: 768px) {
 
   #nextOnAccident {
@@ -504,6 +513,10 @@ carAccident1{
   }
   .headerTitle h1 {
     font-size: 5rem;
+  }
+  iFrame{
+    min-width: 50%;
+    min-height: 500px;
   }
 
   /* .hide {

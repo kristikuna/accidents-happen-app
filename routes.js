@@ -36,4 +36,13 @@ router.delete("/incidents/:id", function(req, res) {
   });
 });
 
+router.get("/videos", function(req, res) {
+  pool.query("SELECT * FROM videos").then(function(result){
+    res.send(result.rows);
+  }).catch(function(err){
+    console.log(err);
+    res.status(500).send("ERROR");
+  })
+});
+
 module.exports = router;
