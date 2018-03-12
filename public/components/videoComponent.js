@@ -1,7 +1,10 @@
 (function() {
     var videoComponent = {
       template: `
-      <div ng-repeat="video in $ctrl.videos" class="videoForm">
+      <div class="searchDiv">
+        <input class="search" type="text" placeholder="Search" ng-model="filterText">
+      </div>
+      <div ng-repeat="video in $ctrl.videos | filter: filterText track by $index" class="videoForm">
       <a class="xbut xbutt" href="#!/home"><i class="material-icons">home</i></a>
 
         <h1 class="videoTitle">{{video.title}}</h1>
