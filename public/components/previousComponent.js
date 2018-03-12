@@ -12,7 +12,7 @@
             </div>
           </div>
           <h1 class="incidentHistory">Incident History</h1>
-          <div class="history" ng-repeat="incident in $ctrl.whatever" ng-style="$ctrl.height" ng-click="$ctrl.slide()">
+          <div class="history" ng-repeat="incident in $ctrl.whatever" ng-style="$ctrl.height" ng-click="$ctrl.slide()" ng-dblclick="$ctrl.slideUp()">
           <table>
           <tr ng-if="incident.type_of">
             <th>Type of incident:</th>
@@ -78,9 +78,14 @@
             $ctrl.slide = function(){
               $ctrl.height = {
                 "max-height": "2000px",
-                "background-color":"green"
               }
               console.log("click");
+            }
+            $ctrl.slideUp = function(){
+              $ctrl.height = {
+                "max-height": "100px",
+              }
+              console.log("doubleclick");
             }
             $ctrl.delete = function(id){
               console.log("delete from component");
