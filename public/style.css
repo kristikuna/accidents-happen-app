@@ -325,15 +325,11 @@ li {
 }
 
 #witnessMain .witnessButton {
-  align-items: center;
-  color: black;
-  background-color: #7D9D99;
-  text-transform: uppercase;
-  border: 2px solid black;
-  font-family: "Open Sans";
-  border-radius: 5px;
-  width: 50%;
+  background-color: rgba(179, 74, 0, 1);
+  width: 200px;
+  opacity: .8;
   margin: 20px;
+  border-radius: 5px;
 }
 
 #witnessMain {
