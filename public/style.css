@@ -529,6 +529,18 @@ iFrame{
   border: white 2px solid;
   border-radius: 10px;
 }
+
+.search {
+  /* margin-top: 30px; */
+  width: 35%;
+  display: inline-block;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+
+.searchDiv {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
 
   #nextOnAccident {
@@ -544,7 +556,7 @@ iFrame{
     font-size: 5rem;
   }
   iFrame{
-    min-width: 50%;
+    min-width: 75%;
     min-height: 500px;
   }
 
