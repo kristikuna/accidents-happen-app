@@ -25,6 +25,8 @@
             template: "<previous-component></previous-component>"
         }).when("/submit", {
             template: "<submit-component></submit-component>"
+        }).when("/videos", {
+            template: "<video-component></video-component>"
         })
         .otherwise({ redirectTo: "/home" });
     });
