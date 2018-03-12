@@ -152,7 +152,7 @@ textarea{
   background-color: grey;
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
   border-radius: 5px;
   opacity: .75;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
@@ -210,7 +210,7 @@ header {
 .headerTitle h1 {
   flex: 1;
   color: #eae8e5;
-  font-size: 4rem;
+  font-size: 3rem;
   transition: 2s;
 }
 
@@ -225,9 +225,12 @@ header {
 .homePageButtons{
   display: none;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
-  flex-wrap: wrap;
-  height: 55vh;
+  /* flex-wrap: wrap; */
+
+  flex-direction: column;
+  /* width: auto; */
 }
 
 .homePageButtons a {
@@ -235,7 +238,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 90%;
   margin: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -419,10 +422,10 @@ li {
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
 
-.history:hover{
+/* .history:hover{
   max-height: 2000px;
   transition: 2s;
-}
+} */
 
 table {
   margin-top: 10px;
@@ -491,14 +494,33 @@ carAccident1{
   justify-content: center;
 }
 
+/* NOTE: video page */
+
 .videoForm {
   text-align: center;
+  background-color: rgba(57, 65, 75, .5);
+  padding: 20px;
+  width: 98%;
+  margin: 25px auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+}
+
+.videoTitle {
+  color: white;
+  padding: 20px;
+}
+
+.videoSubTitle {
+  color: white;
 }
 
 iFrame{
   min-width: 95%;
   min-height: 200px;
-
+  max-width: 95%;
+  border: white 2px solid;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
 
@@ -519,6 +541,17 @@ iFrame{
     min-height: 500px;
   }
 
+  .formButtons a {
+    font-size: 2rem;
+  }
+
+  .homePageButtons{
+    flex-direction: row;
+ }
+
+ .homePageButtons a {
+   height: 55vh;
+ }
   /* .hide {
     display: none;
   } */

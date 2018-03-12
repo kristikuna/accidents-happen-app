@@ -1,7 +1,7 @@
 (function() {
     var previousComponent = {
         template: `
-        <div class="profile">
+        <div class="profile"  >
         <a class="xbut xbutt" href="#!/home"><i class="material-icons">home</i></a>
           <div class="historyHeader">
             <div class="profilePic">
@@ -12,7 +12,7 @@
             </div>
           </div>
           <h1 class="incidentHistory">Incident History</h1>
-          <div class="history" ng-repeat="incident in $ctrl.whatever">
+          <div class="history" ng-repeat="incident in $ctrl.whatever" ng-style="$ctrl.height" ng-click="$ctrl.slide()">
           <table>
           <tr ng-if="incident.type_of">
             <th>Type of incident:</th>
@@ -75,6 +75,13 @@
               console.log(response);
             });
 
+            $ctrl.slide = function(){
+              $ctrl.height = {
+                "max-height": "2000px",
+                "background-color":"green"
+              }
+              console.log("click");
+            }
             $ctrl.delete = function(id){
               console.log("delete from component");
               WizardService.deleteItem(id).then(refreshList);
