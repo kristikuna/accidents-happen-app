@@ -27,6 +27,10 @@
             template: "<submit-component></submit-component>"
         }).when("/videos", {
             template: "<video-component></video-component>"
+        }).when("/login", {
+            template: "<admin-login-component></admin-login-component>"
+        }).when("/admin", {
+            template: "<admin-component></admin-component>"
         })
         .otherwise({ redirectTo: "/home" });
     });

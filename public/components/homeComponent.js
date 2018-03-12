@@ -8,6 +8,7 @@
         <h1 ng-style="$ctrl.font" class="formTitle">Accidents Happen</h1>
         <i class="material-icons" id="slideButton" ng-click="$ctrl.slide()" ng-show="$ctrl.show">arrow_upward</i>
         <i class="material-icons" id="slideButton" ng-click="$ctrl.slideDown()" ng-show="$ctrl.hide">arrow_downward</i>
+        <i class="material-icons" id="adminButton" ng-click="$ctrl.adminPage()">build</i>
       </div>
     </header>
     <div class="homePageButtons" ng-style="$ctrl.display">
@@ -16,7 +17,7 @@
     <a id="article" class="imgButton" href="#!/videos"><span class="imageBackgroundText" >Articles</span></a>
     </div>
     `,
-    controller: function(){
+    controller: function($location){
       var $ctrl = this
       $ctrl.show = true;
       $ctrl.slide = function(){
@@ -48,6 +49,9 @@
         }
         $ctrl.show = true;
         $ctrl.hide = false;
+      }
+      $ctrl.adminPage = function() {
+        $location.path('/login');
       }
 
 
