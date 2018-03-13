@@ -18,8 +18,8 @@
         <p ng-show="showme">Please describe</p>
         <textarea ng-show="showme" name="name" rows="8" cols="80" ng-model="$ctrl.items.description"></textarea>
         <div class="navButtons">
-        <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
-        <button type="submit"><i class="material-icons">arrow_forward</i></button>
+        <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
+        <button class="nextButton" type="submit">Next</button>
         </div>
       </form>
     </div>
@@ -30,8 +30,8 @@
       <form ng-submit="$ctrl.stolenItems($ctrl.items)">
         <textarea name="name" rows="8" cols="80" ng-model="$ctrl.items.property"></textarea>
         <div class="navButtons">
-      <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
-      <button type="submit"><i class="material-icons">arrow_forward</i></button>
+      <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
+      <button class="nextButton" type="submit">Next</button>
       </div>
       </form>
     </div>
@@ -42,8 +42,8 @@
       <form ng-submit="$ctrl.setEvents($ctrl.items)">
         <textarea name="name" rows="8" cols="80" ng-model="$ctrl.items.event"></textarea>
         <div class="navButtons">
-        <button ng-click="$ctrl.goBack()" type="button"><i class="material-icons">arrow_back</i></button>
-        <button type="submit"><i class="material-icons">arrow_forward</i></button>
+        <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
+        <button class="nextButton" type="submit">Next</button>
         </div>
       </form>
     </div>

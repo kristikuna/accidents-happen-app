@@ -42,11 +42,8 @@
         </div>
       </div>
       <div class="navButtons">
-        <button class="hide" ng-click="$ctrl.goBack()">Back</button>
-        <button class="hide" ng-click="$ctrl.setPerpCar($ctrl.car)">NEXT</button>
-
-        <!-- <button class="desktopButtons" ng-click="$ctrl.goBack()"><i class="material-icons">chevron_left</i></button>
-        <button class="desktopButtons" ng-click="$ctrl.setPerpCar($ctrl.car)"><i class="material-icons">chevron_right</i></button> -->
+        <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
+        <button class="nextButton" ng-click="$ctrl.setPerpCar($ctrl.car)">Next</button>
       </div>
     </form>
   </div>
@@ -59,8 +56,8 @@
     <form ng-submit="$ctrl.setInsuranceInfo($ctrl.car)">
       <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.insuranceInfo"></textarea>
       <div class="navButtons">
-        <button class="hide" ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
-        <button class="hide" ng-click="$ctrl.setInsuranceInfo($ctrl.car)"><i class="material-icons">arrow_forward</i></button>
+        <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
+        <button class="nextButton" ng-click="$ctrl.setInsuranceInfo($ctrl.car)">Next</button>
       </div>
     </form>
   </div>
@@ -78,8 +75,8 @@
       </ul> -->
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
       <div class="navButtons">
-        <button class="hide" ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
-        <button class="hide" ng-click="$ctrl.setEvent($ctrl.car)"><i class="material-icons">arrow_forward</i></button>
+        <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
+        <button class="nextButton" ng-click="$ctrl.setEvent($ctrl.car)">Next</button>
       </div>
     </form>
   </div>
@@ -91,8 +88,8 @@
     <h3>Remember to check the area for witnesses</h3>
     <h3>Take photos</h3>
     <div class="navButtons">
-      <button class="hide" ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
-      <button class="hide" ng-click="$ctrl.getForm(6)"><i class="material-icons">arrow_forward</i></button>
+      <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
+      <button class="nextButton" ng-click="$ctrl.getForm(6)">Next</button>
     </div>
   </div>
 

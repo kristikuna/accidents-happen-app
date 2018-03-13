@@ -1,4 +1,4 @@
-.xbut, #xbutt {
+.xbut {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -9,8 +9,10 @@
   color: rgba(255, 87, 87, 0.6);
 }
 
-.xbutt{
+.homeButton{
   color: #294168;
+  top: 15px;
+  right: 15px;
 }
 
 * {
@@ -51,34 +53,51 @@ form {
 }
 
 .tab button {
-  width: 14%;
+  width: 20%;
   height: 40px;
-  color: white;
-  background-color: rgb(56, 57, 58);
   text-transform: uppercase;
   font-family: Raleway;
-  border-radius: 360px;
-  opacity: .8;
   padding-top: 4px;
+  font-size: 15px;
+  border: none;
+  margin: 5px 12px 0px 0px;
 }
 
-.tab button:hover {
+.nextButton{
+  background-color: rgba(41, 65, 104, .5)
+}
+
+.nextButton:hover{
+  background-color: rgb(56, 57, 58);
+}
+
+.backButton{
+  background-color: rgba(232, 233, 238, .8);
+}
+
+
+/* .tab button:hover {
   background-color: rgb(32, 32, 33);
-}
-
+} */
+/*
 .tab ul {
 list-style-type: none;
 }
 
 .tab ul li {
   font-size: 15px;
-  /* padding-top: 5px; */
-}
+  /* padding-top: 5px; }
+  */
 
-.tab, p {
-  font-size: 20px;
-  padding: 20px 10px;
-}
+  /* li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  } */
+
+  /* .tab, p {
+    font-size: 20px;
+    padding: 20px 10px;
+  } */
 
 #theftYesNoBtn {
   display: flex;
@@ -163,9 +182,9 @@ textarea{
   cursor: pointer;
 }
 
-.homeButton{
+/* .homeButton{
   text-align: right;
-}
+} */
 /* NOTE: homepage */
 
 
@@ -306,19 +325,8 @@ p {
   font-size: 25px;
 }
 
-li, .enterInsurance{
+.enterInsurance{
   font-size: 20px;
-}
-
-li {
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-#nextOnAccident {
-  position: absolute;
-  right: 40px;
-  top: 275px;
 }
 
 .accidentForm {
@@ -480,6 +488,7 @@ table tr {
   margin-left: 18%;
   font-family: Raleway, sans-serif;
   font-size: 15px;
+  border-radius: 360px;
 }
 
 #notSafeButton {
