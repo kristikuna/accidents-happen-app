@@ -646,6 +646,8 @@ iFrame{
     margin: 25px auto;
     border-radius: 10px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+    /* flex-grow: 3;
+    flex-shrink: 2; */
     /* transition: all .2s ease-in-out; */
   }
   /* .videoForm:active {
@@ -658,13 +660,14 @@ iFrame{
   display:block;
   z-index:999;
   } */
-  .videoLarge {
+   .videoLarge {
     width: 90%;
     border: 2px solid orange;
-    z-index: 1;
-    transition: all .2s ease-in-out;
-    /* height: auto;
-    position: relative; */
+    background-color: rgb(232, 229, 225);
+    transition: all .3s ease-in-out;
+    position: fixed;
+    z-index: 20;
+    margin-top 0px;
   }
 
   .nextButton {
