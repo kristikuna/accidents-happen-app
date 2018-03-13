@@ -9,7 +9,8 @@
       <i class="material-icons" id="adminButton" ng-click="$ctrl.adminPage()">build</i>
       <a class="xbut homeButton" href="#!/home"><i class="material-icons">home</i></a>
       <div ng-repeat="video in $ctrl.videos | filter: filterText track by $index" class="videoForm" ng-class="{'videoLarge':video.id == $ctrl.selectedVideo}" ng-click="$ctrl.setClickedRow(video.id)" ng-dblclick="$ctrl.slideSmall()">
-        <h1 class="videoTitle">{{video.title}}</h1>
+      <a class="xbut hide" href=""><i class="material-icons x">clear</i></a>
+      <h1 class="videoTitle">{{video.title}}</h1>
         <h3 class="videoSubTitle">{{video.subtitle}}</h3>
 
         <ng-youtube-embed
