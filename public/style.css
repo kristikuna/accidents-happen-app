@@ -152,7 +152,7 @@ textarea{
 
 .formButtons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 20px;
   flex-wrap: wrap;
   height: 80vh;
@@ -602,6 +602,10 @@ iFrame{
   .formButtons a {
     font-size: 2rem;
   }
+
+  .formButtons {
+    justify-content: space-around;
+}
 
   .homePageButtons{
     flex-direction: row;
