@@ -39,10 +39,24 @@ router.delete("/incidents/:id", function(req, res) {
 router.get("/videos", function(req, res) {
   pool.query("SELECT * FROM videos").then(function(result){
     res.send(result.rows);
+    console.log(results.rows);
   }).catch(function(err){
     console.log(err);
     res.status(500).send("ERROR");
-  })
+  });
 });
+  router.post("/videos", function (req, res) {
+    var video = req.body;
+    var sql = "INSERT INTO videos(title, subtitle, src) VALUES ($1::text, $2::text, $3::text)";
+    var values = [video.title, video.subtitle, video.src];
+    console.log(values);
+    pool.query(sql, values).then(function () {
+        res.status(201).send("Created");
+    }).catch(function (err) {
+        console.log(err);
+        res.status(500).send("ERROR");
+    });
+  });
+
 
 module.exports = router;

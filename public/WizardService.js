@@ -5,7 +5,8 @@
       getList: getList,
       setList: setList,
       deleteItem: deleteItem,
-      getVideo: getVideo
+      getVideo: getVideo,
+      setVideo: setVideo
       // updateItem: updateItem
     };
 
@@ -44,6 +45,13 @@
         console.log(response.data);
         return response.data;
         });
+    };
+    function setVideo(video){
+      return $http({
+        method: "POST",
+        url: "/videos",
+        data: video
+      });
     };
     
   };

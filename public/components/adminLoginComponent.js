@@ -3,6 +3,7 @@
       template: `
       <div class="adminLoginPage">
         <form class="loginForm" ng-submit="$ctrl.checkLogin($ctrl.criteria)">
+            <a class="xbut" href="#!/home"><i class="material-icons x">clear</i></a>
             <h1>Please Login</h1>
             <label>Username: 
                 <input id="username" type="text" ng-model="$ctrl.criteria.username">

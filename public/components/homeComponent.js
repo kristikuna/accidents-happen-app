@@ -6,8 +6,8 @@
     <header ng-style="$ctrl.height">
       <div class="headerTitle">
         <h1 ng-style="$ctrl.font" class="formTitle">Accidents Happen</h1>
-        <i class="material-icons" id="slideButton" ng-click="$ctrl.slide()" ng-show="$ctrl.show">arrow_upward</i>
-        <i class="material-icons" id="slideButton" ng-click="$ctrl.slideDown()" ng-show="$ctrl.hide">arrow_downward</i>
+        <i class="material-icons" id="slideButton" ng-click="$ctrl.slide(); $ctrl.rotate()" ng-show="$ctrl.show">arrow_upward</i>
+        <i class="material-icons" id="slideButton" ng-click="$ctrl.slideDown(); $ctrl.rotate()" ng-show="$ctrl.hide">arrow_downward</i>
         <i class="material-icons" id="adminButton" ng-click="$ctrl.adminPage()">build</i>
       </div>
     </header>
@@ -50,10 +50,9 @@
         $ctrl.show = true;
         $ctrl.hide = false;
       }
-      $ctrl.adminPage = function() {
+      $ctrl.adminPage = function(){
         $location.path('/login');
       }
-
 
     }
   }

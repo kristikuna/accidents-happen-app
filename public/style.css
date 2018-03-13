@@ -178,7 +178,9 @@ textarea{
   border: none;
   transition: 1s;
   margin-top: 20px;
+  transition: 3000ms;
 }
+
 #slideButton:hover {
   cursor: pointer;
 }
@@ -547,6 +549,7 @@ iFrame{
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
 .loginForm {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
