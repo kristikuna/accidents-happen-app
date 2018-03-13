@@ -511,24 +511,36 @@ carAccident1{
 }
 
 /* NOTE: video page */
+.videoParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
 .videoForm {
   text-align: center;
-  background-color: rgba(57, 65, 75, .5);
-  padding: 20px;
-  width: 98%;
-  margin: 25px auto;
+  background-color: rgba(232, 229, 225, .5);
+  padding: 10px;
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
   border-radius: 10px;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
 
-.videoTitle {
-  color: #eae8e5;
-  padding: 20px;
+.videoTitle, .videoSubTitle {
+  color: #3B3738;
 }
 
-.videoSubTitle {
+/* .videoSubTitle {
   color: #eae8e5;
+} */
+
+#videoContainer{
+  background-image: url("photo/wild-sea.png");
+  opacity: 0.8;
 }
 
 iFrame{
@@ -541,8 +553,8 @@ iFrame{
 
 #adminButton {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  left: 15px;
 }
 .adminLoginPage {
   display: flex;
@@ -568,7 +580,6 @@ iFrame{
 }
 
 .search {
-  /* margin-top: 30px; */
   width: 35%;
   display: inline-block;
   margin: 0px auto;
@@ -621,7 +632,22 @@ iFrame{
   .adminLoginPage{
     width: 30%;
   }
+  .videoParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .videoForm {
+    padding: 20px;
+    width: 46%;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+  }
 }
+
 @media only screen and (min-width: 1920px) {
   .formButtons{
     display:flex;
@@ -629,6 +655,11 @@ iFrame{
     flex-wrap: nowrap;
     height: 48vh;
     margin: 30px;
+  }
+
+  .videoForm {
+    width: 30%;
+    margin: 25px auto;
   }
 
 }

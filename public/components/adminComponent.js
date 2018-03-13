@@ -32,7 +32,7 @@
         var $ctrl = this;
         $ctrl.videoObj;
         $ctrl.addVideo = function(video) {
-            WizardService.setVideo(video);
+            WizardService.setVideo(video).then(refreshList);;
         };
         WizardService.getVideo().then(function (response){
           $ctrl.videoObj = response;

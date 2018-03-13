@@ -14,7 +14,6 @@
 
       $ctrl.getForm = function(item) {
         $ctrl.accident = item;
-
       }
 
       $ctrl.goBack = function(){
