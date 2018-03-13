@@ -15,7 +15,7 @@
           autoplay="false"
           color="white"
           disablekb="true"
-          end="20">
+          end="">
         </ng-youtube-embed>
 
       </div>

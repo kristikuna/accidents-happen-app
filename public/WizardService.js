@@ -6,8 +6,8 @@
       setList: setList,
       deleteItem: deleteItem,
       getVideo: getVideo,
-      setVideo: setVideo
-      // updateItem: updateItem
+      setVideo: setVideo,
+      deleteVideo: deleteVideo
     };
 
     function getList(){
@@ -46,14 +46,24 @@
         return response.data;
         });
     };
+
     function setVideo(video){
+      console.log(video);
       return $http({
         method: "POST",
         url: "/videos",
         data: video
       });
     };
-    
+
+    function deleteVideo(id){
+      console.log(id);
+      return $http({
+        method: "DELETE",
+        url: "/videos/"+id
+      });
+    };
+
   };
   angular.module("app")
     .factory("WizardService",WizardService)

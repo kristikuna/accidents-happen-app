@@ -58,5 +58,16 @@ router.get("/videos", function(req, res) {
     });
   });
 
+  router.delete("/videos/:id", function(req, res) {
+    var id = req.params.id;
+    var sql = "DELETE FROM videos WHERE id=$1::int";
+    pool.query(sql, [id]).then(function(result){
+      res.send("deleted");
+    }).catch(function(err){
+      console.log(err);
+      res.status(500).send("ERROR");
+    });
+  });
+
 
 module.exports = router;

@@ -331,12 +331,6 @@ p {
   font-size: 20px;
 }
 
-.accidentForm {
-  display: flex;
-  align-items: center;
-  min-height: 500px;
-}
-
 #witnessMain .witnessButton {
   background-color: rgba(179, 74, 0, 1);
   width: 200px;
