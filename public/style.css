@@ -61,10 +61,11 @@ form {
   font-size: 15px;
   border: none;
   margin: 5px 12px 0px 0px;
+  border-radius: 5px;
 }
 
 .nextButton{
-  background-color: rgba(41, 65, 104, .5)
+  background-color: rgba(41, 65, 104, .5);
 }
 
 .nextButton:hover{
@@ -521,7 +522,7 @@ carAccident1{
 
 .videoForm {
   text-align: center;
-  background-color: rgba(232, 229, 225, .5);
+  background-color: rgba(232, 229, 225, .8);
   padding: 10px;
   width: 90%;
   height: auto;
@@ -645,6 +646,32 @@ iFrame{
     margin: 25px auto;
     border-radius: 10px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+    /* transition: all .2s ease-in-out; */
+  }
+  /* .videoForm:active {
+  transform: scale(1.1);
+  position:relative;
+  top:-25px;
+  left:-25px;
+  width:100%;
+  height:auto;
+  display:block;
+  z-index:999;
+  } */
+  .videoLarge {
+    width: 90%;
+    border: 2px solid orange;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+    /* height: auto;
+    position: relative; */
+  }
+
+  .nextButton {
+    transition: all .2s ease-in-out;
+  }
+  .nextButton:hover{
+    transform: scale(1.07);
   }
 }
 

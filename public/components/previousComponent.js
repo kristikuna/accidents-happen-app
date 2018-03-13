@@ -85,6 +85,7 @@
               $ctrl.selectedRow = null;
               console.log("doubleclick");
             }
+            
             $ctrl.delete = function(id){
               console.log("delete from component");
               WizardService.deleteItem(id).then(refreshList);
