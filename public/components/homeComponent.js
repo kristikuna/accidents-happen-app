@@ -8,6 +8,7 @@
         <h1 ng-style="$ctrl.font" class="formTitle">Accidents Happen</h1>
         <i class="material-icons" id="slideButton" ng-click="$ctrl.slide(); $ctrl.rotate()" ng-show="$ctrl.show">arrow_upward</i>
         <i class="material-icons" id="slideButton" ng-click="$ctrl.slideDown(); $ctrl.rotate()" ng-show="$ctrl.hide">arrow_downward</i>
+        <i ng-click="$ctrl.showAlert();" id="helpButton" class="material-icons">call</i>
       </div>
     </header>
     <div class="homePageButtons" ng-style="$ctrl.display">
@@ -49,7 +50,9 @@
         $ctrl.show = true;
         $ctrl.hide = false;
       }
-
+      $ctrl.showAlert = function(){
+        alert("Authorities have be notified, keep calm.");
+      }
     }
   }
   angular.module("app")
