@@ -236,11 +236,21 @@ header {
 }
 
 .formTitle{
-  padding: 20px 17px 10px 25px;
+  padding: 5px 17px 10px 25px;
   font-family: "Pacifico";
   font-weight: normal;
   color: #294168;
   font-size: 40px;
+}
+
+.subtitle{
+  font-family: "Raleway";
+  font-weight: normal;
+  color: #294168;
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 .homePageButtons{
@@ -430,13 +440,7 @@ p {
 
 .grow {
   max-height: 2000px;
-
 }
-
-/* .history:hover{
-  max-height: 2000px;
-  transition: 2s;
-} */
 
 table {
   margin-top: 10px;
@@ -519,12 +523,12 @@ carAccident1{
 }
 
 .videoTitle {
-  color: white;
+  color: #eae8e5;
   padding: 20px;
 }
 
 .videoSubTitle {
-  color: white;
+  color: #eae8e5;
 }
 
 iFrame{
@@ -546,7 +550,7 @@ iFrame{
   flex-direction: column;
   background-color: rgba(57, 65, 75, .5);
   padding: 20px;
-  width: 30%;
+  width: 85%;
   margin: 25px auto;
   border-radius: 10px;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
@@ -579,15 +583,20 @@ iFrame{
   #nextOnAccident {
     right: 180px;
   }
+
   .imgButton {
     opacity: .90;
   }
-  .imgButton:hover {
+
+  .imgB
+  utton:hover {
     opacity: 1.0;
   }
+
   .headerTitle h1 {
     font-size: 5rem;
   }
+
   iFrame{
     min-width: 75%;
     min-height: 500px;
@@ -608,8 +617,18 @@ iFrame{
  .homePageButtons a {
    height: 55vh;
  }
-  /* .hide {
-    display: none;
-  } */
+
+  .adminLoginPage{
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .formButtons{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 48vh;
+    margin: 30px;
+  }
 
 }
