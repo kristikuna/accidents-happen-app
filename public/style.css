@@ -5,11 +5,11 @@
   color: black;
 }
 
-.x:hover{
+.x:hover {
   color: rgba(255, 87, 87, 0.6);
 }
 
-.homeButton{
+.homeButton {
   color: #294168;
   top: 15px;
   right: 15px;
@@ -26,11 +26,12 @@ body {
   background-image: url("photo/fabric.png");
 }
 
-h3{
+h3 {
   color: #294168;
   font-size: 25px;
   margin: 10px 0px;
 }
+
 .tab {
   font-size: 10px;
   padding: 20px;
@@ -64,22 +65,22 @@ form {
   border-radius: 5px;
 }
 
-.nextButton{
+.nextButton {
   background-color: rgba(41, 65, 104, .5);
 }
 
-.nextButton:hover{
+.nextButton:hover {
   background-color: rgb(56, 57, 58);
 }
 
-.backButton{
+.backButton {
   background-color: rgba(232, 233, 238, .8);
 }
-
 
 /* .tab button:hover {
   background-color: rgb(32, 32, 33);
 } */
+
 /*
 .tab ul {
 list-style-type: none;
@@ -90,12 +91,12 @@ list-style-type: none;
   /* padding-top: 5px; }
   */
 
-  /* li {
+/* li {
     margin-left: 20px;
     margin-bottom: 10px;
   } */
 
-  /* .tab, p {
+/* .tab, p {
     font-size: 20px;
     padding: 20px 10px;
   } */
@@ -117,7 +118,7 @@ input {
   font-size: 15px;
 }
 
-.formInputs{
+.formInputs {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +131,7 @@ label {
   display: block;
 }
 
-.formRow{
+.formRow {
   width: 50%;
   padding: 10px;
 }
@@ -143,7 +144,7 @@ label {
   text-transform: uppercase;
 }
 
-textarea{
+textarea {
   width: 100%;
   margin-top: 20px;
   font-size: 20px;
@@ -186,8 +187,8 @@ textarea{
 /* .homeButton{
   text-align: right;
 } */
-/* NOTE: homepage */
 
+/* NOTE: homepage */
 
 #slideButton {
   background-color: grey;
@@ -216,7 +217,7 @@ textarea{
 
 header {
   background-image: url("photo/landscape.jpg");
-  height:100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-origin: content-box;
   background-attachment: fixed;
@@ -236,7 +237,7 @@ header {
   transition: 2s;
 }
 
-.formTitle{
+.formTitle {
   padding: 5px 17px 10px 25px;
   font-family: "Pacifico";
   font-weight: normal;
@@ -244,7 +245,7 @@ header {
   font-size: 40px;
 }
 
-.subtitle{
+.subtitle {
   font-family: "Raleway";
   font-weight: normal;
   color: #294168;
@@ -254,13 +255,12 @@ header {
   margin-top: 10px;
 }
 
-.homePageButtons{
+.homePageButtons {
   display: none;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   /* flex-wrap: wrap; */
-
   flex-direction: column;
   /* width: auto; */
 }
@@ -281,43 +281,50 @@ header {
   font-size: 2rem;
   border-radius: 5px;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
-
 }
+
 #previous {
   background: url(photo/previouspage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #help {
   background: url(photo/gethelp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #article {
   background: url(photo/articles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .fender-bender {
   background: url(photo/fender-bender.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .theft {
   background: url(photo/theft.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .witness {
   background: url(photo/witness.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .har {
   background: url(photo/hit-and-run.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .imageBackgroundText {
   background-color: rgba(20, 20, 20, 0.5);
   font-size: 1.5em;
@@ -326,6 +333,7 @@ header {
 }
 
 /* accident form styles  */
+
 #accidentMain {
   background-color: #E8E9EE;
   border: 2px solid black;
@@ -338,7 +346,7 @@ p {
   font-size: 25px;
 }
 
-.enterInsurance{
+.enterInsurance {
   font-size: 20px;
 }
 
@@ -363,17 +371,16 @@ p {
 }
 
 .report {
-   background-color:#E8E9EE;
-   width: 90%;
-   margin: 15px auto;
-   border-radius: 5px;
-   padding: 5px;
-   position: relative;
-   max-width: 1100px;
-   text-align: center;
-   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+  background-color: #E8E9EE;
+  width: 90%;
+  margin: 15px auto;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+  max-width: 1100px;
+  text-align: center;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
-
 
 .report button {
   width: 13%;
@@ -388,6 +395,7 @@ p {
 }
 
 /* NOTE: history page */
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -417,7 +425,6 @@ p {
   margin-left: 20px;
   color: rgba(232, 233, 238, .8);
   color: #39414B;
-
 }
 
 .profile h1 {
@@ -447,9 +454,9 @@ table {
   margin-top: 10px;
 }
 
-table th,td {
+table th, td {
   text-align: left;
-  padding: 5px 20px;
+  padding: 5px 66px;
 }
 
 table th {
@@ -504,7 +511,7 @@ table tr {
   font-size: 15px;
 }
 
-carAccident1{
+carAccident1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -512,6 +519,7 @@ carAccident1{
 }
 
 /* NOTE: video page */
+
 .videoParent {
   display: flex;
   flex-direction: column;
@@ -539,12 +547,12 @@ carAccident1{
   color: #eae8e5;
 } */
 
-#videoContainer{
+#videoContainer {
   background-image: url("photo/wild-sea.png");
   opacity: 0.8;
 }
 
-iFrame{
+iFrame {
   min-width: 95%;
   min-height: 200px;
   max-width: 95%;
@@ -557,6 +565,7 @@ iFrame{
   top: 20px;
   left: 15px;
 }
+
 .adminLoginPage {
   display: flex;
   justify-content: center;
@@ -568,12 +577,14 @@ iFrame{
   border-radius: 10px;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
+
 .loginForm {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .loginForm button, input {
   width: 100%;
   height: 30px;
@@ -590,49 +601,40 @@ iFrame{
 .searchDiv {
   display: flex;
 }
-@media screen and (min-width: 768px) {
 
+@media screen and (min-width: 768px) {
   #nextOnAccident {
     right: 180px;
   }
-
   .imgButton {
     opacity: .90;
   }
-
-  .imgB
-  utton:hover {
+  .imgB utton:hover {
     opacity: 1.0;
   }
-
   .headerTitle h1 {
     font-size: 5rem;
   }
-
-  iFrame{
+  iFrame {
     min-width: 75%;
     min-height: 500px;
   }
-
   .formButtons a {
     font-size: 2rem;
   }
-
   .formButtons {
     justify-content: space-around;
-}
-
-  .homePageButtons{
+  }
+  .homePageButtons {
     flex-direction: row;
- }
-
- .homePageButtons a {
-   height: 55vh;
- }
-
-  .adminLoginPage{
+  }
+  .homePageButtons a {
+    height: 55vh;
+  }
+  .adminLoginPage {
     width: 30%;
   }
+
   .videoParent {
     display: flex;
     flex-direction: row;
@@ -660,7 +662,7 @@ iFrame{
   display:block;
   z-index:999;
   } */
-   .videoLarge {
+  .videoLarge {
     width: 90%;
     border: 2px solid orange;
     background-color: rgb(232, 229, 225);
@@ -669,11 +671,10 @@ iFrame{
     z-index: 20;
     margin-top 0px;
   }
-
   .nextButton {
     transition: all .2s ease-in-out;
   }
-  .nextButton:hover{
+  .nextButton:hover {
     transform: scale(1.07);
   }
   .hide {
@@ -682,17 +683,40 @@ iFrame{
 }
 
 @media only screen and (min-width: 1920px) {
-  .formButtons{
-    display:flex;
+  .formButtons {
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     height: 48vh;
     margin: 30px;
   }
 
+  .videoParent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    width: 90%;
+  }
+
   .videoForm {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /* text-align: center; */
     width: 30%;
     margin: 25px auto;
   }
 
+  .videoLarge {
+    width: 90%;
+    height: 700px;
+    /* height: auto;
+    border: 2px solid orange;
+    background-color: rgb(232, 229, 225);
+    transition: all .3s ease-in-out;
+    position: fixed;
+    z-index: 20;
+    margin-top 0px; */
+  }
 }
