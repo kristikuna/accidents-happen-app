@@ -7,7 +7,8 @@
       deleteItem: deleteItem,
       getVideo: getVideo,
       setVideo: setVideo,
-      deleteVideo: deleteVideo
+      deleteVideo: deleteVideo,
+      updateVideo: updateVideo
     };
 
     function getList(){
@@ -42,7 +43,6 @@
         method: "GET",
         url: "/videos"
         }).then(function(response) {
-        console.log(response.data);
         return response.data;
         });
     };
@@ -63,6 +63,17 @@
         url: "/videos/"+id
       });
     };
+
+    function updateVideo(video, id){
+    console.log(id);
+    console.log(video);
+
+    return $http({
+             method: "PUT",
+             url: "/videos/" + id,
+             data: video
+         });
+  };
 
   };
   angular.module("app")

@@ -5,6 +5,10 @@
   color: black;
 }
 
+button .material-icons .homeButton{
+  font-size: 50px;
+}
+
 .x:hover {
   color: rgba(255, 87, 87, 0.6);
 }
