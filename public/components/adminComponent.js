@@ -18,36 +18,24 @@
                 <button type="submit">ADD VIDEO</button>
             </form>
         </div>
-        <table ng-repeat="videoInfo in $ctrl.videoObj">
-            <tr>
-              <th>Title:</th>
-              <td>{{ videoInfo.title | uppercase}}</td>
-            </tr>
-            <tr ng-if="incident.events">
-              <th>Subtitle:</th>
-              <td>{{ videoInfo.subtitle | uppercase}}</td>
-            </tr>
-            <tr ng-if="incident.property">
-              <th>Source:</th>
-              <td>{{ videoInfo.src ||"n/a" | uppercase}}</td>
-            </tr>
-          </table>
-        <div>
-        <ul ng-repeat="videoInfo in $ctrl.videoObj">
-          <li>{{videoInfo.title}}
-          <span ng-click="showme=true">
-            <i class="material-icons">mode_edit</i>
-          </span>
-            <span ng-click="$ctrl.removeMe(videoInfo.id)">
-              <i class="material-icons">close</i>
+        
+        <div class="adminLoginPage">
+          <div>
+            <ul ng-repeat="videoInfo in $ctrl.videoObj">
+            <li>{{videoInfo.title}}
+            <span ng-click="showme=true">
+              <i class="material-icons">mode_edit</i>
             </span>
-            <div>
-              <input type="text" ng-show="showme" ng-model="$ctrl.video.title" placeholder="Update video title">
-              <input type="text" ng-show="showme" ng-model="$ctrl.video.subtitle" placeholder="Update video subtitle">
-              <button ng-click="$ctrl.editTitle($ctrl.video,videoInfo.id)" ng-show="showme"><i class="material-icons">add</i></button>
-            </div>
-          </li>
-        </ul>
+              <span ng-click="$ctrl.removeMe(videoInfo.id)">
+                <i class="material-icons">close</i>
+              </span>
+              <div>
+                <input type="text" ng-show="showme" ng-model="$ctrl.video.title" placeholder="Update video title">
+                <input type="text" ng-show="showme" ng-model="$ctrl.video.subtitle" placeholder="Update video subtitle">
+                <button ng-click="$ctrl.editTitle($ctrl.video,videoInfo.id)" ng-show="showme"><i class="material-icons">add</i></button>
+              </div>
+            </li>
+          </ul>
         </div>
       `,
       controller: function(WizardService,$location) {

@@ -631,6 +631,10 @@ iFrame {
 .videoOpener {
   visibility: hidden;
 }
+#editDeleteForm {
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (min-width: 768px) {
   #nextOnAccident {
