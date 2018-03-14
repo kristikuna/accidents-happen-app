@@ -244,6 +244,9 @@ header {
   transition: all 2s ease-in-out;
   display: flex;
 }
+.changeBackground{
+  background: url('photo/fabric.png') no-repeat;
+}
 
 .headerTitle h1 {
   flex: 1;
