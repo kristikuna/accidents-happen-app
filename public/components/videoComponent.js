@@ -8,8 +8,8 @@
       <div class="videoParent">
       <i class="material-icons" id="adminButton" ng-click="$ctrl.adminPage()">build</i>
       <a class="xbut homeButton" href="#!/home"><i class="material-icons">home</i></a>
-      <div ng-repeat="video in $ctrl.videos | filter: filterText track by $index" class="videoForm" ng-class="{'videoLarge':video.id == $ctrl.selectedVideo}" ng-click="$ctrl.setClickedRow(video.id)" ng-dblclick="$ctrl.slideSmall()">
-      <a class="xbut hide" href=""><i class="material-icons x">clear</i></a>
+      <div ng-repeat="video in $ctrl.videos | filter: filterText track by $index" class="videoForm">
+      <i video-open class="material-icons x videoOpener">zoom_out_map</i>
       <h1 class="videoTitle">{{video.title}}</h1>
         <h3 class="videoSubTitle">{{video.subtitle}}</h3>
 
