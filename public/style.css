@@ -304,18 +304,21 @@ header {
   background: url(photo/previouspage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transform-style: preserve-3d;
 }
 
 #help {
   background: url(photo/gethelp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transform-style: preserve-3d;
 }
 
 #article {
   background: url(photo/articles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transform-style: preserve-3d;
 }
 
 .fender-bender {
@@ -347,6 +350,7 @@ header {
   font-size: 1.5em;
   padding: 10px;
   border-radius: 5px;
+  transform: translateZ(20px);
 }
 
 /* accident form styles  */
@@ -628,8 +632,9 @@ iFrame {
   }
   .imgButton {
     opacity: .90;
+    transform-style: preserve-3d;
   }
-  .imgB utton:hover {
+  .imgButton:hover {
     opacity: 1.0;
   }
   .headerTitle h1 {
