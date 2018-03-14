@@ -18,6 +18,20 @@
                 <button type="submit">ADD VIDEO</button>
             </form>
         </div>
+        <table ng-repeat="videoInfo in $ctrl.videoObj">
+            <tr>
+              <th>Title:</th>
+              <td>{{ videoInfo.title | uppercase}}</td>
+            </tr>
+            <tr ng-if="incident.events">
+              <th>Subtitle:</th>
+              <td>{{ videoInfo.subtitle | uppercase}}</td>
+            </tr>
+            <tr ng-if="incident.property">
+              <th>Source:</th>
+              <td>{{ videoInfo.src ||"n/a" | uppercase}}</td>
+            </tr>
+          </table>
         <div>
         <ul ng-repeat="videoInfo in $ctrl.videoObj">
           <li>{{videoInfo.title}}
