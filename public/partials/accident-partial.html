@@ -1,15 +1,15 @@
-<div ng-switch="$ctrl.accident" class="accidentForm">
+<div ng-switch="$ctrl.accident" class="accidentForm" ng-class="$ctrl.animation">
 
-  <div class="tab carAccident1 slide" ng-switch-when="1" ng-animate="animate">
+  <div class="tab carAccident1 slide" ng-switch-when="1">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
     <p>Are you safe?</p>
-    <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')">Yes I'm Safe</button>
-    <button id="notSafeButton" ng-click="$ctrl.showAlert(); $ctrl.getForm(2)">No I need help</button>
+    <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident');$ctrl.goForward()">Yes I'm Safe</button>
+    <button id="notSafeButton" ng-click="$ctrl.showAlert();">No I need help</button>
   </div>
 
-  <div class="tab car2 slide" ng-switch-when="2">
+  <div class="tab car2 slide" ng-switch-when="2" >
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
@@ -42,8 +42,8 @@
         </div>
       </div>
       <div class="navButtons">
-        <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
-        <button class="nextButton" ng-click="">Next</button>
+        <button class="backButton" ng-click="$ctrl.goBack()" go-back>Back</button>
+        <button class="nextButton" ng-click="$ctrl.goForward()">Next</button>
       </div>
     </form>
     <div ng-show="$ctrl.message">
@@ -60,7 +60,7 @@
       <textarea name="description" rows="8" cols="80" ng-model="$ctrl.car.insuranceInfo"></textarea>
       <div class="navButtons">
         <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
-        <button class="nextButton" ng-click="$ctrl.setInsuranceInfo($ctrl.car)">Next</button>
+        <button class="nextButton" ng-click="$ctrl.setInsuranceInfo($ctrl.car);$ctrl.goForward()">Next</button>
       </div>
     </form>
   </div>
@@ -79,7 +79,7 @@
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
       <div class="navButtons">
         <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
-        <button class="nextButton" ng-click="$ctrl.setEvent($ctrl.car)">Next</button>
+        <button class="nextButton" ng-click="$ctrl.setEvent($ctrl.car);$ctrl.goForward()">Next</button>
       </div>
     </form>
   </div>
@@ -92,7 +92,7 @@
     <h3>Take photos</h3>
     <div class="navButtons">
       <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
-      <button class="nextButton" ng-click="$ctrl.getForm(6)">Next</button>
+      <button class="nextButton" ng-click="$ctrl.getForm(6);$ctrl.goForward()">Next</button>
     </div>
   </div>
 

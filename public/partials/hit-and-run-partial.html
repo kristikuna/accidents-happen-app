@@ -1,9 +1,9 @@
-<div ng-switch="$ctrl.accident" class="accidentForm">
+<div ng-switch="$ctrl.accident" class="accidentForm" ng-class="$ctrl.animation">
 
   <div class="tab carAccident1 slide" ng-switch-when="1">
     <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
     <p>Are you safe?</p>
-    <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('hit and run')">Yes I'm Safe</button>
+    <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('hit and run');$ctrl.goForward()">Yes I'm Safe</button>
     <button id="notSafeButton" ng-click="$ctrl.showAlert(); $ctrl.getForm(2)">No I need help</button>
   </div>
 
@@ -31,7 +31,7 @@
       </div>
       <div class="navButtons">
         <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
-        <button class="nextButton" type="submit">Next</button>
+        <button class="nextButton" ng-click="$ctrl.goForward()" type="submit">Next</button>
       </div>
     </form>
     <div ng-show="$ctrl.message">
@@ -51,7 +51,7 @@
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
       <div class="navButtons">
         <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
-        <button class="nextButton" type="submit">Next</button>
+        <button class="nextButton" type="submit" ng-click="$ctrl.goForward()">Next</button>
       </div>
     </form>
   </div>
@@ -66,7 +66,7 @@
       <input type="text" name="" placeholder="direction" ng-model="$ctrl.car.direction">
       <div class="navButtons">
         <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
-        <button class="nextButton" type="submit">Next</button>
+        <button class="nextButton" type="submit" ng-click="$ctrl.goForward()">Next</button>
       </div>
     </form>
   </div>
@@ -77,7 +77,7 @@
     <h3>Take pictures of your car, especially if another car's paint is visible on it.</h3>
     <div class="navButtons">
       <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
-      <button class="nextButton" ng-click="$ctrl.getForm(6)">Next</button>
+      <button class="nextButton" ng-click="$ctrl.getForm(6);$ctrl.goForward()">Next</button>
     </div>
   </div>
 
