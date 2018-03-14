@@ -31,7 +31,6 @@
         $ctrl.videos = response;
         $ctrl.source = $ctrl.videos.src;
         console.log($ctrl.videos[0].src);
-
       });
       $ctrl.adminPage = function() {
         $location.path('/login');

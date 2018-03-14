@@ -35,9 +35,17 @@
         <div>
         <ul ng-repeat="videoInfo in $ctrl.videoObj">
           <li>{{videoInfo.title}}
+          <span ng-click="showme=true">
+            <i class="material-icons">mode_edit</i>
+          </span>
             <span ng-click="$ctrl.removeMe(videoInfo.id)">
               <i class="material-icons">close</i>
             </span>
+            <div>
+              <input type="text" ng-show="showme" ng-model="$ctrl.video.title" placeholder="Update video title">
+              <input type="text" ng-show="showme" ng-model="$ctrl.video.subtitle" placeholder="Update video subtitle">
+              <button ng-click="$ctrl.editTitle($ctrl.video,videoInfo.id)" ng-show="showme"><i class="material-icons">add</i></button>
+            </div>
           </li>
         </ul>
         </div>
@@ -50,10 +58,8 @@
         };
         WizardService.getVideo().then(function (response){
           $ctrl.videoObj = response;
-          console.log($ctrl.videoObj);
         });
         $ctrl.removeMe = function(id){
-          console.log("delete from component");
           WizardService.deleteVideo(id).then(refreshList);
         }
         function refreshList(){
@@ -61,6 +67,9 @@
             $ctrl.videoObj = response;
             console.log(response);
           });
+        }
+        $ctrl.editTitle = function(video,id){
+          WizardService.updateVideo(video,id).then(refreshList);
         }
       }
 

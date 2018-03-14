@@ -58,6 +58,19 @@ router.get("/videos", function(req, res) {
     });
   });
 
+  router.put("/videos/:id", function (req, res) {
+      var id = req.params.id;
+      var video = req.body;
+      var values = [id, video.title, video.subtitle];
+      var sql = "UPDATE videos SET title=$2::text, subtitle=$3::text WHERE id=$1::int";
+      pool.query(sql, values).then(function (result) {
+          res.send(values);
+      }).catch(function (err) {
+          console.log(err);
+          res.status(500).send("ERROR");
+      });
+  });
+
   router.delete("/videos/:id", function(req, res) {
     var id = req.params.id;
     var sql = "DELETE FROM videos WHERE id=$1::int";

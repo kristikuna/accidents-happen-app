@@ -22,7 +22,7 @@
         </div>
         <div class="formRow">
           <label>Number</label>
-          <input type="text" maxlength="10" minlength="10" ng-model="$ctrl.car.phone">
+          <input type="text" ng-model="$ctrl.car.phone">
         </div>
         <div class="formRow">
           <label>Make</label>
@@ -43,9 +43,12 @@
       </div>
       <div class="navButtons">
         <button class="backButton" ng-click="$ctrl.goBack()">Back</button>
-        <button class="nextButton" ng-click="$ctrl.setPerpCar($ctrl.car)">Next</button>
+        <button class="nextButton" ng-click="">Next</button>
       </div>
     </form>
+    <div ng-show="$ctrl.message">
+      <h3>Please Enter More Information</h3>
+    </div>
   </div>
 
   <div class="tab car3 slide" ng-switch-when="3">
