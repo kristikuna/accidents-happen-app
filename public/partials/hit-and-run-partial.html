@@ -5,18 +5,12 @@
     <p>Are you safe?</p>
     <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('hit and run')">Yes I'm Safe</button>
     <button id="notSafeButton" ng-click="$ctrl.showAlert();">No I need help</button>
-
-
-    <!-- <button ng-click="$ctrl.getForm(2); $ctrl.getType('hit and run')" type="button"><i class="material-icons">arrow_forward</i></button> -->
   </div>
 
   <div class="tab car2 slide" ng-switch-when="2">
     <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
     <h3>Enter as much information as you can remember about the other vehicle:</h3>
-    <!-- <ul>
-        <li>This increases the chances that police will catch the driver who hit you.</li>
-        <li>Helps your car insurance company make deisions about your claim.</li>
-      </ul> -->
+
     <form ng-submit="$ctrl.setPerpCar($ctrl.car)">
       <div class="formInputs">
         <div class="formRow">
