@@ -1,4 +1,4 @@
 (function() {
 
-angular.module("app",["ngRoute","ngYoutubeEmbed"]);
+angular.module("app",["ngRoute","ngYoutubeEmbed","ngAnimate"]);
 }());

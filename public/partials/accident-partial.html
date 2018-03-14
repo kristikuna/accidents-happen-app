@@ -1,6 +1,6 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
 
-  <div class="tab carAccident1" ng-switch-when="1" ng-animate="animate">
+  <div class="tab carAccident1 slide" ng-switch-when="1" ng-animate="animate">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
@@ -9,7 +9,7 @@
     <button id="notSafeButton" ng-click="$ctrl.showAlert();">No I need help</button>
   </div>
 
-  <div class="tab car2" ng-switch-when="2">
+  <div class="tab car2 slide" ng-switch-when="2">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
@@ -48,7 +48,7 @@
     </form>
   </div>
 
-  <div class="tab car3" ng-switch-when="3">
+  <div class="tab car3 slide" ng-switch-when="3">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
@@ -62,7 +62,7 @@
     </form>
   </div>
 
-  <div class="tab car4" ng-switch-when="4">
+  <div class="tab car4 slide" ng-switch-when="4">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
@@ -81,7 +81,7 @@
     </form>
   </div>
 
-  <div class="tab car5" ng-switch-when="5">
+  <div class="tab car5 slide" ng-switch-when="5">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
@@ -93,7 +93,7 @@
     </div>
   </div>
 
-  <div id="accidentSummary" class="report" ng-switch-when="6">
+  <div id="accidentSummary" class="report slide" ng-switch-when="6">
     <a class="xbut" href="#!/form">
       <i class="material-icons x">clear</i>
     </a>
@@ -135,8 +135,8 @@
         </tr>
       </table>
       <div class="navButtons">
-        <button class="hide" ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
-        <button class="hide" ng-click="$ctrl.sendToService()"><i class="material-icons">done_all</i></button>
+        <button class="" ng-click="$ctrl.goBack()"><i class="material-icons">arrow_back</i></button>
+        <button class="" ng-click="$ctrl.sendToService()"><i class="material-icons">done_all</i></button>
       </div>
     </div>
   </div>

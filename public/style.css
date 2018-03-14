@@ -760,3 +760,24 @@ iFrame {
     margin-top 0px; */
   }
 }
+
+/* NOTE: form animations */
+
+div.slide.ng-enter{
+  transition: all 1s ease-in-out;
+  left: 100%;
+}
+
+div.slide.ng-enter-active{
+  left: 0;
+}
+
+div.slide.ng-leave{
+  transition: all 1s ease-in-out;
+  position: absolute;
+  right: 25%;
+}
+
+div.slide.ng-leave-active{
+  right: 100%;
+}
