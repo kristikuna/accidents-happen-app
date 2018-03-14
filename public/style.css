@@ -188,6 +188,16 @@ textarea {
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
 
+/* .formButtons a:hover {
+  opacity: 1.0;
+  cursor: pointer;
+} */
+
+.accidentForm{
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+}
 /* .homeButton{
   text-align: right;
 } */
@@ -605,6 +615,9 @@ iFrame {
 .searchDiv {
   display: flex;
 }
+.videoOpener {
+  visibility: hidden;
+}
 
 @media screen and (min-width: 768px) {
   #nextOnAccident {
@@ -654,6 +667,7 @@ iFrame {
     text-align: center;
   }
   .videoForm {
+    position: relative;
     padding: 20px;
     width: 46%;
     margin: 25px auto;
@@ -682,15 +696,27 @@ iFrame {
     z-index: 20;
     margin-top: 0px;
   }
+  .videoOpener {
+    visibility: visible;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
   .nextButton {
     transition: all .2s ease-in-out;
   }
   .nextButton:hover {
     transform: scale(1.07);
   }
+  .hide {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
+  .videoOpener {
+    visibility: visible;
+  }
   .formButtons {
     display: flex;
     flex-direction: row;
