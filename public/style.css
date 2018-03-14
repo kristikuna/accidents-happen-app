@@ -569,6 +569,17 @@ iFrame {
   margin: 25px auto;
   border-radius: 10px;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+  border: #7f7f7f 2px solid;
+}
+
+.adminLoginPage button:hover {
+  background-color: #0061ff;
+  opacity: .75;
+}
+
+.adminLoginPage button {
+  border: none;
+  border-radius: 5px;
 }
 
 .loginForm {
@@ -600,6 +611,12 @@ iFrame {
 #editDeleteForm {
   display: flex;
   justify-content: center;
+}
+.adminLoginPage .edit:hover {
+  color: #0061ff;
+}
+.adminLoginPage .close:hover {
+  color: #ff0000;
 }
 
 @media screen and (min-width: 768px) {

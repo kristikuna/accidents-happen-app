@@ -20,19 +20,20 @@
         </div>
         
         <div class="adminLoginPage">
-          <div>
+          <div class="videoDiv">
             <ul ng-repeat="videoInfo in $ctrl.videoObj">
-            <li>{{videoInfo.title}}
-            <span ng-click="showme=true">
-              <i class="material-icons">mode_edit</i>
-            </span>
+            <li class="listItemInVideos" >{{videoInfo.title}}
+              <span ng-click="showme=true">
+                <i class="material-icons edit">mode_edit</i>
+              </span>
               <span ng-click="$ctrl.removeMe(videoInfo.id)">
-                <i class="material-icons">close</i>
+                <i class="material-icons close">delete_forever</i>
               </span>
               <div>
                 <input type="text" ng-show="showme" ng-model="$ctrl.video.title" placeholder="Update video title">
                 <input type="text" ng-show="showme" ng-model="$ctrl.video.subtitle" placeholder="Update video subtitle">
                 <button ng-click="$ctrl.editTitle($ctrl.video,videoInfo.id)" ng-show="showme"><i class="material-icons">add</i></button>
+                <i ng-show="showme" ng-click="showme=false" class="material-icons">close</i>
               </div>
             </li>
           </ul>
