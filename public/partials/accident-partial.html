@@ -6,7 +6,7 @@
     </a>
     <p>Are you safe?</p>
     <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident');$ctrl.goForward()">Yes I'm Safe</button>
-    <button id="notSafeButton" ng-click="$ctrl.showAlert();">No I need help</button>
+    <button id="notSafeButton" ng-click="$ctrl.showAlert();$ctrl.needHelp()">No I need help</button>
   </div>
 
   <div class="tab car2 slide" ng-switch-when="2" >

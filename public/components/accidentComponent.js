@@ -5,6 +5,7 @@
       var $ctrl = this;
       $ctrl.accidentDb = {};
       var type;
+      $ctrl.animation = "go-forward";
 
       $ctrl.accident = 1;
       $ctrl.setPerpCar = function(car) {
@@ -15,6 +16,11 @@
           $ctrl.message = false;
           $ctrl.getForm(3);
         }
+      }
+
+      $ctrl.needHelp = function(){
+        $ctrl.animation = "go-forward";
+        $ctrl.accident = 2;
       }
 
       $ctrl.getForm = function(item) {

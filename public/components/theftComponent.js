@@ -12,6 +12,11 @@
         $ctrl.accident = item;
       }
 
+      $ctrl.needHelp = function(){
+        $ctrl.animation = "go-forward";
+        $ctrl.accident = 2;
+      }
+
       $ctrl.goBack = function() {
         $ctrl.animation = "go-back";
 
