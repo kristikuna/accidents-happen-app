@@ -9,7 +9,12 @@
       $ctrl.accident = 1;
       $ctrl.setPerpCar = function(car) {
         $ctrl.accidentDb = car;
-        $ctrl.getForm(3);
+        if($ctrl.accidentDb === undefined){
+          $ctrl.message = true;
+        }else {
+          $ctrl.message = false;
+          $ctrl.getForm(3);
+        }
       }
 
       $ctrl.getForm = function(item) {
