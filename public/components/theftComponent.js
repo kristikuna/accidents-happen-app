@@ -28,8 +28,14 @@
 
       $ctrl.setEvents = function(items) {
         $ctrl.theftDb = items;
-        $ctrl.theftDb.type = "theft";
-        $ctrl.getForm(5);
+        if($ctrl.theftDb === undefined){
+          $ctrl.message = true;
+        }else {
+          $ctrl.theftDb.type = "theft";
+          $ctrl.message = false;
+          $ctrl.getForm(5);
+        }
+
       }
 
       $ctrl.sendToService = function(){
