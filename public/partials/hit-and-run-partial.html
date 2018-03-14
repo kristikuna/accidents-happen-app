@@ -9,7 +9,7 @@
 
   <div class="tab car2 slide" ng-switch-when="2">
     <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-    <h3>Enter as much information as you can remember about the other vehicle:</h3>
+    <h3>Other Vechile Information:</h3>
 
     <form ng-submit="$ctrl.setPerpCar($ctrl.car)">
       <div class="formInputs">
@@ -43,11 +43,6 @@
     <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
     <h3>Write your Memories</h3>
     <form ng-submit="$ctrl.setEvent($ctrl.car)">
-      <!-- <ul>Remember to include:
-        <li>Injuries to yourself or others</li>
-        <li>Damage to your property</li>
-        <li>Who, what, where, and when</li>
-      </ul> -->
       <textarea name="name" rows="8" cols="80" ng-model="$ctrl.car.event"></textarea>
       <div class="navButtons">
         <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
@@ -73,8 +68,8 @@
 
   <div class="tab car5 slide" ng-switch-when="5">
     <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
-    <h3>Remember to check the area for witnesses and ask for their names and contact information.</h3>
-    <h3>Take pictures of your car, especially if another car's paint is visible on it.</h3>
+    <h4>Check the area for witnesses and get their contact information.</h4>
+    <h4>Take photos.</h4>
     <div class="navButtons">
       <button class="backButton" ng-click="$ctrl.goBack()" type="button">Back</button>
       <button class="nextButton" ng-click="$ctrl.getForm(6)">Next</button>
