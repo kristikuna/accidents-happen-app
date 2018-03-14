@@ -69,7 +69,6 @@ form {
   height: 40px;
   text-transform: uppercase;
   font-family: Raleway;
-  padding-top: 4px;
   font-size: 15px;
   border: none;
   margin: 5px 12px 0px 0px;
@@ -186,13 +185,7 @@ textarea {
   text-decoration: none;
   font-size: 1rem;
   border-radius: 5px;
-  opacity: .75;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
-}
-
-.formButtons a:hover {
-  opacity: 1.0;
-  cursor: pointer;
 }
 
 /* .homeButton{
@@ -635,7 +628,14 @@ iFrame {
   }
   .formButtons {
     justify-content: space-around;
+    opacity: .75;
   }
+
+  .formButtons a:hover {
+    opacity: 1.0;
+    cursor: pointer;
+  }
+
   .homePageButtons {
     flex-direction: row;
   }
