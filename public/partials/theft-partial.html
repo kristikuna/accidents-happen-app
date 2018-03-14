@@ -3,7 +3,7 @@
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Are you safe?</p>
       <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')">Yes I'm Safe</button>
-      <button id="notSafeButton" ng-click="$ctrl.showAlert();">No I need help</button>
+      <button id="notSafeButton" ng-click="$ctrl.showAlert(); $ctrl.getForm(2)">No I need help</button>
     </div>
 
     <div class="tab slide" ng-switch-when="2">

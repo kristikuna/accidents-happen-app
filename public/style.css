@@ -5,16 +5,16 @@
   color: black;
 }
 
-button .material-icons .homeButton{
-  font-size: 50px;
-}
-
 .x:hover {
   color: rgba(255, 87, 87, 0.6);
 }
 
-.homeButton {
+.homeButton .material-icons{
   color: #294168;
+  font-size: 40px;
+}
+
+.homeButton{
   top: 15px;
   right: 15px;
 }
@@ -24,9 +24,10 @@ button .material-icons .homeButton{
   position: absolute;
   right: 10px;
   top: 10px;
+  font-size: 40px;
 }
 
-#helpButton:hover{
+.material-icons:hover{
   cursor: pointer;
 }
 
@@ -88,32 +89,8 @@ form {
 }
 
 .backButton {
-  background-color: rgba(232, 233, 238, .8);
+  background-color: rgba(232, 233, 238, .5);
 }
-
-/* .tab button:hover {
-  background-color: rgb(32, 32, 33);
-} */
-
-/*
-.tab ul {
-list-style-type: none;
-}
-
-.tab ul li {
-  font-size: 15px;
-  /* padding-top: 5px; }
-  */
-
-/* li {
-    margin-left: 20px;
-    margin-bottom: 10px;
-  } */
-
-/* .tab, p {
-    font-size: 20px;
-    padding: 20px 10px;
-  } */
 
 #theftYesNoBtn {
   display: flex;
@@ -169,7 +146,7 @@ textarea {
 .formButtons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
   flex-wrap: wrap;
   height: 80vh;
 }
@@ -192,20 +169,12 @@ textarea {
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
 }
 
-/* .formButtons a:hover {
-  opacity: 1.0;
-  cursor: pointer;
-} */
-
 .accidentForm{
   display: flex;
   /* align-items: center; */
   /* height: 100vh; */
   margin-top: 80px;
 }
-/* .homeButton{
-  text-align: right;
-} */
 
 /* NOTE: homepage */
 
@@ -230,7 +199,7 @@ textarea {
   align-items: flex-end;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 0px 20px 10px 0px;
   width: 100%;
 }
 
@@ -255,12 +224,12 @@ header {
 .headerTitle h1 {
   flex: 1;
   color: #eae8e5;
-  font-size: 3rem;
+  font-size: 3.5rem;
   transition: 2s;
 }
 
 .formTitle {
-  padding: 5px 17px 10px 25px;
+  padding: 30px 0px 0px 45px;
   font-family: "Pacifico";
   font-weight: normal;
   color: #294168;
@@ -281,10 +250,7 @@ header {
   display: none;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  /* flex-wrap: wrap; */
   flex-direction: column;
-  /* width: auto; */
 }
 
 .homePageButtons a {
@@ -659,11 +625,9 @@ iFrame {
   }
   .formButtons {
     justify-content: space-around;
-    opacity: .75;
   }
 
   .formButtons a:hover {
-    opacity: 1.0;
     cursor: pointer;
   }
 
