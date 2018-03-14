@@ -1,12 +1,12 @@
 <div ng-switch="$ctrl.accident" class="accidentForm">
-    <div class="tab carAccident1" ng-switch-when="1">
+    <div class="tab carAccident1 slide" ng-switch-when="1">
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Are you safe?</p>
       <button id="safeButton" ng-click="$ctrl.getForm(2); $ctrl.getType('car accident')">Yes I'm Safe</button>
       <button id="notSafeButton" ng-click="$ctrl.showAlert();">No I need help</button>
     </div>
 
-    <div class="tab" ng-switch-when="2">
+    <div class="tab slide" ng-switch-when="2">
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <form ng-submit="$ctrl.setDescription($ctrl.items)">
         <p>Did you see the person?</p>
@@ -24,7 +24,7 @@
       </form>
     </div>
 
-    <div class="tab" ng-switch-when="3">
+    <div class="tab slide" ng-switch-when="3">
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Your insurance claims representative and authorities may want a list of stolen items:</p>
       <form ng-submit="$ctrl.stolenItems($ctrl.items)">
@@ -36,7 +36,7 @@
       </form>
     </div>
 
-    <div class="tab" ng-switch-when="4">
+    <div class="tab slide" ng-switch-when="4">
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <p>Write your account of the incident that took place</p>
       <form ng-submit="$ctrl.setEvents($ctrl.items)">
@@ -48,7 +48,7 @@
       </form>
     </div>
 
-    <div class="report" ng-switch-when="5">
+    <div class="report slide" ng-switch-when="5">
       <a class="xbut" href="#!/form"><i class="material-icons x">clear</i></a>
       <h2>Report</h2>
       <div>

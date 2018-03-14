@@ -195,8 +195,9 @@ textarea {
 
 .accidentForm{
   display: flex;
-  align-items: center;
-  min-height: 500px;
+  /* align-items: center; */
+  /* height: 100vh; */
+  margin-top: 80px;
 }
 /* .homeButton{
   text-align: right;
