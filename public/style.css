@@ -44,10 +44,16 @@ body {
 
 h3 {
   color: #294168;
-  font-size: 25px;
+  font-size: 20px;
   margin: 10px 0px;
+  font-family: Limelight;
 }
 
+h4{
+  color: black;
+  font-size: 25px;
+  padding: 10px 0px;
+}
 .tab {
   font-size: 10px;
   padding: 20px;
@@ -571,6 +577,17 @@ iFrame {
   margin: 25px auto;
   border-radius: 10px;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+  border: #7f7f7f 2px solid;
+}
+
+.adminLoginPage button:hover {
+  background-color: #0061ff;
+  opacity: .75;
+}
+
+.adminLoginPage button {
+  border: none;
+  border-radius: 5px;
 }
 
 .loginForm {
@@ -602,6 +619,12 @@ iFrame {
 #editDeleteForm {
   display: flex;
   justify-content: center;
+}
+.adminLoginPage .edit:hover {
+  color: #0061ff;
+}
+.adminLoginPage .close:hover {
+  color: #ff0000;
 }
 
 @media screen and (min-width: 768px) {
@@ -657,20 +680,8 @@ iFrame {
     margin: 25px auto;
     border-radius: 10px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
-    /* flex-grow: 3;
-    flex-shrink: 2; */
-    /* transition: all .2s ease-in-out; */
   }
-  /* .videoForm:active {
-  transform: scale(1.1);
-  position:relative;
-  top:-25px;
-  left:-25px;
-  width:100%;
-  height:auto;
-  display:block;
-  z-index:999;
-  } */
+
   .videoLarge {
     width: 90%;
     border: 2px solid orange;
@@ -694,6 +705,10 @@ iFrame {
   }
   .hide {
     visibility: hidden;
+  }
+
+  h3{
+    font-size: 30px;
   }
 }
 
