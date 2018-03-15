@@ -1,7 +1,7 @@
 .xbut {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  /* right: 0px;
+  top: 0px; */
   color: black;
 }
 
@@ -676,6 +676,7 @@ iFrame {
   .historyBottom span {
     visibility: visible;
   }
+
   .imgButton {
     opacity: .90;
     transform-style: preserve-3d;
@@ -684,7 +685,9 @@ iFrame {
     opacity: 1.0;
   }
   .headerTitle h1 {
-    font-size: 5rem;
+    font-size: 6rem;
+    margin: 14px 33px 33px 120px;
+    padding: 0px;
   }
   iFrame {
     min-width: 75%;
@@ -700,14 +703,14 @@ iFrame {
   .formButtons a:hover {
     cursor: pointer;
   }
-
+/*
   .homePageButtons {
     flex-direction: row;
-  }
+  } */
   .homePageButtons a {
-    height: 40vh;
-    min-width: 30%;
-    font-size: 1.5rem;
+    height: 25vh;
+    min-width: 70%;
+    font-size: 2.5rem;
   }
   .adminLoginPage {
     width: 30%;
@@ -720,6 +723,7 @@ iFrame {
     flex-wrap: wrap;
     text-align: center;
     margin-top: 20px;
+
   }
   .videoForm {
     position: relative;
@@ -767,16 +771,24 @@ iFrame {
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1020px) {
+  .headerTitle h1 {
+    font-size: 5rem;
+    margin: 25px;
+    padding: 0px;
+  }
+
+  .homePageButtons {
+    flex-direction: row;
+  }
+
+  .homePageButtons a {
+    height: 50vh;
+    min-width: 30%;
+    font-size: 1.5rem;
+  }
   .videoOpener {
     visibility: visible;
-  }
-  .formButtons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 48vh;
-    margin: 30px;
   }
 
   .videoParent {
@@ -792,8 +804,9 @@ iFrame {
     flex-direction: row;
     flex-wrap: wrap; */
     /* text-align: center; */
-    width: 30%;
-    margin: 25px auto;
+    width: 33%;
+    /* margin: 25px auto; */
+    justify-content: space-around;
   }
 
   .videoLarge {
@@ -807,7 +820,20 @@ iFrame {
     z-index: 20;
     margin-top 0px; */
   }
-
+  iFrame {
+    min-width: 75%;
+    min-height: 500px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .formButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 48vh;
+    margin: 30px;
+  }
 }
 
 /* NOTE: form animations */
