@@ -753,6 +753,23 @@ iFrame {
 }
 
 @media only screen and (min-width: 1025px) {
+  .formButtons {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    height: 80vh;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .formButtons a {
+    width: 40%;
+    min-height: 250px;
+  }
   .headerTitle h1 {
     font-size: 5rem;
     margin: 25px;
@@ -811,6 +828,7 @@ iFrame {
     justify-content: space-around;
     height: 48vh;
     margin: 30px;
+    margin: 0 auto;
   }
 }
 
