@@ -19,7 +19,7 @@
                         $(".formTitle").css("color", "#39414C");
                         $element.removeClass("slide");
                         $("header").addClass("changeBackground");
-                    } 
+                    }
                 });
             }
         };
