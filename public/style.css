@@ -574,6 +574,7 @@ iFrame {
   border: white 2px solid;
   border-radius: 10px;
 }
+
 #homeButton {
   position: absolute;
   top: 20px;
@@ -682,7 +683,7 @@ iFrame {
   }
   iFrame {
     min-width: 75%;
-    min-height: 500px;
+    min-height: 300px;
   }
   .formButtons a {
     font-size: 2rem;
@@ -713,6 +714,7 @@ iFrame {
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
+    margin-top: 20px;
   }
   .videoForm {
     position: relative;
