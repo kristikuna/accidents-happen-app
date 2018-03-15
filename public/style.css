@@ -686,7 +686,7 @@ iFrame {
   }
   .headerTitle h1 {
     font-size: 6rem;
-    margin: 14px 33px 33px 120px;
+    margin: 14px 33px 33px 48px;
     padding: 0px;
   }
   iFrame {
@@ -735,7 +735,7 @@ iFrame {
   }
 
   .videoLarge {
-    width: 90%;
+    width: 50%;
     border: 2px solid orange;
     background-color: rgb(232, 229, 225);
     transition: all .5s ease-in-out;
