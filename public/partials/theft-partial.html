@@ -56,17 +56,17 @@
       <h2>Report</h2>
       <div>
         <table>
-        <tr>
+        <tr ng-if="$ctrl.theftDb.description">
           <th>Description of person:</th>
-          <td>{{ $ctrl.theftDb.description ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.theftDb.description | uppercase}}</td>
         </tr>
-          <tr>
+          <tr ng-if="$ctrl.theftDb.property">
             <th>Stolen property:</th>
-            <td>{{ $ctrl.theftDb.property ||"n/a"  | uppercase}}</td>
+            <td>{{ $ctrl.theftDb.property | uppercase}}</td>
           </tr>
-          <tr>
+          <tr ng-if="$ctrl.theftDb.event">
             <th>Description of events:</th>
-            <td>{{ $ctrl.theftDb.event ||"n/a" | uppercase}}</td>
+            <td>{{ $ctrl.theftDb.event | uppercase}}</td>
           </tr>
         </table>
         <div class="navButtons">

@@ -98,37 +98,37 @@
     <h3>Report</h3>
     <div>
       <table>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.name">
           <th>Name:</th>
-          <td>{{ $ctrl.accidentDb.name ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.name | uppercase}}</td>
         </tr>
         <tr>
-          <th>Contact:</th>
-          <td>{{ $ctrl.accidentDb.phone ||"n/a" | uppercase}}</td>
+          <th ng-if="$ctrl.accidentDb.phone">Contact:</th>
+          <td>{{ $ctrl.accidentDb.phone | uppercase}}</td>
         </tr>
         <tr>
-          <th>Make:</th>
-          <td>{{ $ctrl.accidentDb.make ||"n/a" | uppercase}}</td>
+          <th ng-if="$ctrl.accidentDb.make">Make:</th>
+          <td>{{ $ctrl.accidentDb.make | uppercase}}</td>
         </tr>
         <tr>
-          <th>Model:</th>
-          <td>{{ $ctrl.accidentDb.model||"n/a" | uppercase}}</td>
+          <th ng-if="$ctrl.accidentDb.model">Model:</th>
+          <td>{{ $ctrl.accidentDb.model | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.color">
           <th>Color:</th>
-          <td>{{ $ctrl.accidentDb.color ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.color | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.plate">
           <th>License plate #:</th>
-          <td>{{ $ctrl.accidentDb.plate ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.plate | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.insuranceInfo">
           <th>Insurance info:</th>
-          <td>{{ $ctrl.accidentDb.insuranceInfo ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.insuranceInfo | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.event">
           <th>Description of events:</th>
-          <td>{{ $ctrl.accidentDb.event ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.event | uppercase}}</td>
         </tr>
       </table>
       <div class="navButtons">
