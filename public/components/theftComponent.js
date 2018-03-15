@@ -12,13 +12,25 @@
         $ctrl.accident = item;
       }
 
+      $ctrl.needHelp = function(){
+        $ctrl.animation = "go-forward";
+        $ctrl.accident = 2;
+      }
+
       $ctrl.goBack = function() {
+        $ctrl.animation = "go-back";
+
         $ctrl.accident = $ctrl.accident - 1;
       }
 
       $ctrl.setDescription = function(items){
         $ctrl.theftDb = items;
         $ctrl.getForm(3);
+      }
+
+      $ctrl.goForward = function(){
+        $ctrl.animation = "go-forward";
+        console.log("click")
       }
 
       $ctrl.stolenItems = function(items) {

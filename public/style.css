@@ -69,6 +69,8 @@ h4{
   margin: 15px auto;
   text-align: center;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
+  transition: all 1s ease-in-out;
+
 }
 
 form {
@@ -752,21 +754,42 @@ iFrame {
 
 /* NOTE: form animations */
 
-div.slide.ng-enter{
+.go-forward .ng-enter{
   transition: all 1s ease-in-out;
   left: 100%;
 }
 
-div.slide.ng-enter-active{
+.go-forward .ng-enter-active{
   left: 0;
 }
 
-div.slide.ng-leave{
+.go-forward .ng-leave{
   transition: all 1s ease-in-out;
   position: absolute;
   right: 25%;
 }
 
-div.slide.ng-leave-active{
+.go-forward .ng-leave-active{
   right: 100%;
+}
+
+/* NOTE: go back */
+
+.go-back .ng-enter{
+  transition: all 1s ease-in-out;
+  right: 100%;
+}
+
+.go-back .ng-enter-active{
+  right: 0;
+}
+
+.go-back .ng-leave{
+  transition: all 1s ease-in-out;
+  position: absolute;
+  left: 25%;
+}
+
+.go-back .ng-leave-active{
+  left: 100%;
 }

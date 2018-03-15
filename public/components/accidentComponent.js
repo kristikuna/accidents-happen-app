@@ -5,6 +5,7 @@
       var $ctrl = this;
       $ctrl.accidentDb = {};
       var type;
+      $ctrl.animation = "go-forward";
 
       $ctrl.accident = 1;
       $ctrl.setPerpCar = function(car) {
@@ -17,11 +18,18 @@
         }
       }
 
+      $ctrl.needHelp = function(){
+        $ctrl.animation = "go-forward";
+        $ctrl.accident = 2;
+      }
+
       $ctrl.getForm = function(item) {
         $ctrl.accident = item;
       }
 
       $ctrl.goBack = function(){
+        $ctrl.animation = "go-back";
+        console.log($ctrl.animationDirection)
         $ctrl.accident = $ctrl.accident - 1;
       }
 
@@ -45,9 +53,16 @@
         $location.path('/submit')
       }
 
+      $ctrl.goForward = function(){
+        $ctrl.animation = "go-forward";
+        console.log("click")
+      }
+
       $ctrl.showAlert = function(){
         alert("Authorities have be notified, keep calm.");
       }
+
+
     }
   };
 
