@@ -11,7 +11,7 @@
               <h2>GRANT CHIRPUS</h2>
             </div>
           </div>
-          <h1 class="incidentHistory">Incident History</h1>
+          <h3 class="incidentHistory">Incident History</h3>
           <div class="history" ng-repeat="incident in $ctrl.whatever | orderBy: id : reverse = true"  ng-class="{'grow':incident.id == $ctrl.selectedRow}" ng-click="$ctrl.setClickedRow(incident.id)" ng-dblclick="$ctrl.slideUp()">
           <table>
           <tr ng-if="incident.type_of">
