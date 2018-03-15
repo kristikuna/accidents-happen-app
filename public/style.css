@@ -1,7 +1,7 @@
 .xbut {
   position: absolute;
-  /* right: 0px;
-  top: 0px; */
+  right: 0px;
+  top: 0px;
   color: black;
 }
 
@@ -783,7 +783,7 @@ iFrame {
   }
 
   .homePageButtons a {
-    height: 50vh;
+    /* height: 50vh; */
     min-width: 30%;
     font-size: 1.5rem;
   }
