@@ -719,6 +719,9 @@ iFrame {
   h3{
     font-size: 30px;
   }
+  .history {
+    width: 60%;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -761,6 +764,7 @@ iFrame {
     z-index: 20;
     margin-top 0px; */
   }
+
 }
 
 /* NOTE: form animations */
