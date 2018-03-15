@@ -442,6 +442,22 @@ p {
   /* opacity: .5; */
 }
 
+
+.historyBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.historyBottom span {
+  visibility: hidden;
+  /* color: crimson; */
+  font-style: italic;
+  font-size: .75em;
+  padding-bottom: 20px;
+}
+
 .grow {
   max-height: 2000px;
 }
@@ -474,8 +490,8 @@ table td {
   opacity: .8;
   width: 10%;
   height: 40px;
-  margin: 20px;
-  float: right;
+  margin-bottom: 20px;
+  /* float: right; */
 }
 
 .submit {
@@ -637,6 +653,9 @@ iFrame {
 @media screen and (min-width: 768px) {
   #nextOnAccident {
     right: 180px;
+  }
+  .historyBottom span {
+    visibility: visible;
   }
   .imgButton {
     opacity: .90;

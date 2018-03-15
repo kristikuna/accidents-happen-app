@@ -12,7 +12,7 @@
             </div>
           </div>
           <h1 class="incidentHistory">Incident History</h1>
-          <div class="history" ng-repeat="incident in $ctrl.whatever"  ng-class="{'grow':incident.id == $ctrl.selectedRow}" ng-click="$ctrl.setClickedRow(incident.id)" ng-dblclick="$ctrl.slideUp()">
+          <div class="history" ng-repeat="incident in $ctrl.whatever | orderBy: id : reverse = true"  ng-class="{'grow':incident.id == $ctrl.selectedRow}" ng-click="$ctrl.setClickedRow(incident.id)" ng-dblclick="$ctrl.slideUp()">
           <table>
           <tr ng-if="incident.type_of">
             <th>Type of incident:</th>
@@ -63,7 +63,10 @@
               <td>{{ incident.direction ||"n/a" | uppercase}}</td>
             </tr>
           </table>
-          <button class="profileDelete" ng-click="$ctrl.delete(incident.id)"><i class="material-icons">delete_forever</i></button>
+          <div class="historyBottom">
+            <span>Double-click to close</span>
+            <button class="profileDelete" ng-click="$ctrl.delete(incident.id)"><i class="material-icons">delete_forever</i></button>
+          </div>
           </div>
         </div>
         `,
@@ -78,14 +81,13 @@
 
             $ctrl.setClickedRow = function(id){
               $ctrl.selectedRow = id;
-              console.log("click" + id);
+              console.log("click id = " + id);
             }
 
             $ctrl.slideUp = function(){
               $ctrl.selectedRow = null;
-              console.log("doubleclick");
             }
-            
+
             $ctrl.delete = function(id){
               console.log("delete from component");
               WizardService.deleteItem(id).then(refreshList);
