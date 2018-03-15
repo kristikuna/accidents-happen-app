@@ -82,37 +82,37 @@
     <div>
       <h3>Other Vehicle Details</h3>
       <table>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.make">
           <th>Make:</th>
-          <td>{{ $ctrl.accidentDb.make ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.make | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.model">
           <th>Model:</th>
-          <td>{{ $ctrl.accidentDb.model ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.model | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.color">
           <th>Color:</th>
-          <td>{{ $ctrl.accidentDb.color ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.color | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.plate">
           <th>License plate #:</th>
-          <td>{{ $ctrl.accidentDb.plate||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.plate | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.driver">
           <th>Driver description:</th>
-          <td>{{ $ctrl.accidentDb.driver ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.driver | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.event">
           <th>Description of events:</th>
-          <td>{{ $ctrl.accidentDb.event ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.event | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.description">
           <th>Damage to other vehicle:</th>
-          <td>{{ $ctrl.accidentDb.description ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.description | uppercase}}</td>
         </tr>
-        <tr>
+        <tr ng-if="$ctrl.accidentDb.direction">
           <th>Direction vehicle headed:</th>
-          <td>{{ $ctrl.accidentDb.direction ||"n/a" | uppercase}}</td>
+          <td>{{ $ctrl.accidentDb.direction | uppercase}}</td>
         </tr>
       </table>
       <div class="navButtons">
