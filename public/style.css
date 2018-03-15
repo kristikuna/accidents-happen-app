@@ -154,6 +154,7 @@ textarea {
   margin-top: 10px;
   flex-wrap: wrap;
   height: 80vh;
+  padding-bottom: 20px;
 }
 
 .formButtons a {
