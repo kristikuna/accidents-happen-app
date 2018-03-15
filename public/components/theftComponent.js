@@ -19,7 +19,6 @@
 
       $ctrl.goBack = function() {
         $ctrl.animation = "go-back";
-
         $ctrl.accident = $ctrl.accident - 1;
       }
 
@@ -30,7 +29,6 @@
 
       $ctrl.goForward = function(){
         $ctrl.animation = "go-forward";
-        console.log("click")
       }
 
       $ctrl.stolenItems = function(items) {

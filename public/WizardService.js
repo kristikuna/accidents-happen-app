@@ -16,13 +16,11 @@
         method: "GET",
         url: "/incidents"
         }).then(function(response) {
-        console.log(response.data);
         return response.data;
         });
     };
 
     function setList(incident){
-      console.log(incident);
       return $http({
         method: "POST",
         url: "/incidents",
@@ -31,7 +29,6 @@
     };
 
     function deleteItem(id){
-      console.log(id);
       return $http({
         method: "DELETE",
         url: "/incidents/"+id
@@ -48,7 +45,6 @@
     };
 
     function setVideo(video){
-      console.log(video);
       return $http({
         method: "POST",
         url: "/videos",
@@ -57,7 +53,6 @@
     };
 
     function deleteVideo(id){
-      console.log(id);
       return $http({
         method: "DELETE",
         url: "/videos/"+id
@@ -65,8 +60,6 @@
     };
 
     function updateVideo(video, id){
-    console.log(id);
-    console.log(video);
 
     return $http({
              method: "PUT",

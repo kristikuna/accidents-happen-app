@@ -41,7 +41,6 @@
 
       $ctrl.goForward = function(){
         $ctrl.animation = "go-forward";
-        console.log("click")
       }
 
       $ctrl.setEvent = function (car){
@@ -55,7 +54,6 @@
       }
 
       $ctrl.sendToService = function(){
-        console.log($ctrl.accidentDb);
         WizardService.setList($ctrl.accidentDb);
         $location.path('/submit');
       }
