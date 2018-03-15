@@ -752,7 +752,7 @@ iFrame {
   }
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1025px) {
   .headerTitle h1 {
     font-size: 5rem;
     margin: 25px;
