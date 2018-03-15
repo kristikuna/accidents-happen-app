@@ -545,8 +545,10 @@ carAccident1 {
 } */
 
 #videoContainer {
-  background-image: url("photo/wild-sea.png");
-  opacity: 0.8;
+  background-image: url("photo/wood_background_2.jpeg");
+  opacity: 1.0;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 iFrame {
