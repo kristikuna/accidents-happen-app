@@ -10,8 +10,8 @@
       <a class="xbut homeButton" href="#!/home"><i class="material-icons">home</i></a>
       <div ng-repeat="video in $ctrl.videos | filter: filterText track by $index" class="videoForm">
       <i video-open class="material-icons x videoOpener">zoom_out_map</i>
-      <h1 class="videoTitle">{{video.title}}</h1>
-        <h3 class="videoSubTitle">{{video.subtitle}}</h3>
+      <h3 class="videoTitle">{{video.title}}</h3>
+        <p class="videoSubTitle">{{video.subtitle}}</p>
 
         <ng-youtube-embed
           video="video.src"

@@ -46,7 +46,7 @@ h3 {
   color: #294168;
   font-size: 20px;
   margin: 10px 0px;
-  font-family: Limelight;
+  font-family: "Patua One";
 }
 
 h4{
@@ -90,10 +90,6 @@ form {
   background-color: rgba(41, 65, 104, .5);
 }
 
-.nextButton:hover {
-  background-color: rgb(56, 57, 58);
-}
-
 .backButton {
   background-color: rgba(232, 233, 238, .5);
 }
@@ -134,7 +130,7 @@ label {
 }
 
 .tab a {
-  width: auto;
+  font-size: 25px;
   padding: 10px;
   color: black;
   text-decoration: none;
@@ -177,8 +173,6 @@ textarea {
 
 .accidentForm{
   display: flex;
-  /* align-items: center; */
-  /* height: 100vh; */
   margin-top: 80px;
 }
 
@@ -232,6 +226,8 @@ header {
   color: #eae8e5;
   font-size: 3.5rem;
   transition: 2s;
+  line-height: 1;
+  padding-bottom: 25px;
 }
 
 .formTitle {
@@ -494,7 +490,7 @@ table td {
   margin-top: 5%;
   margin-left: 18%;
   font-family: Raleway, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 360px;
 }
 
@@ -507,7 +503,7 @@ table td {
   margin: 10px;
   opacity: 1;
   font-family: Raleway;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 carAccident1 {
@@ -658,7 +654,9 @@ iFrame {
     flex-direction: row;
   }
   .homePageButtons a {
-    height: 55vh;
+    height: 40vh;
+    min-width: 30%;
+    font-size: 1.5rem;
   }
   .adminLoginPage {
     width: 30%;
