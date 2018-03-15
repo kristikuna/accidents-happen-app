@@ -105,6 +105,7 @@ form {
   background-color: rgba(179, 74, 0, 1);
   width: 60px;
   opacity: .8;
+  text-align: center;
 }
 
 input {
@@ -157,6 +158,9 @@ textarea {
 
 .formButtons a {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -379,15 +383,14 @@ p {
 }
 
 .report button {
-  width: 13%;
+  width: 20%;
   height: 40px;
-  color: white;
-  background-color: rgb(56, 57, 58);
   text-transform: uppercase;
   font-family: Raleway;
-  border-radius: 100px;
-  opacity: .8;
-  padding-top: 4px;
+  font-size: 15px;
+  border: none;
+  margin: 5px 12px 0px 0px;
+  border-radius: 5px;
 }
 
 /* NOTE: history page */
@@ -442,6 +445,22 @@ p {
   /* opacity: .5; */
 }
 
+
+.historyBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.historyBottom span {
+  visibility: hidden;
+  /* color: crimson; */
+  font-style: italic;
+  font-size: .75em;
+  padding-bottom: 20px;
+}
+
 .grow {
   max-height: 2000px;
 }
@@ -474,8 +493,8 @@ table td {
   opacity: .8;
   width: 10%;
   height: 40px;
-  margin: 20px;
-  float: right;
+  margin-bottom: 20px;
+  /* float: right; */
 }
 
 .submit {
@@ -547,8 +566,10 @@ carAccident1 {
 #videoContainer {
   background-image: url("photo/wood_background_2.jpeg");
   opacity: 1.0;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 iFrame {
@@ -558,6 +579,7 @@ iFrame {
   border: white 2px solid;
   border-radius: 10px;
 }
+
 #homeButton {
   position: absolute;
   top: 20px;
@@ -651,6 +673,10 @@ iFrame {
   #nextOnAccident {
     right: 180px;
   }
+  .historyBottom span {
+    visibility: visible;
+  }
+
   .imgButton {
     opacity: .90;
     transform-style: preserve-3d;
@@ -659,11 +685,13 @@ iFrame {
     opacity: 1.0;
   }
   .headerTitle h1 {
-    font-size: 5rem;
+    font-size: 6rem;
+    margin: 14px 33px 33px 120px;
+    padding: 0px;
   }
   iFrame {
     min-width: 75%;
-    min-height: 500px;
+    min-height: 300px;
   }
   .formButtons a {
     font-size: 2rem;
@@ -675,14 +703,14 @@ iFrame {
   .formButtons a:hover {
     cursor: pointer;
   }
-
+/*
   .homePageButtons {
     flex-direction: row;
-  }
+  } */
   .homePageButtons a {
-    height: 40vh;
-    min-width: 30%;
-    font-size: 1.5rem;
+    height: 25vh;
+    min-width: 70%;
+    font-size: 2.5rem;
   }
   .adminLoginPage {
     width: 30%;
@@ -694,6 +722,8 @@ iFrame {
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
+    margin-top: 20px;
+
   }
   .videoForm {
     position: relative;
@@ -713,6 +743,7 @@ iFrame {
     z-index: 20;
     margin-top: 0px;
   }
+
   .videoOpener {
     visibility: visible;
     position: absolute;
@@ -735,18 +766,29 @@ iFrame {
   .history {
     width: 60%;
   }
+  .report{
+    width: 50%;
+  }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1020px) {
+  .headerTitle h1 {
+    font-size: 5rem;
+    margin: 25px;
+    padding: 0px;
+  }
+
+  .homePageButtons {
+    flex-direction: row;
+  }
+
+  .homePageButtons a {
+    height: 50vh;
+    min-width: 30%;
+    font-size: 1.5rem;
+  }
   .videoOpener {
     visibility: visible;
-  }
-  .formButtons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 48vh;
-    margin: 30px;
   }
 
   .videoParent {
@@ -762,8 +804,9 @@ iFrame {
     flex-direction: row;
     flex-wrap: wrap; */
     /* text-align: center; */
-    width: 30%;
-    margin: 25px auto;
+    width: 33%;
+    /* margin: 25px auto; */
+    justify-content: space-around;
   }
 
   .videoLarge {
@@ -777,7 +820,20 @@ iFrame {
     z-index: 20;
     margin-top 0px; */
   }
-
+  iFrame {
+    min-width: 75%;
+    min-height: 500px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .formButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 48vh;
+    margin: 30px;
+  }
 }
 
 /* NOTE: form animations */
