@@ -105,6 +105,7 @@ form {
   background-color: rgba(179, 74, 0, 1);
   width: 60px;
   opacity: .8;
+  text-align: right;
 }
 
 input {
@@ -157,6 +158,9 @@ textarea {
 
 .formButtons a {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -563,8 +567,10 @@ carAccident1 {
 #videoContainer {
   background-image: url("photo/wood_background_2.jpeg");
   opacity: 1.0;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 iFrame {
