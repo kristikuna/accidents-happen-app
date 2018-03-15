@@ -558,11 +558,24 @@ iFrame {
   border: white 2px solid;
   border-radius: 10px;
 }
-
+#homeButton {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 40px;
+}
 #adminButton {
   position: absolute;
   top: 20px;
   left: 15px;
+  font-size: 40px;
+}
+.videoButton i:hover {
+  color: #0061ff;
+}
+.videoButton i {
+  color: rgba(232, 229, 225, .8);
+  margin-bottom: 20px;
 }
 
 .adminLoginPage {
