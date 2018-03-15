@@ -1,7 +1,7 @@
 .xbut {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 5px;
+  top: 5px;
   color: black;
 }
 
@@ -686,7 +686,7 @@ iFrame {
   }
   .headerTitle h1 {
     font-size: 6rem;
-    margin: 14px 33px 33px 120px;
+    margin: 14px 33px 33px 48px;
     padding: 0px;
   }
   iFrame {
@@ -703,10 +703,7 @@ iFrame {
   .formButtons a:hover {
     cursor: pointer;
   }
-/*
-  .homePageButtons {
-    flex-direction: row;
-  } */
+
   .homePageButtons a {
     height: 25vh;
     min-width: 70%;
@@ -734,22 +731,6 @@ iFrame {
     box-shadow: 10px 10px 8px rgba(0, 0, 0, .3);
   }
 
-  .videoLarge {
-    width: 90%;
-    border: 2px solid orange;
-    background-color: rgb(232, 229, 225);
-    transition: all .5s ease-in-out;
-    position: fixed;
-    z-index: 20;
-    margin-top: 0px;
-  }
-
-  .videoOpener {
-    visibility: visible;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
   .nextButton {
     transition: all .2s ease-in-out;
   }
@@ -771,7 +752,7 @@ iFrame {
   }
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1025px) {
   .headerTitle h1 {
     font-size: 5rem;
     margin: 25px;
@@ -796,33 +777,30 @@ iFrame {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 25px auto;
-    width: 90%;
+    width: 100%;
   }
 
   .videoForm {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
-    /* text-align: center; */
-    width: 33%;
-    /* margin: 25px auto; */
-    justify-content: space-around;
+    width: 31%;
+    justify-content: space-between;
   }
 
   .videoLarge {
     width: 90%;
-    height: 700px;
-    /* height: auto;
+    height: 550px;
     border: 2px solid orange;
     background-color: rgb(232, 229, 225);
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
     position: fixed;
     z-index: 20;
-    margin-top 0px; */
+    margin-top: 0px;
   }
-  iFrame {
-    min-width: 75%;
-    min-height: 500px;
+
+  .videoOpener {
+    visibility: visible;
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }
 }
 @media only screen and (min-width: 1900px) {
