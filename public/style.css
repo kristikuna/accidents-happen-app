@@ -482,7 +482,6 @@ table th {
 
 table td {
   vertical-align: top;
-  /* width: 75%; */
 }
 
 
@@ -495,7 +494,6 @@ table td {
   width: 10%;
   height: 40px;
   margin-bottom: 20px;
-  /* float: right; */
 }
 
 .submit {
@@ -559,10 +557,6 @@ carAccident1 {
 .videoTitle, .videoSubTitle {
   color: #3B3738;
 }
-
-/* .videoSubTitle {
-  color: #eae8e5;
-} */
 
 #videoContainer {
   background-image: url("photo/wood_background_2.jpeg");
@@ -751,6 +745,11 @@ iFrame {
   .report{
     width: 50%;
   }
+
+  #safeButton {
+    margin-left: 18%;
+  }
+
 }
 
 @media only screen and (min-width: 1025px) {
