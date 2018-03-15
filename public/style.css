@@ -505,6 +505,9 @@ table td {
   width: 65%;
   height: 45px;
   background-color: green;
+  display: -webkit-box; 
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   margin-top: 5%;
@@ -513,6 +516,7 @@ table td {
   font-size: 20px;
   border-radius: 360px;
 }
+
 
 #notSafeButton {
   background-color: crimson;
