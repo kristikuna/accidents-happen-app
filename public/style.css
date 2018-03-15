@@ -697,6 +697,7 @@ iFrame {
   }
   .formButtons a {
     font-size: 2rem;
+    width: 60%;
   }
 
   .formButtons a:hover {
