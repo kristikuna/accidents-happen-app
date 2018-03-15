@@ -105,7 +105,7 @@ form {
   background-color: rgba(179, 74, 0, 1);
   width: 60px;
   opacity: .8;
-  text-align: right;
+  text-align: center;
 }
 
 input {
@@ -383,15 +383,14 @@ p {
 }
 
 .report button {
-  width: 13%;
+  width: 20%;
   height: 40px;
-  color: white;
-  background-color: rgb(56, 57, 58);
   text-transform: uppercase;
   font-family: Raleway;
-  border-radius: 100px;
-  opacity: .8;
-  padding-top: 4px;
+  font-size: 15px;
+  border: none;
+  margin: 5px 12px 0px 0px;
+  border-radius: 5px;
 }
 
 /* NOTE: history page */
@@ -740,6 +739,7 @@ iFrame {
     z-index: 20;
     margin-top: 0px;
   }
+
   .videoOpener {
     visibility: visible;
     position: absolute;
@@ -761,6 +761,9 @@ iFrame {
   }
   .history {
     width: 60%;
+  }
+  .report{
+    width: 50%;
   }
 }
 
