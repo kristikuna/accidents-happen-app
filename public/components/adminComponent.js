@@ -18,11 +18,11 @@
                 <button type="submit">ADD VIDEO</button>
             </form>
         </div>
-        
+
         <div class="adminLoginPage">
-          <div class="videoDiv">
+
             <ul ng-repeat="videoInfo in $ctrl.videoObj">
-            <li class="listItemInVideos" >{{videoInfo.title}}
+            <li class="listItemInVideos" ><span class="vidTitle">{{videoInfo.title}}</span>
               <span ng-click="showme=true">
                 <i class="material-icons edit">mode_edit</i>
               </span>

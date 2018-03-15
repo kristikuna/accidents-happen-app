@@ -586,6 +586,15 @@ iFrame {
   border-radius: 5px;
 }
 
+.adminLoginPage .vidTitle {
+  flex-grow: 1;
+}
+
+.adminLoginPage li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .loginForm {
   position: relative;
   display: flex;
