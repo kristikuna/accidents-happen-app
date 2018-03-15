@@ -828,11 +828,12 @@ iFrame {
 .go-forward .ng-leave{
   transition: all 1s ease-in-out;
   position: absolute;
-  right: 25%;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .go-forward .ng-leave-active{
-  right: 100%;
+  right: 150%;
 }
 
 /* NOTE: go back */
@@ -849,9 +850,10 @@ iFrame {
 .go-back .ng-leave{
   transition: all 1s ease-in-out;
   position: absolute;
-  left: 25%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .go-back .ng-leave-active{
-  left: 100%;
+  left: 150%;
 }
