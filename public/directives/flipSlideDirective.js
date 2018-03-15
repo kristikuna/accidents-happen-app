@@ -14,12 +14,12 @@
                     }else{
                         console.log("true");
                         $element.css({"transform": "rotate(180deg)", "transition-duration": "2200ms"});
-                        $("header").css("height", "35vh");
+                        $("header").css("height", "25vh");
                         $(".homePageButtons").css("display", "flex");
                         $(".formTitle").css("color", "#39414C");
                         $element.removeClass("slide");
                         $("header").addClass("changeBackground");
-                    } 
+                    }
                 });
             }
         };
