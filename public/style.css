@@ -1,7 +1,7 @@
 .xbut {
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: 0px;
   color: black;
 }
 
@@ -517,7 +517,6 @@ table td {
   font-family: Raleway, sans-serif;
   font-size: 20px;
   border-radius: 360px;
-
 }
 
 
