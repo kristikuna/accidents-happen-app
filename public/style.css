@@ -566,7 +566,7 @@ carAccident1 {
 #videoContainer {
   background-image: url("photo/wood_background_2.jpeg");
   opacity: 1.0;
-  background-repeat: no-repeat;
+  min-height: 100vh;;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
