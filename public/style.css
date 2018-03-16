@@ -187,6 +187,7 @@ textarea {
 /* NOTE: homepage */
 
 #slideButton {
+  display: none;
   background-color: grey;
   color: white;
   padding: 15px;
@@ -751,6 +752,9 @@ iFrame {
 }
 
 @media only screen and (min-width: 1025px) {
+  #slideButton {
+    display: block;
+  }
   .formButtons {
     display: flex;
     justify-content: space-around;
