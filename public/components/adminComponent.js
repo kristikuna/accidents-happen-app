@@ -54,7 +54,6 @@
         function refreshList(){
           WizardService.getVideo().then(function (response){
             $ctrl.videoObj = response;
-            console.log(response);
           });
         }
         $ctrl.editTitle = function(video,id){

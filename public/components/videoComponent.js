@@ -30,16 +30,13 @@
       WizardService.getVideo().then(function(response) {
         $ctrl.videos = response;
         $ctrl.source = $ctrl.videos.src;
-        console.log($ctrl.videos[0].src);
       });
       $ctrl.setClickedRow = function(id){
         $ctrl.selectedVideo = id;
-        console.log("click" + id);
       }
 
       $ctrl.slideSmall = function(){
         $ctrl.selectedVideo = null;
-        console.log("doubleclick");
       }
     }
   }

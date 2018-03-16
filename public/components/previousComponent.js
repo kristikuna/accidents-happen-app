@@ -76,12 +76,10 @@
 
             WizardService.getList().then(function (response){
               $ctrl.whatever = response;
-              console.log(response);
             });
 
             $ctrl.setClickedRow = function(id){
               $ctrl.selectedRow = id;
-              console.log("click id = " + id);
             }
 
             $ctrl.slideUp = function(){
@@ -89,14 +87,12 @@
             }
 
             $ctrl.delete = function(id){
-              console.log("delete from component");
               WizardService.deleteItem(id).then(refreshList);
             }
 
             function refreshList(){
               WizardService.getList().then(function (response){
                 $ctrl.whatever = response;
-                console.log(response);
               });
             }
 
